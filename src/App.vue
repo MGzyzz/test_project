@@ -1,5 +1,11 @@
 <template>
-  <div class="container" :class="{ 'container--wide': mode === 'editor' }">
+  <div
+    class="container"
+    :class="{
+      'container--wide': mode === 'editor',
+      'container--with-sidebar': mode === 'quiz' && screen === 'setup',
+    }"
+  >
     <!-- Mode nav (hidden during active quiz) -->
     <div v-if="screen !== 'quiz'" class="mode-nav">
       <button class="mode-btn" :class="{ active: mode === 'quiz' }" @click="mode = 'quiz'">
@@ -12,7 +18,14 @@
 
     <!-- Quiz mode screens -->
     <template v-if="mode === 'quiz'">
-      <SetupScreen v-if="screen === 'setup'" @start="handleStart" />
+      <!-- Setup with sidebar -->
+      <div v-if="screen === 'setup'" class="setup-layout">
+        <FileSidebar @selected="onSidebarSelected" />
+        <div class="setup-main">
+          <SetupScreen ref="setupRef" @start="handleStart" />
+        </div>
+      </div>
+
       <QuizScreen v-else-if="screen === 'quiz'" />
       <ResultsScreen v-else @repeat="handleRepeat" @back="screen = 'setup'" />
     </template>
@@ -28,6 +41,7 @@ import SetupScreen from './components/SetupScreen.vue'
 import QuizScreen from './components/QuizScreen.vue'
 import ResultsScreen from './components/ResultsScreen.vue'
 import EditorScreen from './components/EditorScreen.vue'
+import FileSidebar from './components/FileSidebar.vue'
 import { useQuiz } from './composables/useQuiz.js'
 
 const mode = ref('quiz')    // 'quiz' | 'editor'
@@ -55,6 +69,14 @@ function onGoQuiz() {
   screen.value = 'setup'
 }
 
+function onSidebarSelected({ name, text, total }) {
+  // SetupScreen already has loadText called via useQuiz,
+  // just sync its local state via expose
+  if (setupRef.value) setupRef.value.syncFromSidebar(name, text, total)
+}
+
+const setupRef = ref(null)
+
 function onKeydown(e) {
   if (screen.value !== 'quiz') return
 
@@ -77,6 +99,21 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 </script>
 
 <style>
+.container--with-sidebar {
+  max-width: 860px;
+}
+
+.setup-layout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.setup-main {
+  flex: 1;
+  min-width: 0;
+}
+
 .mode-nav {
   display: flex;
   gap: 6px;

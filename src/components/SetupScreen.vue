@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Test Prep</h1>
     <div class="card">
       <label>Questions</label>
       <div class="file-upload-area">
@@ -57,6 +56,7 @@ const fileName = ref('or paste text below')
 const from = ref(1)
 const to = ref(1)
 
+
 const total = computed(() => allQuestions.value.length)
 const status = computed(() => {
   const n = total.value
@@ -85,6 +85,15 @@ function onStart() {
   if (!total.value) return
   emit('start', { from: from.value, to: to.value })
 }
+
+function syncFromSidebar(name, content, total_) {
+  text.value = content
+  fileName.value = name
+  from.value = 1
+  to.value = total_ || 1
+}
+
+defineExpose({ syncFromSidebar })
 </script>
 
 <style scoped>

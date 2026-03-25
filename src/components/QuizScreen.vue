@@ -28,8 +28,17 @@
         {{ feedback.text }}
       </div>
 
-      <button v-if="showConfirm" class="btn btn-primary" @click="confirmAnswer">Confirm</button>
-      <button v-if="answered" class="btn btn-primary" @click="nextQuestion">Next</button>
+      <button
+        v-if="!answered"
+        class="btn btn-primary"
+        :disabled="!showConfirm"
+        @click="confirmAnswer"
+      >Confirm</button>
+      <button
+        v-if="answered"
+        class="btn btn-primary"
+        @click="nextQuestion"
+      >Next</button>
     </div>
   </div>
 </template>
@@ -146,4 +155,5 @@ const {
 .feedback.wrong { background: var(--red-bg); border: 1px solid var(--red-border); color: var(--red); }
 
 .btn + .btn { margin-top: 10px; }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
 </style>

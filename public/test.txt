@@ -1,0 +1,2335 @@
+Which of the following definitions best describes project management?
+-Project management is the ongoing management of a team of skilled workers that deliver a product to a client
++Project management uses specific knowledge, skills, tools, and techniques to deliver valuable projects to clients
+-Project management is a detailed scheduling of multiple tasks within a project
+-Project management coordinates with stakeholders in a project to obtain feedback on deliverables
+
+Which two of the following are benefits of project management?
++Project management improves productivity, efficiency, and quality of work
+-Project management predicts profits, margins and issues payments to people working on projects
+-Project management improves communication within teams and overall satisfaction for employees
++Project management increases customer satisfaction by planning and meeting expectations
+
+Imagine the company you work with is beginning an initiative to audit and update internal training resources. Once this initiative is completed the company will present a new training library to employees as a resource for tasks they should complete.
+Which of the following terms best describes this initiative?
+-An inventory of assets
+-A program
++A project
+-A portfolio
+
+Which of the following statements best identifies the role of project management in projects?
++Balancing the scope of work, resources, timelines and budget
+-Processing the budget and payments from the client
+-Ensuring quality of deliverables
+-Scoping out and creating the initial statement of work for a project
+
+Which of the following definitions best describes project management?
+-Project management oversees permanent teams within a company
++Project management uses specific knowledge, skills, tools, and techniques to deliver valuable projects to clients
+-Project management coordinates with clients to action feedback on deliverables
+-Project management completes contractor payments, client invoices, and financial tasks for a department
+
+Which two of the following are benefits of project management?
++Project management addresses project risks proactively
++Project management manages budgets and timelines so that projects are able to be successfully completed within the planned budget and timeframe
+-Project management improves the relationship between employees and managers
+-Project management provides quality training for individuals that are onboarding to a project
+
+Imagine that the project you are working on has one round of client feedback that is implemented as a part of the contract. The client asks the team to do a second round of edits, but the project manager redirects the client to the contract and works with the client and team to identify a feedback checklist.
+Which of the following benefits best describes the benefit of project management for this scenario?
++Project management manages budgets so that projects are able to be successfully completed within the planned budget
++Project management addresses project risks proactively
+-Project management increases customer satisfaction by planning projects
+-Project management improving communication between teams
+
+Imagine you have been invited to work on a committee that will be working to improve training in multiple departments with multiple projects over the next year.
+Which of the following terms best describes this initiative?
+-A project
+-A portfolio
++A program
+
+Imagine you have joined a company that has three months to create an online course on HTML programming.
+Which of the following terms best describes this initiative?
+-A portfolio
++A project
+-A program
+
+Imagine you have been invited to identify all of the websites created by your company and to work with many different teams to manage many projects to update each site to meet the organization’s sales goals.
+Which of the following terms best describes this initiative?
+-A program
++A portfolio
+-A project
+
+Which of the following statements best identifies the role of project management in projects?
+-Working with the client to define the deliverable for the project
+-Managing one of the teams working on a project
++Balancing the scope of work, resources, timelines, and budget
+-Advocating for the client’s needs in internal meetings
+
+Imagine that you are working on a project that involves multiple departments to create a customized deliverable. Each week the project manager sends out a detailed email with the current budget, the status of all the departments’ progress, and a summary of upcoming deadlines.
+Which of the following statements best identifies the driver of project management in the scenario?
+-Cost
+-Timelines
++Reporting
+-Resources
+
+Imagine that you are involved in a project with tight deadlines. The project manager has created a detailed chart of all tasks and deadlines for each task.
+Which of the following statements best identifies the driver of project management in the scenario?
+-Cost
+-Reporting
+-Resources
++Timelines
+
+A project you are working on is currently understaffed and behind on deliverables. The project manager compares the list of deadlines to the current staffing and decides that two additional staff need to join the project to complete the project on time.
+Which of the following statements best identifies the driver of project management in the scenario?
+-Timelines
++Resources
+-Reporting
+-Cost
+
+Which of the following is an external party that project managers commonly collaborate with during a project?
+-Legal, to address legal and contract issues
+-HR and recruiting, to recruit personnel
+-IT, to help with technical systems
++Suppliers who provide a service required for the project
+
+Which of the following roles best describes a project management methodology that consists of linear, non- overlapping phases that do not change with project needs?
+-Critical Path
+-Lean
++Waterfall
+-Agile
+
+Which of the following trends in project management are best described by the ability to automate administrative tasks by providing insights into project performance through data analysis and visualization?
+-Hybrid project management methodologies
+-Remote teams
++Artificial intelligence
+-Global workforce
+
+Is the following statement true or false: Modern Day project management involves static projects where timelines, budgets, deliverables, and resources infrequently change.
+-True
++False
+
+The project manager realizes two additional workers are needed for a project. Which stakeholder would the project manager work with to gain budget and resources for the project?
+-Sales and Marketing
+-Operations
+-Legal
++Executives
+
+A company needs new software to be used internally. They bring in a project manager to manage a project to implement the software and train departments on how to use it. Which primary stakeholder would the project manager work with?
+-Sales and Marketing
+-Legal
+-Executives
++Operations
+
+Who would the project manager work with to hire new personnel or contractors to fill an open position to meet resourcing needs?
++Human Resources
+-Sales and Marketing
+-IT
+-Legal
+
+Which of the following terms describes a set of project management guidelines, best practices, and processes that make project management more effective within cost, scope, and time constraints?
+-Project Management Professional
+-Project Management Institute
++Project Management Body of Knowledge
+-Project Management Professional Certificate
+
+Which of the following terms best describes a project management methodology that addresses the inflexibility of waterfall’s long and strict project phases by having short development sprints?
+-Lean
+-Critical Path
+-Six Sigma
++Agile
+
+Which project methodology is focused on minimizing the waste of resources and time?
+-Agile
+-Critical Path
+-Six Sigma
++Lean
+
+Which project management software is cloud- based and automates administrative work?
+-Tableau
+-IBM Cognos
++Asana
+-Google Data Studio
+
+Which of the following is a messaging system that can facilitate synchronous and asynchronous communication of a remote global team?
+-IBM Cognos
+-Google Data Studio
+-Tableau
++Slack
+
+Which of the following terms describes a trend in project management that include traits such as emotional intelligence, conflict resolution, communication, negotiation, and mentoring?
+-Hybrid teams
++Soft skills
+-Remote teams
+-Artificial intelligence
+
+Which of the following terms describes traditional project management?
++Sequential
+-Remote and hybrid teams
+-Automated management
+-Flexible
+
+Which of the following is a responsibility of a project manager during the project closing phase?
++Holding a retrospective to review project performance
+-Creating a Kanban board
+-Developing a financial plan
+-Assigning individual roles to team members
+
+Which type of project meeting includes team members reporting on the tasks they worked on yesterday, the tasks they will do today, and any challenges or blockers they are facing?
+-Sprint review
++Stand- up
+-Sprint retrospective
+-Project status
+
+As a project manager, you will need to estimate how long tasks should take to create a project plan and help team members manage due dates. Which soft skill best describes this project management skill?
+-Communication
+-Negotiation
+-Building relationships
++Time management
+
+As a project manager, you will keep up with many small parts of a project, like spreadsheets, project tracking software, and detailed plans. What trait best describes the ability to oversee all of these components in a project?
+-Problem solving
+-Motivational
++Detail oriented
+-Curious
+
+As a project manager, you will allocate tasks to team members based on capacity, skill sets, and maximizing efficiency. Which of the following technical skills best describes this aspect of project management?
+-Change management
+-Software and information technology
++Resource planning
+-Business process improvement
+
+Which of the following is an additional skill that IT project managers are expected to have in addition to standard project management skills?
+-Data analytics
+-Resource planning
+-Data management
++Programming language
+
+What skill is a project manager using when they ask clarifying questions to understand better how to solve an issue blocking progress on a deliverable?
+-Trust Building
+-Leadership
++Communication
+-Motivation
+
+What skill is a project manager using when resolving a problem between two teams to keep the project on track?
++Conflict Management
+-Inspire
+-Leadership
+-Trust Building
+
+A project manager uses project management software that tracks risks and issues and provides a dashboard to communicate project status with all stakeholders. Which phase in the project management lifecycle would the project manager use this software in?
++Project monitoring and reporting
+-Project planning
+-Project closing
+-Post- project evaluation
+
+The project manager hosts a meeting to gain input from team members on the previous project’s performance and whether the project met its defined goals. Which phase in the project management lifecycle would this process be used in?
+-Project Closing
++Post- project evaluation
+-Project monitoring and reporting
+-Project planning
+
+A project manager meets with the development team, product owner, and stakeholders to review the work that was completed during the sprint. What type of meeting is this?
+-Project Status meeting
++Sprint review
+-Stand- up
+-Sprint retrospective
+
+A project manager meets with project stakeholders to share updates and answer any concerns that the stakeholders have. What type of meeting is this?
++Project status meeting
+-Sprint review
+-Sprint retrospective
+-Stand- up
+
+Which of the following describes the types of skills that include understanding the value a project will bring to the client, organization, and employees?
+-Managerial skills
++Business skills
+-Technical skills
+-Leadership skills
+
+Which of the following project management positions can be described by the following statement: an entry- level administrative position in charge of the generation and distribution of project reports and often also deals with scheduling?
+-Senior executive level
+-Program manager
+-Portfolio manager
++Project coordinator
+
+Which of the following annual salaries best aligns with a senior project manager role?
+-$60,000
+-$78,000
+-$51,000
++$97,000
+
+Which of the following careers is considered the most senior- level position in project management?
+-Project Team Lead
++Director of project management
+-Scrum master
+-Senior project manager
+
+Which of the following are specialized skills that you will need as a project manager unique to the finance industry?
+-Risk management, process integration, quality assurance, and procurement
+-Development of web apps and portals
+-Technical knowledge and business acumen to understand project planning, and feasibility
++Financial analysis, budgeting, and forecasting
+
+Which of the following are responsibilities that require project manager oversight in the healthcare industry?
+-Risk management, process integration, quality assurance, and procurement
+-Technical knowledge and business acumen to understand project planning, cost, and feasibility
++Development of web apps and portals, facilitation of the construction of new buildings/departments, implementation, and integration of new equipment in a facility
+-Managing network infrastructures, equipment installation, and cybersecurity
+
+Which of the following is a responsibility of an IT project manager that overlaps with the responsibilities of a non- IT project manager?
++Identifying gaps, following the team’s project governance structure, and optimizing the project and process
+-Conceptual understanding of API integrations
+-Familiarity with object- oriented analysis and design
+-Assisting in establishing safe practices and system configurations to protect information systems from unwanted access or destruction
+
+Imagine that you are working on an IT project for the first time as a project manager. Which of the following is an additional responsibility you might be required to take on as an IT project manager?
+-Managing resources for projects, such as computer equipment and employees
+-Identifying gaps, following the team’s project governance structure, and optimizing the project and process
+-Working within deadlines and budgets, monitoring progress, organizing meetings, and creating status reports
++Assisting in establishing safe practices and system configurations to protect information systems from unwanted access or destruction
+
+Which of the following describes the types of skills that include the ability to lead a team and overcome challenges the team comes across while working on a project?
++Leadership Skills
+-Managerial Skills
+-Business Skills
+-Technical Skills
+
+Imagine that you are working as a project manager on a project to move a company into a new software system that will streamline their process. In your meetings with stakeholders, you provide updates that explain the steps implemented along with the value that each step provides to increase the efficiency of employees using the new software. Which of the following describes the skill this project manager is using?
+-Leadership Skills
++Business Skills
+-Technical Skills
+-Managerial Skills
+
+Which of the following is a career path that can be described as strategically managing several projects, analyzing the business benefits of a program, and managing multiple project dependencies?
+-Project coordinator
++Program manager
+-Portfolio manager
+-Senior executive
+
+Which role is responsible for setting a strategic vision and enforcing an organization’s policies and procedures?
+-Portfolio manager
++VP of Operations
+-Director of project management
+-Program manager
+
+Which two of the following are benefits of project management?
+-Project management predicts profits, margins and issues payments to people working on projects
++Project management addresses project risks proactively
+-Project management improves communication between employees and managers by creating clear expectations
++Project management manages budgets and timelines to ensure projects are able to be successfully completed within the planned budget and timeframe
+
+Which of the following statements best identifies the role of project management in projects?
+-Evaluating the quality of deliverables
+-Processing client, vendor, and contractor payments
++Ensuring project success through controlling the scope, schedule, financials, risk, quality, and resources of the project
+-Attending early sales calls with prospective clients
+
+Imagine you are working on a current project that is understaffed. You need more team members for the production team to keep up with the number of multimedia deliverables. Which of the following departments would you approach for help adding more team members to the production team?
+-Legal
+-IT
+-Operations
++Human Resources
+
+Which of the following terms best describes a project management methodology that focuses on delivering value and minimizing the waste of resources or time?
+-Waterfall
+-Critical Path
++Lean
+-Agile
+
+Which of the following best describes the project management trend that helps organizations make data-driven decisions about their projects?
+-Remote teams
++Data Analytics
+-Hybrid project management methodologies
+-Productivity suites
+
+Imagine that you are working on a project, and there are two types of software suggested by the client to use when reviewing deliverables. As the project manager, you look into both types of software to identify the best one that will work with the project’s workflow and technology usage. Which skill did the project manager use?
+-Negotiation
++Research
+-Time management
+-Problem-solving
+
+During standups, a project manager creates a safe and positive space to share blockers with the team. The team then collaborates on possible solutions. After a solution is identified, the project manager ensures that it is followed through. Which interpersonal skill is the project manager using?
+-Communication
+-Conflict management
+-Inspiration
++Trust building
+
+Which type of project meeting includes sharing updates with all project stakeholders and answering any questions or concerns the stakeholders have?
+-Sprint retrospective
++Project status
+-Stand-up
+-Sprint review
+
+Which of the following annual salaries best aligns with a position that requires several years of experience as a project manager and potentially taking on some project team lead responsibilities?
+-$60,000
++$78,000
+-$110,000
+-$45,000
+
+Which of the following best describes a set of important skills project managers use in the engineering industry?
++Quality management, contract administration, and risk management
+-Risk management, process integration, quality assurance, and procurement
+-Financial analysis, budgeting, and forecasting
+-Technical knowledge and business acumen to understand project planning, cost, and feasibility
+
+Which of the following best describes the benefit of project management for this scenario?
+-Project management addresses external project risks proactively
+-Project management manages budgets to complete projects within the planned budget
+-Project management increases customer satisfaction by planning projects
++Project management improves communication between teams
+
+Which of the following terms best describes this initiative?
++A project
+-A program
+-A portfolio
+
+Which stakeholders would you be working with on a day-to-day basis?
++Sales and Marketing
+-Executives
+-Legal
+-Operations
+
+Which of the following terms best describes a project management methodology that is data-focused and manufacturing-driven?
++Six Sigma
+-Critical Path
+-Lean
+-Agile
+
+Which project management tool can combine project and resource data with other data from the organization to develop a complete picture of key performance indicators and project health?
+-Jira
+-Slack
+-Microsoft Teams
++IBM Cognos
+
+Which of the following terms best describes modern project management?
+-Linear planning
+-Sequential
+-Predictable cycles
++Flexible
+
+Which soft skill best describes this project management skill?
++Building relationships
+-Negotiation
+-Decision making
+-Time management
+
+Which of the following types of meetings is this?
+-Sprint review
+-Stand-up
++Sprint retrospective
+-Project status meeting
+
+Which phase in the project management lifecycle would this dashboard be necessary?
+-Post-project evaluation
+-Project planning
++Project monitoring and reporting
+-Project closing
+
+Which of the following is a senior-level career that can provide strategic directions for a company’s projects by defining how those projects fit into the business’s strategy and goals?
+-Program manager
+-Project team lead
+-Scrum master
++Director of Project Management
+
+A project manager oversees a project with predefined deliverables that are unlikely to change during the project's course. Which of the following project lifecycles is most appropriate for this project?
+-Iterative
+-Agile
++Predictive
+-Incremental
+
+A project manager is assigned to oversee the development of a new web-based application for a client. The client wants to review and provide feedback at each milestone throughout the project, and the manager anticipates a low degree of change to the project scope. Which of the following project lifecycles is most appropriate for this project?
++Incremental
+-Agile
+-Iterative
+-Predictive
+
+A project manager uses an iterative lifecycle approach for a software development project requiring significant experimentation and refinement in the design phase. The project team needs to incorporate feedback from users and stakeholders throughout the project. Which of the following defines why the iterative lifecycle is best for this project?
++Iterative lifecycles require frequent deliveries but a high degree of change
+-Iterative lifecycles require periodic deliveries
+-Motivate the team
+-Iterative lifecycles require multiple deliveries and a high degree of change
+
+A project team is developing a mobile application for a client. The client gives the team a general idea of the application’s functionality but is open to making changes based on user feedback throughout the project. Which of the following project lifecycles is most appropriate for this project?
+-Incremental
+-Predictive
+-Iterative
++Agile
+
+The team is classifying various project management models as either adaptive or predictive. Which of the following models would most closely meet the definition of adaptive?
+-Waterfall
++Kanban
+-Critical path
+-Critical chain
+
+Ralph Stacey developed a method to objectively determine the type of lifecycle to apply to a project. Which of the following two answers are parameters Stacey recommends in making this decision?
+-Risk exposure
++Technical degree of uncertainty
+-Personnel capacity
++Requirements uncertainty
+
+A project sponsor wants to establish an agile methodology to manage certain projects. Which of the following two key roles are essential to the success of this initiative?
+-Program manager
++Scrum master
+-Project manager
++Product owner
+
+A customer requests frequent deliveries during an inventory management upgrade project. Likely, the degree of change impacting the project is low. Which of the following is the best lifecycle choice for this scenario?
+-Predictive
++Incremental
+-Agile
+-Iterative
+
+Another project’s customer requests a high degree of deliveries. However, the team anticipates the degree of change to be high as well. Which of the following is the best lifecycle choice for this scenario?
+-Iterative
++Agile
+-Predictive
+-Incremental
+
+A project manager is overseeing a project and decides to use a Define, Measure, Analyze, Improve, and Control Model. Which of the following types of project is manager overseeing?
+-Lean
+-Agile
+-Waterfall
++Six Sigma
+
+The project management team is reviewing a variety of organizational types. Which two of the following ways will the project manager be impacted depending on the organization type the team selects?
+-Contingency reserves
++Resource availability
++Project manager’s authority
+-Risk appetite
+
+A project manager works in an organization sometimes known as a “silo.” In this model, support is minimal and the manager may not be assigned as a project manager. Success in this model is difficult to achieve. Which model fits this scenario?
+-Strong matrix
++Organic or functional
+-Weak matrix
+-Project oriented
+
+A project management office (PMO) has a low level of control but does provide best practices, common oversights, and templates. Which type of PMO is this?
+-Controlling
+-Informational
++Supportive
+-Directive
+
+A key infrastructure project has failed twice to achieve the desired objectives. For the third attempt, the team modifies their approach to meet the needs of the project. What method did the team use in this scenario?
++Tailoring
+-Revising
+-Modifying
+-Updating
+
+You are responsible to the internal and external stakeholders of the organization. You must perform with integrity, care, trustworthiness, and compliance. Which principle of project management do these statements represent?
+-Create a collaborative project team environment
+-Effectively engage with stakeholders
+-Focus on value
++Be a diligent, respectful, and caring steward
+
+A project manager’s ability to respond to changing conditions, along with the ability to absorb impacts and recover quickly, is critical. Which of the following concepts defines these two critical abilities?
++Resiliency and adaptability
+-Adaptability and perseverance
+-Assertiveness and resiliency
+-Perseverance and assertiveness
+
+The need to identify key measures, metrics, and standards falls within which of the following Project Management Institute’s (PMI) knowledge areas?
+-Project resource management
+-Project integration management
++Project quality management
+-Project scope management
+
+A project manager wants to ensure that they understand all key project management principles. How many principles should the manager review?
++Twelve principles
+-Five principles
+-Eight principles
+-Ten principles
+
+Which knowledge area requires a project manager to negotiate with organizational functional managers to gain support?
+-Project scope management
++Project resource management
+-Project stakeholder management
+-Project procurement management
+
+A project team is implementing a new work-from-home policy. Many meetings will require virtual methods. What are the two key considerations that may impact the success of this new program?
+-Multiple locations
++Technology availability
+-Employee disabilities
++Various time zones
+
+Management assumes individuals are motivated by self-realization, values, and a higher calling. Which management style should a project manager use to influence the team that will cultivate insight and meaning?
+-Theory Y
+-Theory X
++Theory Z
+-Theory A
+
+Drexler and Sibbet developed the 7-Step Team Performance Model. Which two stages are essential to this model’s success?
++Create the team
+-Reward the team
++Sustainability and performance actions
+-Motivate the team
+
+The ADKAR Model is widely accepted for driving and managing organizational change. Which two of the following steps are in this model?
++Desire
++Reinforcement
+-Anticipate
+-Alert
+
+William Bridges developed a three-step transition model that defines the stages of change. Which of the following is the first stage in this model?
+-The New Beginning
+-Unfreezing
++Ending, Losing, and Letting Go
+-The Neutral Zone
+
+Which two of the following choices explain the quality assurance function?
+-Corrective
++Prevention
++Uses quality audits
+-Uses inspections
+
+A key principle in project management states that the ability to absorb impacts and recover quickly is essential. What does the Project Management Institute (PMI) call this ability?
++Resiliency
+-Flexibility
+-Strength
+-Adaptability
+
+A team is trying to understand how all process groups work together. They also need to develop and implement an integrated change control process. Which knowledge area are they analyzing?
++Project integration management
+-Project planning management
+-Project scope management
+-Project initiation management
+
+There are a number of meetings that are critical to success when managing an adaptive project. Which two meetings are appropriate for an adaptive project?
++Daily standup meeting
+-Pre-baseline and baseline presentations
++Product backlog refinement
+-Kick-off meetings to gain stakeholder acceptance
+
+One of the 12 Principles of Project Management describes each project as unique, recommends that the project manager avoid a “Cookie Cutter” approach, and directs managers to adapt their approach to meet the project’s needs. Which principle does this describe?
++Tailor based on context
+-Optimize risk responses
+-Recognize, evaluate, and respond to system interactions
+-Navigate complexity
+
+The 7-Step Performance Model walks project managers through the process of how to build an effective and high-performing team. Steps 1–4 of this model share stages to create the team. Steps 5–7 share project team sustainability and performance actions. Who developed this 7-Step Performance Model?
+-Douglas McGregor
+-David McClelland
+-Abraham Maslow
++Drexler and Sibbet
+
+Management assumes all employees work for the sole purpose of income. Managers should influence these team members using a hands-on and top-down management approach. Which of the following management type does this describe?
++Theory X
+-Theory Y
+-Theory D
+-Theory Z
+
+Which of the following quality tools provides the horizontal value chain for a process from start to end and is commonly used by Six Sigma for process development and improvement?
+-Logical data model
+-Mind mapping
++SIPOC
+-Design for X
+
+The team uses a graphical representation of numerical data over a standard distribution. They determine the mean and analyze how data changes as you move away from the mean on the bell curve. Which tool and technique is the team using?
+-Design for X
+-Affinity chart
+-Scatter diagram
++Histogram
+
+William Bridges developed a three-step transition model that defines stages of change. Which of the following is the final stage in this three-step transition model?
+-Unfreezing
+-The Neutral Zone
+-Ending, Losing, and Letting Go
++The New Beginning
+
+Which two of the following choices explain the quality control function?
+-Uses quality audits
++Corrective
++Uses inspections
+-Prevention
+
+A project manager develops a business case to modify an existing product to add functionality that a critical customer requests. The sponsor approves the business case and wants to move on to the project’s next phase. Which document does the project manager need to create next?
+-Stakeholder engagement plan
+-Statement of work
++Project charter
+-Project brief
+
+What are two benefits the project manager will realize once a sponsor approves the project charter?
++Authority
+-Final scope description
+-Budget approval
++Access to resources
+
+Which of the following is a manager-created document meant for stakeholders who do not require in-depth project detail?
+-Business case
+-Stakeholder register
+-Project charter
++Project brief
+
+A project manager is developing a business case to support the automation of a core organizational process. They are following the Project Management Institute (PMI) model. Which of the following elements are not included in a business case?
++Project sponsor
+-Business need
+-Project justification
+-Business strategy
+
+The PMI recommends that the value propositions in a project charter address four key areas. These areas include financial, process, employee, and customer benefits. Which model does this four-benefit approach replicate?
+-Benefits Quadrant Model
+-Benefits Management Model
+-Value Analysis Model
++Balanced Scorecard Model
+
+A project manager presents a project charter to a sponsor. The sponsor approves the project charter for planning. Which key milestone is met in this scenario?
+-Preliminary scope
+-Interim approval
+-Baseline
++Pre-baseline
+
+A project manager defines the roles and responsibilities of the team in a stakeholder register. Which code should the manager use for a team member, who is a subject matter expert (SME), and is responsible for task completion?
+-AC
+-RC
++RA
+-CI
+
+Which two statements about a stakeholder register are true?
++The project manager develops the stakeholder register with the project charter
+-The project manager completes the stakeholder register before the start of a project
++Stakeholders may have multiple RACI designators
+-The project manager should define role definitions on the stakeholder register
+
+A project manager is taking a team vote to decide on the following scenario. There are four groups of stakeholders in the project. Marketing accounts for approximately 40% of the total stakeholder population. As a result, the marketing group will have the final say in the decision-making process. Which of the following describes this process?
++Plurality
+-Majority
+-Autocratic
+-Unanimity
+
+A facilitator leads a brainstorming session to generate potential solutions. After the team identifies all possible solutions, the stakeholders must prioritize each for feasibility. The best option is generally regarded as the one that scores the highest. Which decision-making method does this scenario describe?
+-Wideband Delphi
+-Multi-criteria decision analysis
++Nominal group technique
+-Voting
+
+Which decision-making method does the project manager facilitate when the decision needs to be confidential, and participants are hesitant to share their opinions in an open forum, or when the team is widely dispersed?
+-Multi-criteria decision analysis
++Wideband Delphi
+-Nominal group technique
+-Voting
+
+A project stakeholder has several reservations about a project but also sees potential. In terms of project support, the project stakeholder is still unsure. How would you classify the current level of commitment of the stakeholder?
+-U
++I
+-R
+-L
+
+A project team finalizes a close-hold plan that defines the stakeholders’ existing and desired levels of commitment. The team develops strategies to manage these stakeholders. Which of the following plans did the team develop in this scenario?
++Stakeholder engagement plan (SEP)
+-Stakeholder register
+-Project brief
+-Project charter
+
+A project manager met with a chief financial officer (CFO). The project under consideration is a new product that provides a revenue stream for approximately four years. The CFO asks for a financial analysis that considers the time value of money. Which financial information should the project manager provide?
+-IRR
+-ROI
++NPV
+-ROIC
+
+This financial analysis results in a subjective or objective measure of returns. Company shareholders determine if the project provides greater returns to the shareholders than its costs. There is no calculation involved. Which two of the following financial analyses does this describe?
++EVA
+-ROI
++ROIC
+-BCR
+
+Which of the following describes the estimation technique that involves comparing the current project to similar past projects to estimate the costs?
+-Parametric
+-Bottom-up
+-Budget estimate
++Analogous
+
+A critical stakeholder's responsibilities to support a project include ensuring that the project team produces the deliverables and meets the timeline. Which of the following roles should the project manager annotate on the stakeholder register for the stakeholder in this scenario?
+-A
+-C
+-I
++R
+
+The project manager has completed the project charter, and the team has just finished a brainstorming session to identify key stakeholders critical to the project's success. Where should the project manager document these stakeholders?
+-Stakeholder dictionary
+-Stakeholder log
++Stakeholder register
+-Stakeholder matrix
+
+Which of the following is a weighted method of decision-making in which two or more options are compared and scored?
++Multi-Criteria Decision Analysis
+-OARP
+-Wideband Delphi
+-Nominal Group Technique
+
+A project team employs a voting method where more than 50% of the voting members determine the decision path. Which of the following criterion describes this scenario?
++Majority
+-Unilateral
+-Plurality
+-Unanimity
+
+There are two projects. Project A has a value of $60,000. Project B has a value of $40,000. You can select only one project, and you decide on Project B. By selecting Project B, you “give up” the chance to gain the value of Project A. Which of the following concepts addresses project trade-offs like the one in this scenario?
+-Time value of money
++Opportunity cost
+-Depreciation
+-Straight line
+
+A project manager discovers that cash flow may be increased by applying tax benefits gained from asset depreciation. The project manager purchased a capital asset valued at $20,000 with a depreciable lifecycle of 4 years. How much can the manager claim each year using the straight-line depreciation method?
+-$7,500
++$5,000
+-$10,000
+-$20,000
+
+A project has benefits of $100,000. The costs are $50,000. Which is the benefit-cost ratio (BCR) for this scenario?
+-0.5
+-100%
++2.0
+-$50,000
+
+Which of the following estimation techniques uses regression analysis and learning curve techniques to multiply the quantity of work performed times the productivity rate?
+-Expert
++Parametric
+-Bottom-up
+-Top-down
+
+The project manager normally provides the rough order of magnitude (ROM) estimate in the project charter. What is the range for a ROM estimate?
++-25%/+75%
+--25%/+25%
+--10%/+10%
+--5%/+10%
+
+You are developing a comprehensive list of requirements using user stories. Which item is not addressed in a user story?
+-Value
+-Need
+-Role
++Project Name
+
+Who generally is responsible for writing user stories, and where are they placed when validated?
++The product owner is responsible for writing user stories, and they are placed in the product backlog when validated
+-The project manager is responsible for writing user stories, and they are placed in the product backlog when validated
+-The product owner is responsible for writing user stories, and they are placed in the requirements backlog when validated
+-The project manager is responsible for writing user stories, and they are placed in the requirements backlog when validated
+
+Which of the following does the team generate which reflects tasks required to complete a user story?
+-Requirements backlog
+-Work breakdown structure (WBS)
+-Product backlog
++Sprint backlog
+
+Which of the following terms are deliverables from each iteration that are produced and delivered to the customer for feedback through a product demo or review?
+-Product Entities
+-Milestones
+-Implements
++Increments
+
+What is a common acronym used to explain the attributes of a product backlog?
+-SMART
++INVEST
+-BRIGHT
+-DEEP
+
+Which of the following statements about the monitoring and controlling process group is TRUE?
++The first deliverables were received and inspected, and a few minor defects were corrected
+-The team is finalizing the risk register and preparing to present the project management plan to a sponsor
+-The team gained customer sign-off and is preparing to transition the final product to operations
+-The project charter is complete, and the team is developing a stakeholder register. The project manager also schedules a pre-baseline presentation
+
+The team develops all required deliverables and performs Quality Assurance functions to prevent defects. Which process group best fits the description?
++Executing process group
+-Planning process group
+-Initiating process group
+-Closing process group
+
+Which of the following process groups does the team use to finalize the risk register?
+-Executing process group
+-Closing process group
++Planning process group
+-Initiating process group
+
+Which of the following best describes the closing process group?
+-The team receives and inspects the first deliverables
+-The team is finalizing the risk register and preparing to present the project management plan to a sponsor
+-The team is developing all required deliverables and performing Quality Assurance functions to prevent defects
++The team has gained customer sign-off and is preparing to transition the final product to operations
+
+Which of the following best describes the initiating process group?
+-The first deliverables were received and inspected. A few minor defects were corrected
+-The team gained customer sign-off and is preparing to transition the final product to operations
+-The team is finalizing the risk register and preparing to present the project management plan to a sponsor
++The project charter is complete, the team is developing a stakeholder register, and the project manager schedules a pre-baseline presentation
+
+A project team inspects a completed deliverable to determine if it meets specifications. If so, they will verify completion. In which of the following phases does this scenario happen?
+-The executing phase
+-The planning phase
++The monitoring and controlling phase
+-The closing phase
+
+Who writes user stories, and where do they place them when validated?
+-The project manager writes user stories and places them in the requirements backlog
++The product owner writes user stories and places them in the product backlog
+-The product owner writes user stories and places them in the requirements backlog
+-The project manager writes user stories and places them in the product backlog
+
+The project team is building high-priority deliverables for the project. In what phase of the project are they performing critical quality assurance activities to ensure the team follows standards and prevents potential defects?
++The executing phase
+-The closing phase
+-The planning phase
+-The monitoring and controlling
+
+Tomorrow is a big day. The project sponsor has just approved the project, and the project manager is building an agenda for a kick-off meeting. In which of the following phases does the kick-off meeting occur?
++The planning phase
+-The monitoring and controlling phase
+-The executing phase
+-The closing phase
+
+Which two documents does the project manager complete during the project initiation phase?
++Project charter
++Stakeholder register
+-Communications management plan
+-Risk register
+
+Which of the following are the two most common lifecycle categories project managers use in project management?
+-Six Sigma
++Adaptive
+-Lean
++Predictive
+
+A product owner meets with a key customer and determines their requirements. The project manager documents these requirements in the form of user stories. Where will these user stories be held for implementation?
+-User story backlog
+-Requirements log
+-Sprint backlog
++Product backlog
+
+A project manager reviews key documents created in the initiating phase or process group. Which two documents should not be part of this review?
+-Project charter
++Project management plan
+-Stakeholder register
++Work breakdown structure (WBS)
+
+The sponsor approves the project charter, and planning is underway. Which of the following baselines is the first planning target to complete and gain approval and acceptance of?
+-Quality baseline
+-Schedule baseline
++Scope baseline
+-Cost baseline
+
+The primary focus of the project executing phase is the production of which of the following?
++Deliverables
+-Final product
+-Reports
+-Milestones
+
+Your team receives a deliverable and is about to transfer it to quality control. What is not true about quality control?
++The primary focus of quality control is to prevent defects from occurring
+-The quality control team performs the process in the monitoring and controlling phase
+-The quality control team ensures the project team corrects defects before the customer acquires the product
+-The quality control team uses inspections to determine if the deliverable meets specifications
+
+A project manager receives a verified deliverable. Which of the following steps should be taken next?
+-The project manager updates the project status and informs the project sponsor
+-The project manager closes out all contracts immediately
+-The project manager transitions the product for further processing
++The project manager validates scope to gain acceptance
+
+A project manager conducts lessons learned sessions with the project team. Which of the following questions does not need to be addressed?
++What are the next steps?
+-What can be improved?
+-What could have gone better?
+-What went well?
+
+What is the primary purpose of a project kick-off meeting?
+-Gain sponsor approvals
+-Build the project team
+-Review the project charter
++Attain stakeholder acceptance
+
+Which of the following models does the product backlog follow?
++The DEEP Model
+-The Waterfall Model
+-The Agile Model
+-The Scrum Model
+
+A project manager is reviewing the communications model. Which challenge will be the most difficult to manage?
+-Proper encoding
++Communication blockers
+-Choice of medium
+-Feedback channels
+
+Many project team members complain that the team is not proficient in using all systems and applications. The team feels training is needed. Which technology factor is being addressed?
+-Urgency to share information
+-Availability and reliability of technology
++Ease of use
+-Challenges in the project environment
+
+Active listening is a critical skill that improves overall communication effectiveness. What are two essential areas of active listening?
+-Assuming understanding and paraphrasing
+-Ensuring questions are brief and summarizing
+-Assuming understanding and ensuring questions are brief
++Paraphrasing and summarizing
+
+A key stakeholder is unhappy with a project manager’s conflict resolution approach. The project manager pushed their viewpoint at the expense of the stakeholder. The stakeholder left feeling they had no say in the matter. What concept is shown in the scenario?
+-Collaborate/Problem Solve
+-Withdraw/Avoid
+-Smooth/Accommodate
++Force/Direct
+
+Mary has a meeting with stakeholders. She emphasizes areas of agreement rather than differences. She postpones satisfying her needs to maintain harmony and relationships. What concept is shown in the scenario?
+-Collaborate/Problem Solve
+-Withdraw/Avoid
+-Force/Direct
++Smooth/Accommodate
+
+The duty to understand the truth and act truthfully in our communications and in our conduct reflects which aspect of the Project Management Institute (PMI) Code of Ethics?
+-Respect
++Honesty
+-Fairness
+-Responsibility
+
+The communications model shares the flow of effective communications from sender to receiver. Which two statements are true regarding this model?
++Ensure feedback matches the need
+-Encode in a way that matches your preferences
+-Choose a standard medium
++Anticipate communications blockers
+
+Your team is dispersed in different time zones, and virtual communication is often your only viable option. In addition, the project uses Microsoft SharePoint. You must ensure all key stakeholders have access to and understand how to use the system. Which two communications technology factors are impacting the project?
+-Ease of use
+-Urgency to share information
++Challenges in the project environment
++Availability and reliability of technology
+
+A project manager is sending communications to one or multiple parties and will not receive any acknowledgment that the communications were read or understood. What communications method is this project manager using?
+-Pull communications
++Push communications
+-Interactive communications
+-Non-Verbal communications
+
+Communication is essential to project management success. According to the Project Management Institute (PMI), what percentage of a project manager’s time is generally spent effectively communicating?
+-100%
++90%
+-80%
+-99%
+
+The communications management plan is complete, and the project manager moves the project to the executing phase or process group. On what process does the project management team now focus?
+-Monitor communications
+-Control communications
++Manage communications
+-Plan Communications
+
+Two project team members are having a passionate discussion on the most appropriate way to complete a project task. In the end, the two members agree upon a solution that benefits the project. What type of conflict occurred?
+-Dysfunctional
++Functional
+-Consequential
+-Collaborative
+
+A project manager uses a conflict resolution technique that is not optimal but often necessary. Each party receives something but must give up something in return. This technique may lead to buyer’s remorse. Which of the following techniques is described?
+-Collaborate/Problem Solve
+-Smooth/Accommodate
+-Withdraw/Avoid
++Compromise/Reconcile
+
+Ram uses a conflict management technique that incorporates multiple viewpoints and shows a cooperative attitude to solve the conflict. Ram wants to strive for consensus and commitment. Which of the following techniques is Ram using in the scenario?
+-Withdraw/Avoid
+-Smooth/Accommodate
++Collaborate/Problem Solve
+-Force/Direct
+
+While reviewing various power sources, a project manager notes one power is the ability to gain support when the project team and stakeholders perceive the project manager as possessing special knowledge. Others must also perceive this knowledge as functional expertise that they consider essential. In addition, this power must be earned. What power is under consideration?
+-Reward Power
+-Position power
++Expert power
+-Referent power
+
+Which of the following values, as defined by PMI’s Code of Ethics, emphasizes the duty to take ownership of decisions, actions, and consequences?
+-Honesty
++Responsibility
+-Respect
+-Fairness
+
+Who typically develops a team charter?
++Project team
+-Sponsor
+-Project manager
+-Program manager
+
+You are communicating with a stakeholder with high power and low interest in the project. Which strategy is most appropriate to manage and engage with this customer?
+-Keep informed
+-Monitor
++Keep satisfied
+-Manage closely
+
+Which of the following documents can a project manager use to define current and desired stakeholder commitment levels and develop strategies to adjust the commitment levels?
+-Stakeholder register
++Stakeholder engagement plan
+-Team charter
+-Communications management plan
+
+A project management trainer describes key strategies to attain desired levels of stakeholder commitment. What two strategies should be on the trainer’s list?
++Share scope, schedule, and budget recommendations before project management planning are complete
+-Engage stakeholders when planning is complete
++Share well-defined and value-added project objectives
+-Stress that communication is seventy-five percent of a project manager’s job
+
+A project manager must define and document ground rules and norms to guide the team’s behavior. Which tool is best to achieve this goal?
++Team charter
+-Project charter
+-Business case
+-Team norms sheet
+
+Which of the following is a common method used to define stakeholder responsibilities?
+-ARCI
+-IACR
++RACI
+-ACRI
+
+The team is currently productive. You need to participate in project activities to maintain required levels of support. Which of the Tuckman Ladder stages best describes the team?
+-Form
+-Perform
++Norm
+-Storm
+
+A number of project team members are in the storm stage of the Tuckman Ladder. What is your best strategy option?
+-Delegate
+-Participate
++Sell
+-Tell
+
+People evaluate work based on the level of effort required to accomplish it. If the potential reward justifies the level of effort, the team member performs at a high level. Which of the following supports the described concept?
+-Theory of needs
+-Extrinsic vs. Intrinsic motivation theory
++Expectancy theory
+-Herzberg's theory
+
+Who developed the Theory of needs?
+-Frederick Herzberg
+-Abraham Maslow
+-Daniel Pink
++David McClelland
+
+Which two statements regarding risk are correct?
++Risks are potential events to prepare for
+-Risks are events that occur which require action
+-Risks result in threats only
++Risks may be positive
+
+The correct way to document risk is through risk metalanguage. Which of the following is the correct sequence?
+-Event-Cause-Impact
++Cause-Event-Impact
+-Impact-Cause-Event
+-Cause-Impact-Event
+
+A project team identifies a risk early in the project. The project manager must assign this risk to a team member who will prioritize, manage, and monitor the risk throughout the project. What role is this team member assuming?
+-Project manager
+-Subject matter expert
+-Sponsor
++A risk owner
+
+A project team member wants to determine when risks are first identified and documented in the project management lifecycle. Which of the following process groups should you share?
++The initiate phase
+-The monitoring and controlling phase
+-The planning phase
+-The execute phase
+
+Why is it problematic to use ambiguous risk statements?
++Ambiguous risk statements lack clarity and can lead to incorrect actions.
+-Ambiguous risk statements can result in ineffective risk management efforts.
+-Ambiguous risk statements are too detailed.
+-Ambiguous risk statements reduce the number of documented risks.
+
+The project team identifies an IT risk early in the project. You receive notification that the risk has occurred. How do you now classify this risk?
+-Active risk
+-Problem
++Issue
+-Defect
+
+Which two of the following statements regarding SWOT analysis are true?
++Weaknesses may lead to threats
+-Strengths can lead to threats
++Strengths are internally controlled
+-Opportunities are internally controlled
+
+A project team is developing a document that describes how risk management activities will be structured and performed. This document provides instructions and a roadmap for how the project team will conduct risk management for a project. What is this document called?
++Risk management plan
+-Risk register
+-Risk report
+-Risk exposure document
+
+The project team develops a probability and impact matrix. Which of the following best describes this document?
+-The probability and impact matrix defines reserves required to respond to risk and how they are maintained and distributed.
+-The probability and impact matrix provides a schedule for risk reassessment and status analysis/reporting.
++The probability and impact matrix determine the relative priority of all risks by risk score.
+-The probability and impact matrix define the probability and impact ratings to qualify all risks.
+
+A project team completes an analysis to set aside funds to respond to identified or known risks. What type of reserves does the project team determine?
++Contingency
+-Additive
+-Management
+-Emergency
+
+An effective project risk management understands the degree of uncertainty an organization is willing to accept in anticipation of a reward and plans accordingly. What concept does this planning support?
+-Risk threshold
++Risk appetite
+-Risk adversity
+-Risk tolerance
+
+The first risks the project manager typically documents in a risk register are identified during the development of which document?
+-Statement of work
+-Stakeholder register
++Project charter
+-Project management plan
+
+The project team analyzes each risk to determine the probability and impact of its occurrence. The team determines a risk score by multiplying probability times impact to determine a risk score. This process is referred to as which of the following?
+-Qualitative risk analysis
+-Risk trend analysis
+-Quantitative risk analysis
++Probability and impact analysis
+
+A Subject Matter Expert (SME) states that if inventory safety levels fall below 300 units, the risk will become a critical issue that the team must address. Which of the following did the SME define?
+-Risk threshold
+-Contingency reserve
++Risk trigger
+-Risk probability
+
+A project team is beginning the project risk management process and wants to start by identifying risks. The project manager states that before identification, it is necessary to perform which of the following steps?
+-Control
+-Analyze
+-Respond
++Plan
+
+Which of the following stakeholder roles supports project risk management by approving the risk management plan for the project and approving, designating, and authorizing reserves if a risk response requires funding?
+-Core team member
+-Risk owner
+-Project manager
++Sponsor
+
+Which of the following statements is most accurate regarding project risk management?
+-All risks should be managed on an equal and consistent basis in project risk management
+-Project risk management focuses on the mitigation of threats
++Project risk management conditions will change over the project course
+-Risk identification is a critical first step in project risk management
+
+A team is managing a critical construction project. A contractual risk impacting the project occurs. Which of the following is the correct classification for this risk?
+-Defect
++Issue
+-Problem
+-Mitigation
+
+A methodology to define risks recommends documentation using a cause, event, and impact format. What is this methodology referred to as?
+-Risk definition format
+-Impact analysis
++Risk metalanguage
+-CEI formatting
+
+In the context of SWOT analysis, how are opportunities defined and derived?
+-Opportunities are new threats that arise from existing weaknesses in the organization.
++Opportunities are external events that may occur as a result of existing strengths, which can be leveraged to benefit the organization.
+-Opportunities are risks that must be eliminated to avoid negative impacts.
+-Opportunities are internal factors that the organization can control to improve processes.
+
+This document contains different sections which include: Risk management team, Definitions of probability and impact, Probability and impact matrix, Risk reassessment schedule, Risk contingency reserves, and Clarification and comments. What is this document called?
+-Risk dictionary
++Risk management plan
+-Risk register
+-Risk breakdown structure
+
+A project manager is referencing a document that lists potential risks that may impact projects broken out by category. This list is derived from lessons learned that document past risks on previous projects. Which of the following is this list called?
+-Risk management plan
+-Risk register
++Risk breakdown structure
+-Risk reference list
+
+A project team completes a project with a budget of $20,000. The project's actual costs were $20,300. According to PMI, this is a failed project. How could project failure due to ending the project over budget have been avoided?
+-Define risk appetite
+-Add management reserves
+-Add contingency reserves
++Define risk thresholds
+
+What is the next step after completing a SWOT analysis?
++Document findings in a risk register and calculate risk scores.
+-Focus on addressing weaknesses and threats only.
+-Immediately implement changes based on strengths and opportunities.
+-Conduct a financial audit to check resource availability.
+
+A project manager identifies hazardous materials planned for use on a project. The team identifies a substitute material to eliminate the risk cause. What risk strategy does this scenario employ?
+-Mitigate
++Avoid
+-Transfer
+-Exploit
+
+Project A and B combine a materials order to gain a supplier discount and achieve cost savings. What risk strategy does this scenario employ?
+-Exploit
++Share
+-Enhance
+-Mitigate
+
+A project team works diligently to develop a risk report that the project manager shares with key stakeholders. The report graphically shows the aggregate total of all risks and how this total has been trending over the past three months. Which risk report entry does this scenario fit?
+-Risk appetite
++Risk exposure
+-Risk trend
+-Risk threshold
+
+A project manager provides a list of questions to stakeholders before a brainstorming session. Which of the following allows individuals participating in this meeting to consider responses ahead of time?
+-Nominal group technique
+-Assumption analysis
++Brainwriting
+-Affinity charting
+
+Paul plans to use a systematic forecasting method to gather the opinions of a panel of experts on a problem the team is encountering. Which method will Paul employ?
+-Brainstorming
+-Root cause analysis
++Delphi technique
+-Interviewing
+
+The team is reviewing the overall project risk monitoring process and the effectiveness of risk response strategies so that the team can make adjustments for the remainder of the project. What action is the team taking?
++Risk audit
+-Contingency reserve review
+-Risk reassessment
+-Quality audit
+
+A team is reviewing risk responses. One response states that the project manager will contract an external Subject Matter Expert (SME) if internal skill sets are insufficient. The team recognizes that this response may lead to a risk of potential issues in selecting a vendor and schedule delays. What two types of risk are identified in this scenario?
+-Opportunity
++Threats
++Secondary risk
+-Residual risk
+
+A team initiates a risk response to install all electrical equipment in a facility. There is a risk of documenting negative impact if the permit process runs long. They implement a response to pay an expedited fee to receive the permits on time. The permits arrive, but the team does not authorize part of the work to be accomplished. A new risk is added to the risk register. How is this risk classified?
+-Risk audit finding
+-Risk defect
+-Secondary risk
++Residual risk
+
+A risk that occurs is classified as which of the following?
+-Negative condition
++Issue
+-Problem
+-Defect
+
+The project team is managing a complex infrastructure development project. They need to respond to many positive and negative risks. The team suspects that the project manager will need to outsource some of these risks to a third party. Which two response strategies are appropriate for these risks?
++Transfer
++Share
+-Enhance
+-Mitigate
+
+New regulatory guidance, which became effective this week, led to the identification of numerous risks that may delay schedules on a housing development project. The firm has no control over these regulations. What is the most appropriate risk strategy to respond to these risks?
+-Exploit
++Mitigate
+-Avoid
+-Enhance
+
+Sanjay is developing a risk report to distribute to project stakeholders. What category of risks does the risk report typically include?
+-Watch list risks
+-Critical risks
++Urgent risks
+-Near-term risks
+
+A recently completed risk audit discloses several new risks resulting from implementing a risk response. The response attempts to mitigate a legal condition that led to potential fines. The response needs to be revised. Some fines are prevented, but other fines are incurred. The project manager documents a new risk because of this response failure. The team determines that the updated response could lead to new legal ramifications if executed. What two ways would you categorize these new risks?
++Secondary
+-Urgent
+-Watch
++Residual
+
+Which of the following best describes a secondary risk?
+-A risk that affects the project budget and scope.
+-A risk that was initially unanticipated and identified during the project execution.
+-A risk that has been completely mitigated by the primary response.
++A new risk that arises as a result of implementing a fallback response to a primary risk.
+
+What is the main function of an issue log in project risk management?
+-To increase the project scope and budget.
+-To predict future project risks.
+-To track new risks that might arise.
++To document and manage issues that have occurred, including their resolution.
+
+Which two statements are true regarding the need to perform periodic risk reassessments?
+-All risks are known after risk planning
+-The project manager finalizes risk scores at the beginning of the project
++The risk monitoring process may require updates
++Risk owners may discover new risks or current risk updates
+
+What is the primary purpose of a periodic risk audit?
+-Determine risk ownership and assign tasks
++Evaluate the effectiveness of the monitor risk process
+-Discover secondary risks and update the risk register
+-Update the risk register as new risks are discovered
+
+How should risks and opportunities be listed in the embedded table when preparing a risk report?
+-By the project manager’s name and date of identification.
+-By listing every risk and opportunity identified regardless of urgency.
++By cause, event, impact, response, and risk score for both risks and opportunities.
+-By listing only the highest risk scores and ignoring the causes and impacts.
+
+A project manager works with risk owners and the team to develop a response to an environmental risk potentially impacting a project. The team was unable to determine a response. What is the optimal risk strategy at this point?
++Accept
+-Acknowledge
+-Consent
+-Affirm
+
+A lifecycle is a series of phases a project passes through to meet project requirements. On which methodology is the current Project Management Institute (PMI) predictive lifecycle based?
+-DMA DV
++PDCA
+-PDCL
+-DMAIC
+
+Artifact is a term used in adaptive project management defined as templates, documents, outputs, or deliverables. Which two choices do we consider key artifacts when managing an adaptive project?
++Increments
+-Iterations
++Sprint backlog
+-User stories
+
+The initiating process group is the first phase in the PMI project lifecycle. Which is a key output of the initiation phase?
+-Communications management plan
++Stakeholder register
+-Business case
+-Scope statement
+
+A project management team worked hard and long to finalize the project management plan. The project sponsor requested a few modifications but approved the plan. What is the next step the team must take?
+-Schedule scope validation
+-Begin project planning
++Conduct a kick-off meeting
+-Finalize project charter
+
+The six-month business application project is close to being completed. What are two key outputs that will result from project closure activities?
++Lessons learned
+-Closed procurements
++Accepted deliverables
+-Product transition
+
+Communications planning is underway to support the project... Which two technological factors are the team analyzing?
++Availability and reliability of technology
+-Project environment
+-Urgency to share information
++Ease of use
+
+As the project progresses... Which communications process is the team performing?
+-Control communications
+-Plan communications
++Monitor communications
+-Manage communications
+
+Tailoring communications ensures that the purpose of your communications is clear... This scenario discusses the need for which term?
+-Communications commitment
++Communications competence
+-Need for feedback
+-Communications styles
+
+A team has a significant conflict to resolve... What was the conflict management technique used?
+-Accommodate
+-Direct
+-Reconcile
++Collaborate
+
+PMI defines four values that drive effective communications... Which two values does the Code of Ethics cover?
+-Equity
++Respect
+-Commitment
++Fairness
+
+The stakeholder team recently completed a stakeholder mapping activity... Which strategy is optimal?
+-Keep informed
+-Manage closely
++Keep satisfied
+-Monitor
+
+PMI provides recommended commitment levels... Which two classifications does PMI use?
+-A
++N
+-B
++S
+
+The project team has been working together for three weeks... What is the optimal leadership strategy?
+-Sell
+-Delegate
++Participate
+-Tell
+
+PMI adapted a team charter... What are two recommended areas for norms?
++Conflict resolution process
++Teams agreement
+-Delegate
+-Sell
+
+The team is well into the project... Which process is the team performing?
+-Monitor stakeholder engagement
+-Plan stakeholder engagement
++Manage stakeholder engagement
+-Identify stakeholders
+
+The team identifies risks that may impact a newly approved construction project... Where will these risks first be documented?
+-Stakeholder register
++Project charter
+-Risk management plan
+-Project scope statement
+
+The project manager developed a risk register... What is the proper way to document a risk?
++Cause-Event-Impact
+-Situation-Occurrence-Consequences
+-Situation-Occurrence-Impact
+-Cause-Event-Consequences
+
+The team identified the probability of all risks... What process did the team complete?
+-Quantitative risk analysis
+-Risk scoring analysis
++Qualitative risk analysis
+-Risk metalanguage
+
+A project to repave a parking area... What term are these early warning signs defining?
+-Warning
++Trigger
+-Notice
+-Caution
+
+The team identifies a new risk... Which response strategy must the team employ?
++Escalation
+-Transfer
+-Mitigation
+-Avoid
+
+A project manager presents risk status... What percentage should be included?
+-10%
++20%
+-90%
+-50%
+
+A risk owner developed a risk response... What type of risk is this scenario describing?
+-Residual risk
++Secondary risk
+-Primary risk
+-Added risk
+
+Which two statements are accurate when defining a project risk management approach?
+-The project manager includes an overall strategy in the risk register
+-Risk management begins as soon as the project charter is approved
++Risk owners are primarily responsible for managing individual risks
++Risk scores may change as a project progress
+
+A project manager asks a junior developer to work by pairing with a senior developer on the team for part of the project. Which of the following does the example describe?
++Providing training and development opportunities
+-Clearly defining tasks and responsibilities
+-Assigning tasks based on skills
+-Monitoring progress
+
+What are two methods that project managers can use to empower their team members? (Choose 2)
+-Create a high-pressure environment
++Encourage open and regular communication
++Matching tasks to team members based on their skills and abilities
+-Listening to team member concerns but failing to act
+
+Julie is a new project manager and wants to create an enjoyable environment for her team to keep them motivated. Select the best method that she can implement.
+-Throw the team a big pizza party
+-Ensure everyone is on video when they are on conference calls
++Recognize high-performing team members at weekly meetings, and reward them
+-Addressing every challenge and issue as though it is highly important and very urgent
+
+A company is running a marketing campaign and one of their project objectives includes the phrase "a 10% conversion rate". This project objective is both specific and _______? (Fill in the blank)
+-Accurate
+-Relevant
++Measurable
+-Time-bound
+
+Nico adds the project objectives to his project charter and project scope statement. What is the purpose of adding project objectives to these documents? (Choose 2)
+-Protects the project manager from getting fired if the team does not deliver
++Protect the team against under or over-delivering
+-Reinforces the importance of achieving the project objectives
++Align the project team and project stakeholders on the objectives of the project
+
+Fill in the blanks. According to Robert K. Greenleaf servant leadership is a _________ and __________ that enriches the lives of individuals, builds better organizations, and ultimately creates a more just and caring world. (Choose 2)
+-A process
++Philosophy
++Set of practices
+-A framework
+
+As a servant leader, Marisha works alongside the team and observes the processes and procedures of the team. This helps her make decisions on optimizing project outcomes. Which benefit of participating in the work does this example represent?
+-Better understanding of challenges
+-Lead by example
+-Builds trust
++Identifying improvements
+
+Kruz is a project manager. He wants to participate in different tasks with the team. Which of the following strategies can Kruz implement to ensure that he can participate in the work with ease?
++Budget time and schedule the work with the team
+-Focus on personal development and training for how to do the work
+-Start working on a task that a team member is working on
+-Inform the boss, but not the team
+
+What is the MOST critical aspect of a successful project?
+-Tools used to accomplish work
+-Accurate schedules
+-Clearly defined deliverables
++People who work on the project tasks
+
+A project manager checks in with their team, reviews the project status, and checks if any additional support is required. Which of the following best describes the project manager's actions?
+-Assigning tasks based on skills
++Monitoring progress
+-Clearly defining tasks and responsibilities
+-Providing training and development opportunities
+
+What happens when a project manager empowers their team members?
+-Creates a high-pressure environment
+-Makes project monitoring redundant
++Invites new ideas and innovative solutions
+-Creates additional roles and responsibilities
+
+Brad is a new project manager, and his mentor, Christy, recommends using rewards to encourage team efforts. In addition, Christy advises Brad to promote work-life balance. How will implementing these suggestions help Brad?
++Create an enjoyable environment
+-Encourage team member empowerment
+-Help with planning and monitoring
+-Ease team forming
+
+A company is running a project to reduce operating costs, and one of their project objectives includes the phrase "50% decrease month-over-month for three months." This project objective is specific, measurable, and _______? (Fill in the blank)
+-Relevant
+-Clear
+-Accurate
++Time-bound
+
+Louisa is setting up a meeting for her project. She wants to share the project objectives, set the tone for the project, ensure that stakeholders are aligned, and provide an opportunity for the senior management and sponsor to reinforce the importance of the project. What type of meeting will help address Louisa's agenda?
+-Project review
+-Daily progress check meeting
++Kick-off meeting
+-Weekly status meeting
+
+Identify the two best practices to ensure a project manager can communicate objectives. (Select two.)
++Use clear and concise language
++Avoid technical jargon
+-Include all details in the presentation
+-Limit discussions or questions
+
+Pat is facing some challenges in her latest project. Pat has seen an increase in project objectives, requirements, and tasks lately. However, the project budget and resource constraints remain the same. What kind of a challenge is Pat facing?
+-Lack of clear communication
+-Decreased team motivation
++Scope creep
+-Mismatch in skillsets
+
+A project manager demonstrates their willingness to participate in work alongside team members. Which of the following best describes the benefits of this scenario?
+-Increases the amount of time it takes to get the work done
+-Builds a culture of competitiveness
++Builds trust and rapport
+-Better understanding of challenges
+
+Project teams can be full of diverse members who may have different perspectives or approaches that can help. What participation strategy can project managers use to take advantage of the different perspectives their team members offer?
+-Micromanage their teams
+-Delegate project management tasks
++Be open to learning
+-Focus on personal development and training for how to do the work
+
+Project communications management is a critical knowledge area, which can make or break a project's success. What are the two primary goals that must be accomplished in the area of project communications management? (Choose 2)
++Carry out activities to satisfy strategies
+-Recognize potential communications blockers
++Develop strategies for effective communication
+-Implement a stakeholder engagement plan
+
+In which of the following communications project management processes will the project manager implement the communications management plan?
+-Execute communications
+-Monitor communications
++Manage communications
+-Plan communications management
+
+A project manager is planning a number of meetings today. The plan is to meet with a number of peers to discuss best practices in risk management. Classify this communication activity.
+-Hierarchical
+-Upward
+-Downward
++Horizontal
+
+A sponsor is consistently sending motivational emails to the project manager and teams. What type of communications methodology is the sponsor using?
++Informal written
+-Informal verbal
+-Formal verbal
+-Formal written
+
+There are a number of ways to effectively engage stakeholders. Which of the following are the two most common methods? (Choose 2)
+-Push communications
++Active listening
++Conflict management
+-Pull communications
+
+Harry is a product manager tasked with marketing a newly developed product that is the best in the market. He needs to share this new product with potential external customers as soon as possible. Harry does not have a defined target group. He does know the demographics of where potential buyers are located. Which of the following is the most effective communication medium in the given scenario?
+-Direct messaging
+-Face-to-face
+-Email
++Social media
+
+Sanjay is working with a new vendor whom he has limited experience with. There is a need to negotiate some key aspects of the current contract, which may not serve the needs of the project as written. Sanjay needs to gain a better understanding of the vendor's current skill sets, schedules, and any potential risks they have identified. Which of the following is the most effective communication medium in the given scenario?
+-Email
+-Social media
+-Direct messaging
++Face-to-face
+
+Priya needs to meet with Ram this afternoon. Ram is a core team member who has recently not performed at an acceptable level. Priya discussed the issue with Ram two weeks ago. Performance did not improve despite Ram's commitment to address the issues discussed. Priya is not looking forward to this meeting. But Ram's performance must improve. Which of the following is the most effective communication medium combination in the given scenario?
+-Audio conference and visual presentation
++Face-to-face and formal written documentation
+-Email and direct messaging
+-Social media and phone call
+
+Jose has a number of routine communication tasks to accomplish this week. The communications tasks are important, but feedback requirements are not urgent. Jose is confident that the stakeholders he must communicate with will be receptive within a reasonable time frame and provide the feedback he requires. If replies are delayed, there will be minimal immediate impact on the project. Which of the following is the most effective communication medium in the given scenario?
+-Social media
++Email
+-Face-to-face
+-Direct messaging
+
+A project manager is trying to determine which medium to use for their project. What two considerations regarding medium selections are accurate? (Choose 2)
++Mediums are adjusted to meet project needs
+-A single medium for a project eliminates confusion
+-The majority of mediums suffice to serve the needs of the project equally
++Determine mediums to meet the needs of the audience
+
+A project manager is completing a communications management plan and trying to determine whether email, a meeting, or a simple report will best satisfy a communications item. Determining the appropriate technology or option for a communications item is referred to as choice of _____?
++Media
+-Models
+-Channels
+-Options
+
+Much of a project's communications will consist of communication where messages are sent without the expectation of an immediate reply. This communication will not happen in real time, and there is always a certain time lag before the recipient takes in the information and gives his feedback. What type of communication is being referred to in the above scenario?
++Asynchronous
+-Synchronous
+-Pull
+-Push
+
+The business app development project is extremely high priority and fast moving. Daily collaboration face-to-face will be essential to the project's overall success. Which method of communication is best suited to this project?
+-Push
+-Pull
+-Asynchronous
++Synchronous
+
+A project manager is determining the most appropriate media to use when planning communications. What are two considerations the project manager should keep in mind? (Choose 2)
+-Cultural challenges
+-Language differences
++Urgency of the message
++Nature of the communication
+
+The concept of failing fast was originally developed to amplify the value of using which project lifecycle methodology?
+-Waterfall
+-Lean
+-Six sigma
++Agile
+
+What is the primary purpose of conducting lessons learned at the end of each project phase and during project closure? (Choose 2)
++Document opportunities achieved
+-Gain customer acceptance
+-Course correct, current project
++Assist future project managers
+
+A key project team member is currently eliciting requirements from customers. This team member will also develop and prioritize user stories and place them in a product backlog. Which of the following roles best describes this team member?
+-Scrum master
+-Project manager
+-Project sponsor
++Product owner
+
+A new project to develop an accounts payable process at a startup has been proposed. Who will be responsible for ultimate project approval, authorization to use resources, and project funding?
+-Program manager
+-Project manager
+-Product owner
++Project sponsor
+
+Which types of projects can benefit from a fail-fast approach? (Choose 2)
++Complex projects
+-Support projects with standard requirements
+-Stable waterfall projects
++Uncertain projects
+
+Failing fast is a concept that originated as part of which project lifecycles or methods? (Choose 2)
++Adaptive
++Agile
+-Six Sigma
+-Predictive
+
+A best practice at the end of a project phase is to have a meeting that documents what went well, what can be accomplished better, and how can a project team implement changes in future projects. What is the formal name of this process?
+-Solutions Management
+-Looking Back
++Lessons Learned
+-Reflection
+
+In which of the following communications project management processes will the project manager update the communications management plan?
+-Plan communications management
+-Manage communications
++Monitor communications
+-Execute communications
+
+A key project team member is responsible for analyzing the organization's needs and identifying areas where the project can help to meet those needs. They work closely with the key stakeholders and the development team to ensure the product meets the business requirements. Which role best describes the key team member?
+-Scrum master
++Business analyst
+-Product sponsor
+-Project manager
+
+A key team member acts primarily as a trainer, facilitator, and coach. They ensure that the team attends all key project meetings and events and follow the correct protocols. Identify the role that best describes the key team member.
++Scrum master
+-Project manager
+-Product owner
+-Project sponsor
+
+The best practice for effective stakeholder engagement is to tailor the engagement efforts to meet the situational needs of the audience. What are two tailoring considerations recommended? (Choose 2)
++Integration
++People
+-Readiness
+-Language
+
+A commuter accessed an application designed to map the best route considering the time of day and traffic conditions. The app provided an erroneous route that did not meet the commuter's expectations. What is the term used for the gap where expectations are not met?
+-Gulf of functionality
+-Gulf of evaluation
+-Gulf of expectations
++Gulf of execution
+
+A project has several stakeholders who possess low power to influence the project. However, the stakeholders have a high level of interest in project results. What is the optimal strategy for managing these stakeholders?
+-Manage closely
+-Keep satisfied
++Keep informed
+-Monitor
+
+The team is reviewing the Browaeys and Price cross-cultural communications model. Several team members located in India, China, and the United States. What two culturally impacted considerations might interfere with sending the intended message? (Choose 2)
+-Time zones
+-Technology
++Stereotypes
++Styles
+
+There are eight stakeholders on the entire team. How many potential channels of communication exist?
+-36
+-8
+-16
++28
+
+What is the Early Start (ES) for this project?
+-4
++6
+-3
+-10
+
+What is the Late Finish (LF) for this project?
+-3
+-6
+-8
++12
+
+What is the float/slack for this project?
+-3
+-12
+-8
++4
+
+What is the Early Finish (EF) for this project?
+-10
+-12
+-4
++8
+
+What is the Late Start (LS) for this project?
+-12
+-8
+-6
++10
+
+What is the duration for this project?
+-10
+-12
+-4
++3
+
+According to the Project Management Institute (PMI), what percentage of project management work is impacted by communications?
+-80%
++90%
+-100%
+-70%
+
+Which two of the following entries should be documented in a Communications Management Plan? (Choose 2)
+-Exclusions
++Purpose
++Audience
+-References and links
+
+The Project Management Institute defines the value of virtual meetings in terms of decision-making, problem-solving, and sharing information. What does PMI identify as the primary constraint?
+-Interaction
++Technology
+-Content
+-Audience
+
+Per the PMI definition, status reporting is part of a broader category. Status reports are included as a part of what category?
+-Work performance data
++Work performance reports
+-Work performance status
+-Work performance information
+
+The frequency of status reporting should be defined in which key document?
+-Communications report
+-Stakeholder engagement plan
++Communications management plan
+-Project charter
+
+Which of the following statements are TRUE about the role of a business analyst? (Choose 2)
+-Develops the project charter
++Ensures the right requirements are identified
+-Develop an integrated change control process
++Develops a traceability matrix
+
+Which stakeholder normally develops business case that drive project charter creation?
+-Sponsor
+-Scrum Master
+-Project manager
++Business analyst
+
+Gwen is a project manager. She has to prepare and communicate a schedule to her stakeholders. Using a project management technique in which a schedule network analysis is used to modify an already determined and set project schedule to account for more limited than expected project resources. She is adding resource, feeding, and project buffers. What analysis is she using?
+-Critical release
+-Critical path
+-Critical buffer
++Critical chain
+
+How long is the critical path for this project?
++12
+-10
+-13
+-11
+
+In the above network diagram, which work packages have float/slack?
++C
+-A
+-E
++H
+
+In the network diagram, if work package C duration is changed to 7. How long will the critical path for this project be?
+-10
+-11
+-12
++13
+
+In the network diagram, what is the LF for Work Package C?
+-9
+-7
+-10
++12
+
+The primary tool that defines key communications items and when they are accomplished during the course of a project is a ______?
+-Communications brief
+-Communications report
+-Communications model
++Communications plan
+
+Which of the following statements are TRUE regarding the communications management plan? (Choose 2)
+-Defines communication channels
++Subject to change and updates
+-Accomplished during project initiation
++Prescribes communication mediums
+
+A project manager is planning an important virtual meeting. What is the project manager's greatest risk?
+-Timing
+-Attendance
+-Interaction
++Technology
+
+The team is preparing a number of work performance reports to distribute to stakeholders. Which of the following are work performance reports? (Choose 2)
+-Resource plan
++Memo
++Status report
+-Scope statement
+
+Which statement is accurate regarding communications styles?
+-Communicate using a standard method for all business transactions
+-Adjusting your communications style is a high risk
+-PMI does not advocate styles surveys
++Communication-style surveys are backed by science
+
+All project managers should strive to excel at servant leadership. Which of the following are specific servant leadership behaviors essential to project success? (Choose 2)
++Remove obstacles
+-Avoid scope creep
+-Define specific roles
++Be a diversion shield
+
+Which of the following activities is the role of a leader? (Choose 2)
+-Select the correct lifecycle
++Influence stakeholders
++Actively listen
+-Address issues
+
+A critical leadership competency is arriving at solutions that all parties can embrace, listening to diverse opinions and approaches, and learning and solving problems as a cohesive team. How is this competency categorized?
+-Support
+-Courage
+-Transparency
++Positive discourse
+
+Human beings have a set of biases. Some are conscious, and others are unconscious. Which of the following leadership behavior addresses preferences?
+-Support
+-Courage
+-Positive discourse
++Transparency
+
+Identify the specific leadership competency where ethics and honesty will be critical considerations.
+-Humility
++Integrity
+-Assertiveness
+-Respect
+
+The management suggests that the team begin using a model to help leaders adapt their styles and approaches to support individuals by providing an action plan for personal development. Which model best fits this description?
+-ADKAR
++OSCAR
+-PDCA
+-Tuckman Ladder
+
+A key manager is trying to recognize personal biases. They are striving to improve leadership effectiveness by using disciplined, rationale, logical, and evidence-based approaches. Which leadership skill is the manager trying to improve?
+-Emotional intelligence
+-Decision-making
++Critical thinking
+-Conflict management
+
+The project team is evaluating a number of key stakeholders to determine the current productivity of the team. The team concluded that most stakeholders primarily focus on project work. Performance is not optimal but satisfactory. These stakeholders will need support from the team as the work continues. What stage in team development are the majority of the stakeholders?
+-Storm
+-Form
++Norm
+-Perform
+
+A project manager is currently preparing a monthly status report for a high-priority construction project. What input will be most beneficial to ensure the status report meets the needs of the project stakeholders?
+-Work performance data
++Work performance information
+-Communications technology factors
+-Work performance reports
+
+A manager is employing a leadership style where the team is allowed to make decisions and establish goals. This is often referred to as a hands-off style. Which of the following is a hands-off style?
+-Transactional
+-Charismatic
+-Servant leader
++Laissez-Faire
+
+Servant leadership is a key theme for gaining traction in leadership and management studies. There are key qualities that a servant leader needs to embrace. Define two qualities that are critical to success. (Choose 2)
++Remove obstacles
+-Risk reduction
++Diversion shield
+-Roles and responsibilities
+
+Individuals on the team are personally preparing to support the project. Sometimes, these individuals lack confidence and motivation or fail to see where they fit in the team. The individuals may have reservations about the project, the team, and the impact on their careers. So, productivity is low. What is the best strategy to support the team?
++Sell
+-Delegate
+-Participate
+-Tell
+
+A team is attending a training to learn best practices to increase self-awareness and self-management skills. The goal of this training is to allow the participants to strive to become more socially aware and improve their social skills. Which key leadership skill best describes the scenario?
+-Critical thinking
+-Decision-making
+-Conflict management
++Emotional intelligence
+
+A team is able, confident, and willing to perform at a high level. Which readiness state in the Hersey-Blanchard situational leadership model maps with the team description?
+-R2
+-R3
+-R1
++R4
+
+A new team member is working on your project. This team member is not able to perform tasks effectively. In addition, this team member is not yet willing or confident to begin performing tasks. What is the optimal situational leadership approach to lead this team member?
+-Participate
+-Sell
++Tell
+-Delegate
+
+The Project Management Institute (PMI) discusses four key variables when determining the most appropriate leadership style. Identify the variables. (Choose 2)
++Maturity
+-Resilience
++Governance
+-Adaptability
+
+A team uses the OSCAR model to adapt their styles and approaches to support individuals by providing an action plan for personal development. In the current stage, the team is candidly defining their current skills, abilities, and knowledge levels. They will then link perceptions with reality and objectively define the performance gaps to overcome. Which step in the model are they in?
+-Actions
+-Review
++Situation
+-Outcomes
+
+A leader meets with a team member who cannot perform the job adequately. This team member also lacks the confidence to perform the job. What is the most appropriate situational leadership approach?
++Tell
+-Participate
+-Sell
+-Delegate
+
+The core project team is preparing to generate several WORK PERFORMANCE REPORTS. They are reviewing raw data received through several sources, including memos, e-mails, and chat inputs. What type of information are they reviewing, and during which process group was it generated?
++Work Performance Data/Executing
+-Work Performance Data/Monitoring and Controlling
+-Work Performance Information/Monitoring and Controlling
+-Work Performance Information/Executing
+
+Which two statements are TRUE regarding intuitive decision-making? (Choose 2)
+-Effective when there are minimal risks associated with the decision
++Useful when not enough time to gather relevant data is a reality
+-Not impacted by personal experience and knowledge
++The use of four categories of thought patterns is helpful to justify
+
+Roy, a project manager, did not work on resource planning at the beginning of the project. With no clear view of the resources required to complete the tasks, Roy assigned work to resources, which was much more than what they could realistically complete in the given timeframe. What type of challenge does this scenario illustrate?
+-Decreased stakeholder satisfaction
+-Inaccurate resource skillset
+-Burnout resources
++Overallocation
+
+What are two important considerations project managers should consider for effective resource planning? (Choose 2)
+-Team morale
++Priority
+-Contingencies
++Interdependencies
+
+Which of the following includes the resource categories most commonly found in a resource breakdown structure (RBS)?
+-Internal and external personnel
++Personnel, software and tools, equipment, and other categories
+-Finance, Marketing, Engineering, and HR
+-External, internal, project management, environment, and other risks
+
+Marta is building an RBS document for her new project. She has gathered requirements and added WBS identifiers and work packages to the RBS document. She has also brainstormed a list of resources for the project. What is the next step that Marta should take to continue building the RBS document?
++Categorize each resource and add it to the appropriate cells
+-Review the RBS document and check it against schedules, availability, and budget
+-Negotiate with department heads to acquire the required resources
+-Prioritize the list based on critical tasks needed to complete the project
+
+Which key principle of effective negotiation requires project managers to be willing to explore alternative options and make concessions when necessary?
+-Active listening
+-Preparation
+-Networking
++Creative problem solving
+
+What team dysfunction is characterized by members unwilling to be vulnerable and open to one another?
+-Lack of commitment
+-Avoidance of accountability
++Absence of trust
+-Inattention to results
+
+What can project managers use to build trust?
+-The five dysfunctions of a team assessment
++Personality assessments
+-Self-reflection
+-Self-reflection exercise
+
+Before Jennifer meets with key stakeholders, she attempts to anticipate how the stakeholders might react to her messages. Then, Jennifer tailors her message appropriately. What EQ component is in this example?
+-Effective decision making
+-Fostering trust
+-Better leadership
++Increased empathy
+
+What method is used in managing up?
+-Aligning one's own work with junior team member expectations
+-Put one's needs and priorities first
++Strategically communicating with higher-ups
+-Always share only good news with higher-ups
+
+Fill in the blank. Leaders who are ___________ can quickly assess new situations, make necessary changes to their plans, and effectively navigate unexpected challenges.
+-Prepared
+-Trustworthy
++Adaptable
+-Resilient
+
+A project team has many team members who are overallocated. As a result, many team members rush through work and cut corners. What impact does this have on the project?
+-Decreased productivity
+-Delays in the project
+-Decreased team morale and motivation
++Low quality deliverables
+
+What is the purpose of the resource breakdown structure (RBS) artifact?
++Used to identify all necessary resources and align them to tasks in the work breakdown structure
+-Used by the purchasing department to acquire physical resources and equipment
+-Used by the project manager to set the budget with the finance team
+-Used to develop the work breakdown structure and identify work packages
+
+What principle of effective negotiation allows negotiators to understand the other party's needs fully and requires them to ask clarifying questions if necessary?
+-Creative problem solving
++Active listening
+-Emotion management
+-Negotiation preparation
+
+Jordani has attempted to mitigate her resource challenges by utilizing her networks and relationships, clearly communicating her needs, and developing a cost-benefit analysis. She is still struggling to get a commitment from two engineering resources. What strategy can she employ to overcome her challenge?
+-Create an enjoyable environment
++Negotiation
+-Do the work herself
+-Build a resource breakdown structure
+
+Which of the five dysfunctions of a team lead to a lack of responsibility and ownership?
+-Fear of conflict
+-Absence of trust
+-Inattention to results
++Avoidance of accountability
+
+Fill in the blanks. According to Lencioni, trust is the ____________ among team members that their peers ____________ are good.
+-certainty; intentions
+-impression; ambitions
+-feeling; goals
++confidence; intentions
+
+During a meeting with his manager, Erik uses techniques to manage his anxiety and discomfort at delivering bad news. What component of the Emotional Intelligence model is Erik using?
+-Social skills
+-Motivation
+-Self-awareness
++Self-regulation
+
+What tip for managing up requires project managers to avoid undermining the other person's authority or acting in a way that could be insubordinate?
+-Build a relationship
+-Be collaborative
++Be respectful
+-Anticipate needs
+
+An airline faces a sudden economic downturn, and the program management leader must navigate layoffs, budget cuts, and change directions on several projects. The project management leader must display what qualities to be successful.
+-Resilience
+-Adaptability
+-Neither adaptability nor resilience
++Both adaptability and resilience
+
+Sophie recognizes that projects often encounter unexpected changes. What method for applying adaptability and resilience allows her to adjust project plans to move forward while maintaining team morale?
++Embracing change
+-Adjusting communication style
+-Being open to feedback
+-Staying focused
+
+Project planning is complete. The project manager and team are preparing to present project objectives to all stakeholders to gain their acceptance. What meeting is being planned?
+-Project acceptance meeting
++Project kick-off meeting
+-Project plan approval meeting
+-Project pre-baseline meeting
+
+A project manager is responsible for ensuring all project team members function at a high level. What is the best practice to ensure the team is motivated and committed. (Choose 2)
++Ensure people are working on tasks that match or slightly exceed their skillset
++Ensure people are working on tasks that match their disposition
+-Ensure people are assigned to the most critical tasks
+-Ensure people are working with team members they are compatible with
+
+Bethany is adopting a leadership approach that can create an environment more conducive to successful project outcomes. Teams often feel empowered, are more collaborative, and have high morale, which sets the stage for a successful project. What leadership approach is Bethany adopting?
+-Situational leadership
++Servant leadership
+-Inspirational leadership
+-Charismatic leadership
+
+The customer was unhappy when the final project product was delivered. A team member added features and functionality without addressing the effects on time, costs, and resources and without customer approval. What issue occurred that impacted acceptance?
+-Scope expansion
+-Work variance
++Scope creep
+-Unauthorized work
+
+Effective conversations ensure that the right communications are shared with the right audience in a timely manner. What is the most critical step in ensuring a conversation is effective?
+-Skills
+-Presenting
+-Media
++Planning
+
+Describe two primary benefits of effective communication with stakeholders and the project team. (Choose 2)
++Builds trust
+-Build on assumptions
++Resolves conflicts
+-Develop constraints
+
+The communications management is currently outdated. The team identified new stakeholders who must be included and addressed some media choices that were no longer effective. Which project communications management process is being performed?
+-Update communications
++Monitor communications
+-Plan communications management
+-Manage communications
+
+A project manager is sending out various communications using voice, video, text messages, and email. There is no need for an immediate response. What type of communication is being used?
+-Indirect communication
+-Direct messaging
+-Synchronous
++Asynchronous
+
+The team is finalizing the communications management plan. They are trying to determine the optimal choice for a number of communications items. They agreed that email programs like Outlook and Gmail and direct messaging such as Slack, Microsoft Teams, and WhatsApp provide a record of communication that any stakeholder can refer to at a later point. What is the team trying to determine?
+-Communication modes
+-Communication sources
+-Communication methods
++Communication mediums
+
+There are a total of seven team members on the project. How many potential communication channels exist?
+-49
++21
+-14
+-7
+
+There are many aspects of cross-cultural communications that can impact the message intended versus the message received. An individual's frame of reference may impact the effectiveness of communications greatly. Identify two frame of reference considerations that may impact cross-cultural communications? (Choose 2)
+-Constraints
++Assumptions
+-Gender
++Experience
+
+The concept of failing fast is gaining popularity in project management. The goal is to identify problems and issues early and address them before they impact the project baseline. In which lifecycle methodology did the failing fast methodology originate?
+-Waterfall
+-Incremental
+-Predictive
++Adaptive
+
+A key team member is responsible for defining the product vision and ensuring it aligns with the organization's goals. They work closely with the development team to prioritize features and ensure that the project meets the needs of the stakeholders and provides value.
++Product Owner
+-Project Manager
+-Scrum Master
+-Sponsor
+
+A project team member has been designated a role where they will need to develop code for a new software application that needs to be launched in two months. What RACI designator is essential to clarify the role of this team member?
+-C
+-I
++R
+-A
+
+A project is resource challenged. They have a critical path and two other paths that are near the critical path. They elected to add resource buffers to have additional resources available to ensure the non-critical paths are not delayed. In addition, they believe a number of unknown risks may lead to the need for project buffers. What type of schedule planning did they leverage?
++Critical chain method
+-Critical resource method
+-Critical buffer method
+-Critical path method
+
+A project work package has an ES on Day 3 and a LS on Day 5. The EF is Day 7, and LF is Day 9. Which of the following statements is TRUE about this work package? (Choose 2)
+-Slack is 4 days
++Slack is 2 days
+-Duration is 3 days
++Duration is 5 days
+
+Review the diagram and then respond to the question. What is the critical path for this project?
++12
+-10
+-Insufficient information
+-11
+
+Review the diagram and then respond to the question. Which work package has the most slack?
+-E
++H
+-F
+-B
+
+A project manager is very disappointed by project communications effectiveness. Communications are random, stakeholders complain about a lack of timely information, and oftentimes stakeholders do not understand the purpose behind communications. What should the project manager revisit and potentially update?
++Communications management plan
+-Work performance information
+-Project status report
+-Communications report
+
+A virtual team is developing a communications strategy to determine the most effective means to communicate that mitigates the risk of distance and time zones. What is the primary constraint they must consider?
+-Personalities
++Technology
+-Attendance
+-Costs
+
+Which communication style will likely ask what, when, where, and how questions, speak in complete sentences/paragraphs, be deliberate and clear, and exhibit detail-oriented preferences?
++Structural
+-Conceptual
+-Analytic
+-Social
+
+Specific leadership competencies can benefit your project. Misty is attempting to ensure all decisions arrived upon can be solutions that the team can support and embrace. Which specific competency is being displayed?
+-Transparency
++Positive discourse
+-Respect
+-Integrity
+
+The team is reviewing the Tuckman Ladder to determine where to place the current IT team. They want to integrate the IT team into the project as quickly as possible. What are two stages that the team will need to analyze? (Choose 2)
++Norm
+-Conform
++Storm
+-Inform
+
+There are many proven techniques designed to improve leadership skills. One method is to work to increase self-awareness and self-management skills and strive to become more socially aware to improve your social skills. What technique is being described?
+-Apply critical thinking
++Improve emotional intelligence
+-Positive decision-making
+-Effective conflict management
+
+The project team is focused on completing planning for a major product launch scheduled in three months. Today they are identifying all necessary project resources, including human resources, software and tools, equipment, and more. They will align the resource requirements with work packages from the work breakdown structure. What tool is recommended to document this work?
+-Resource statement
++Resource breakdown structure
+-Resource requirement list
+-Resource register
+
+Negotiating for resources is one of the project manager's most challenging tasks. Functional managers are often not willing providers of the personnel and other resources you require. What aspects of the negotiation process are helpful for a project manager to remember? (Choose 2)
+-Ensure the negotiation meets your total needs
+-Focus on results over relationship
++Strive for a mutually beneficial solution
++Communicate clearly and assertively
+
+The Lencioni 5 Dysfunctions of a Team model is a guide to achieve better project results. Which is the first dysfunction a manager should try to manage to effectively utilize this model?
++Absence of trust
+-Lack of commitment
+-Fear of conflict
+-Avoidance of accountability
+
+A project team member is assessing their ability to self-manage or regulate their actions and emotions to improve their overall emotional intelligence. What step do they need to address before self-management can be totally successful?
++Become more self-aware of what drives your actions
+-Communicate effectively and build relationships
+-Motivate self to achieve goals
+-Be socially aware of others' emotions and respond accordingly
+
+A project sponsor often displays the ability to recover quickly from setbacks and failures. This leader is always able to maintain their focus and motivation even when things don't go as planned. What key attribute is this leader exhibiting?
++Resilience
+-Emotional intelligence
+-Adaptability
+-Situational leadership
+
+A new team member is currently unable to perform tasks at a high level. In addition, this team member is both insecure and not willing to perform the project tasks assigned. Which situational leadership strategy is most appropriate for this new team member?
+-Support
++Direct
+-Coach
+-Monitor
