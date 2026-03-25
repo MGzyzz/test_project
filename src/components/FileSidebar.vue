@@ -90,7 +90,6 @@ async function select(f) {
   gap: 8px;
   padding: 9px 14px;
   cursor: pointer;
-  border-radius: 0;
   transition: background .12s;
   font-size: .875rem;
   color: var(--text-2);
@@ -116,5 +115,44 @@ async function select(f) {
 
 .file-label {
   line-height: 1.3;
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .file-sidebar {
+    width: 100%;
+    position: static;
+    padding: 10px 0;
+  }
+
+  .sidebar-header {
+    padding: 0 12px 8px;
+  }
+
+  .file-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 6px;
+    padding: 0 12px;
+    scrollbar-width: none;
+  }
+
+  .file-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .file-item {
+    flex-shrink: 0;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    border-radius: var(--radius-sm);
+    padding: 7px 12px;
+    background: var(--surface-2);
+    white-space: nowrap;
+  }
+
+  .file-item.active {
+    border-bottom-color: var(--accent);
+  }
 }
 </style>

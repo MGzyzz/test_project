@@ -114,6 +114,12 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   min-width: 0;
 }
 
+@media (max-width: 600px) {
+  .setup-layout {
+    flex-direction: column;
+  }
+}
+
 .mode-nav {
   display: flex;
   gap: 6px;
