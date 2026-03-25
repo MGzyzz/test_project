@@ -35,7 +35,6 @@ onMounted(async () => {
     if (res.ok) files.value = await res.json()
   } catch {}
   loading.value = false
-  if (files.value.length) select(files.value[0])
 })
 
 async function select(f) {
