@@ -118,41 +118,35 @@ async function select(f) {
 }
 
 /* ── Mobile ── */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .file-sidebar {
     width: 100%;
     position: static;
-    padding: 10px 0;
+    padding: 0;
+    margin-bottom: 16px;
   }
 
   .sidebar-header {
-    padding: 0 12px 8px;
+    padding: 12px 16px;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--border);
   }
 
   .file-list {
     display: flex;
-    overflow-x: auto;
-    gap: 6px;
-    padding: 0 12px;
-    scrollbar-width: none;
-  }
-
-  .file-list::-webkit-scrollbar {
-    display: none;
+    flex-direction: column;
+    padding: 6px 0;
   }
 
   .file-item {
-    flex-shrink: 0;
-    border-left: none;
-    border-bottom: 2px solid transparent;
-    border-radius: var(--radius-sm);
-    padding: 7px 12px;
-    background: var(--surface-2);
-    white-space: nowrap;
+    border-left: 3px solid transparent;
+    border-radius: 0;
+    padding: 12px 16px;
+    width: 100%;
   }
 
   .file-item.active {
-    border-bottom-color: var(--accent);
+    border-left-color: var(--accent);
   }
 }
 </style>

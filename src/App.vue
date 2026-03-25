@@ -114,9 +114,11 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   min-width: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .setup-layout {
     flex-direction: column;
+    gap: 0;
+    align-items: stretch;
   }
 }
 
