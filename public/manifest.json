@@ -1,3 +1,4 @@
 [
-  { "name": "IT Project Management", "file": "/test.txt" }
+  { "name": "IT Project Management", "file": "/test.txt" },
+  { "name": "Legal Aspects ICT 2025", "file": "/legal_aspects_ICT_2025_mytest.txt" }
 ]
