@@ -93,7 +93,7 @@ Which of the following is an external party that project managers commonly colla
 -IT, to help with technical systems
 +Suppliers who provide a service required for the project
 
-Which of the following roles best describes a project management methodology that consists of linear, non- overlapping phases that do not change with project needs?
+Which of the following roles best describes a project management methodology that consists of linear, non-overlapping phases that do not change with project needs?
 -Critical Path
 -Lean
 +Waterfall
@@ -145,7 +145,7 @@ Which project methodology is focused on minimizing the waste of resources and ti
 -Six Sigma
 +Lean
 
-Which project management software is cloud- based and automates administrative work?
+Which project management software is cloud-based and automates administrative work?
 -Tableau
 -IBM Cognos
 +Asana
@@ -177,7 +177,7 @@ Which of the following is a responsibility of a project manager during the proje
 
 Which type of project meeting includes team members reporting on the tasks they worked on yesterday, the tasks they will do today, and any challenges or blockers they are facing?
 -Sprint review
-+Stand- up
++Stand-up
 -Sprint retrospective
 -Project status
 
@@ -221,25 +221,25 @@ A project manager uses project management software that tracks risks and issues 
 +Project monitoring and reporting
 -Project planning
 -Project closing
--Post- project evaluation
+-Post-project evaluation
 
 The project manager hosts a meeting to gain input from team members on the previous project’s performance and whether the project met its defined goals. Which phase in the project management lifecycle would this process be used in?
 -Project Closing
-+Post- project evaluation
++Post-project evaluation
 -Project monitoring and reporting
 -Project planning
 
 A project manager meets with the development team, product owner, and stakeholders to review the work that was completed during the sprint. What type of meeting is this?
 -Project Status meeting
 +Sprint review
--Stand- up
+-Stand-up
 -Sprint retrospective
 
 A project manager meets with project stakeholders to share updates and answer any concerns that the stakeholders have. What type of meeting is this?
 +Project status meeting
 -Sprint review
 -Sprint retrospective
--Stand- up
+-Stand-up
 
 Which of the following describes the types of skills that include understanding the value a project will bring to the client, organization, and employees?
 -Managerial skills
@@ -247,7 +247,7 @@ Which of the following describes the types of skills that include understanding 
 -Technical skills
 -Leadership skills
 
-Which of the following project management positions can be described by the following statement: an entry- level administrative position in charge of the generation and distribution of project reports and often also deals with scheduling?
+Which of the following project management positions can be described by the following statement: an entry-level administrative position in charge of the generation and distribution of project reports and often also deals with scheduling?
 -Senior executive level
 -Program manager
 -Portfolio manager
@@ -259,7 +259,7 @@ Which of the following annual salaries best aligns with a senior project manager
 -$51,000
 +$97,000
 
-Which of the following careers is considered the most senior- level position in project management?
+Which of the following careers is considered the most senior-level position in project management?
 -Project Team Lead
 +Director of project management
 -Scrum master
@@ -277,10 +277,10 @@ Which of the following are responsibilities that require project manager oversig
 +Development of web apps and portals, facilitation of the construction of new buildings/departments, implementation, and integration of new equipment in a facility
 -Managing network infrastructures, equipment installation, and cybersecurity
 
-Which of the following is a responsibility of an IT project manager that overlaps with the responsibilities of a non- IT project manager?
+Which of the following is a responsibility of an IT project manager that overlaps with the responsibilities of a non-IT project manager?
 +Identifying gaps, following the team’s project governance structure, and optimizing the project and process
 -Conceptual understanding of API integrations
--Familiarity with object- oriented analysis and design
+-Familiarity with object-oriented analysis and design
 -Assisting in establishing safe practices and system configurations to protect information systems from unwanted access or destruction
 
 Imagine that you are working on an IT project for the first time as a project manager. Which of the following is an additional responsibility you might be required to take on as an IT project manager?
@@ -467,6 +467,31 @@ Ralph Stacey developed a method to objectively determine the type of lifecycle t
 +Technical degree of uncertainty
 -Personnel capacity
 +Requirements uncertainty
+
+The LMN company is managing an extensive IT server upgrade required to improve the overall efficiency of its corporate network. Management is not concerned with the number of deliveries. They want all objectives to improve speed and reduce resources by the end of the project. However, the technological part of the project is complex, and the team believes they may need to use trial and error to build, test, and potentially modify the server before the next project phase. Which project management lifecycle approach best suits the LMN company project description?
+-Incremental approach
++Iterative approach
+-Predictive approach
+-Agile approach
+
+The ABC Company needs to develop a new business application to manage employee workload and assignments. The project manager will develop this application internally. There is a high level of debate about what the end goal should look like. The customer has requested frequent deliveries. In addition, numerous change requests will probably occur while the team develops the project. Which project management lifecycle approach best suits the ABC company project description?
+-Predictive approach
++Agile approach
+-Iterative approach
+-Incremental approach
+
+The XYZ company is implementing a project to improve its accounts receivable process. The objectives are well defined. All stakeholders agree that a single delivery of the final process and narrative at the end of the project will suffice. There are a few predictive technical challenges, but the thought is that the project objectives will undergo minimum change. Which project management lifecycle approach best suits the XYZ company project description? 
+-Incremental approach
++Predictive approach
+-Iterative approach 
+-Agile approach
+
+The DEF company is developing a new product requested by a key customer. The product specifications are straightforward. There is a low probability that the customer will change them. The customer has asked for project deliverables to be broken into phases to review the final design before development and analyze a prototype before total production is authorized. The customer wants a set testing period before the final launch. Which project management lifecycle approach best suits the DEF company project 
+description? 
+-Agile approach
++Incremental approach
+-Iterative approach
+-Predictive approach
 
 A project sponsor wants to establish an agile methodology to manage certain projects. Which of the following two key roles are essential to the success of this initiative?
 -Program manager
@@ -882,6 +907,36 @@ Which two documents does the project manager complete during the project initiat
 -Communications management plan
 -Risk register
 
+The communications model illustrates communications from the sender’s message to the receiver’s receipt. Which is the most challenging aspect of this model?
+-Feedback channels
+-Medium selection
+-Acknowledgement
++Noise
+
+Communications technology factors are circumstances that can jeopardize project communications… What are two standard communications technology factors?
++Degree of interaction required
+-Push or pull communications modalities
+-Project environment
++Availability and reliability of technology
+
+The communications management plan is critical… During which process does the project manager develop and update it?
+-Plan communications/monitor communications
+-Manage communications/monitor communications
+-Monitor communications/manage communications
++Plan communications/manage communications
+
+A project manager uses a conflict management style… Which technique is the manager using?
++Collaborate/Problem Solve
+-Force/Direct
+-Compromise/Reconcile
+-Smooth/Accommodate
+
+The project is progressing… What are two documents that require updates throughout the project?
++Stakeholder register
+-Project charter
+-Business case
++Communications management plan
+
 Which of the following are the two most common lifecycle categories project managers use in project management?
 -Six Sigma
 +Adaptive
@@ -977,6 +1032,69 @@ The duty to understand the truth and act truthfully in our communications and in
 +Honesty
 -Fairness
 -Responsibility
+
+
+
+The communications model shares the flow of effective communications from sender to receiver. Which two statements are true?
++ Ensure feedback matches the need
+- Encode in a way that matches your preferences
+- Choose a standard medium
++ Anticipate communications blockers
+
+Your team is dispersed in different time zones… Which two communications technology factors are impacting the project?
+- Ease of use
+- Urgency to share information
++ Challenges in the project environment
++ Availability and reliability of technology
+
+A project manager is sending communications… What communications method is this?
+- Pull communications
++ Push communications
+- Interactive communications
+- Non-Verbal communications
+
+Communication is essential to project management success… What percentage of time is spent communicating?
+- 100%
++ 90%
+- 80%
+- 99%
+
+The communications management plan is complete… What process does the team now focus on?
+- Monitor communications
+- Control communications
++ Manage communications
+- Plan Communications
+
+Two project team members are having a passionate discussion… What type of conflict occurred?
+- Dysfunctional
++ Functional
+- Consequential
+- Collaborative
+
+A project manager uses a conflict resolution technique… Which technique is described?
+- Collaborate/Problem Solve
+- Smooth/Accommodate
+- Withdraw/Avoid
++ Compromise/Reconcile
+
+Ram uses a conflict management technique… Which technique is Ram using?
+
+- Withdraw/Avoid
+- Smooth/Accommodate
++ Collaborate/Problem Solve
+- Force/Direct
+
+While reviewing various power sources… What power is under consideration?
+- Reward Power
+- Position power
++ Expert power
+- Referent power
+
+Which of the following values… emphasizes ownership of decisions and consequences?
+- Honesty
++ Responsibility
+- Respect
+- Fairness
 
 The communications model shares the flow of effective communications from sender to receiver. Which two statements are true regarding this model?
 +Ensure feedback matches the need
@@ -1097,6 +1215,337 @@ Who developed the Theory of needs?
 -Abraham Maslow
 -Daniel Pink
 +David McClelland
+
+Which two of the following are process-oriented plans that share methods and general planning guidance?
+-Network diagram
++Cost management plan
++Requirements management plan
+-Scope statement
+
+A project work package has an optimistic estimated completion time of nine days. The team calculates the most likely duration to be twelve days for completion time. There is a chance of a pessimistic outcome of eighteen days. Using the three-point averaging method, which is the best duration estimate for this project?
+-Thirteen and a half days
++Thirteen days
+-Thirty-nine days
+-Twelve days
+
+The scope baseline includes which two of the following documents?
+-Network diagram
++WBS dictionary
++Scope statement
+-Scope management plan
+
+A project manager completes the pre-baseline presentation, and the project sponsor approves the project charter. Which area should the team begin planning first?
+-Project quality management
++Project scope management
+-Project cost management
+-Project schedule management
+
+A project manager requires contractor support. The project team does not have the technical expertise needed to build a deliverable internally. The manager sends out a Statement of Work describing the functionality required. The manager realizes that this contract will likely place risk on the buyer. What type of contract will the project manager initiate once a seller is selected? 
+-Time and material
++Cost reimbursement 
+-Statement of Work (SOW) 
+-Fixed price 
+
+A project manager wants to ensure the project's deliverables conform to the customer’s requirements and are fit for use. Which of the following support plans should the project manager use? 
+-Resource Breakdown Structure 
+-Risk Management Plan 
+-Stakeholder Engagement Plan 
++Quality Management Plan 
+
+A project team member wants to see the project's material and equipment requirements. Which of the following support plans will show the team member a visual representation of the project's needs broken down into small components? 
+-Procurement Management Plan 
+-Stakeholder Engagement Plan 
++Resource Breakdown Structure 
+-Communications Management Plan 
+
+Which support plan does the project manager develop during support planning that must receive approval from the sponsor? This plan ensures the right information is shared with all stakeholders in a timely manner.
+-Quality Management Plan 
++Communications Management Plan 
+-Risk Management Plan 
+-Resource Breakdown Structure 
+
+A project manager must develop a support plan to identify, evaluate, and manage positive and negative events that may impact a project. Which of the following support plans should the project manager develop?
+-Communications Management Plan 
+-Resource Breakdown Structure 
++Risk Management Plan 
+-Procurement Management Plan 
+
+The project customer has asked the project manager to ensure that the organization can acquire the project deliverables from external sources they need in a timely and cost-effective manner. Which of the following support plans should the project manager develop to identify and procure the products and services the project requires to reach completion? 
+-Quality Management Plan 
+-Risk Management Plan 
+-Resource Breakdown Structure 
++Procurement Management Plan 
+
+The project team needs to assess the project stakeholder's current levels of commitment to develop strategies to raise the stakeholder's level of commitment even higher. Which of the following support plans should the project manager develop to identify and evaluate the stakeholder’s commitment levels and develop strategies to gain commitment? 
++Stakeholder Engagement Plan 
+-Procurement Management Plan 
+-Communications Management Plan 
+-Risk Management Plan 
+
+A project manager reviews a document produced by a business analyst that describes the product vision, how the product supports organizational objectives, product features, timelines, and recommended project lifecycles. This document will guide project initiation and planning. Which of the following documents matches this description? 
+-Scope statement  
++Product roadmap
+-Project charter
+-Traceability matrix
+
+The sponsor approves the project charter, and the project manager publishes the stakeholder register. Which planning process should the team address first?
++Scope
+-Cost
+-Quality
+-Schedule
+
+The project team is planning the scope and are working on a document that shows the detail and attributes of each work package supporting the project. These attributes are broken into specific tasks. Which document is under development in this scenario?
++Work breakdown structure (WBS) dictionary
+-Work breakdown structure (WBS)
+-Project charter
+-Scope statement
+
+Many project managers worry about managing the triple constraints… Which two constraints apply?
+-Risk
++Scope
+-Communications
++Cost
+
+The project management framework is divided into five distinct phases… What does PMI refer to these phases?
+-Project lifecycles
+-Project phase gates
+-Project steps
++Project process groups
+
+The project management framework developed by PMI lists forty-nine processes… Where do the majority fall?
+-Initiate
+-Monitor and Control
+-Execute
++Plan
+
+What is a common acronym used to explain the attributes of a product backlog? 
+-SMART
+-INVEST
+-BRIGHT
++DEEP
+
+You are developing a comprehensive list of requirements using user stories. Which item is not addressed in a user story?
+-Value
+-Need
+-Role
++Project Name
+
+Who generally is responsible for writing user stories, and where are they placed when validated?
++The product owner is responsible for writing user stories, and they are placed in the product backlog when validated.
+-The project manager is responsible for writing user stories, and they are placed in the product backlog when validated.
+-The product owner is responsible for writing user stories, and they are placed in the requirements backlog when validated.
+-The project manager is responsible for writing user stories, and they are placed in the requirements backlog when validated.
+
+Which of the following does the team generate which reflects tasks required to complete a user story?
+-Requirements backlog
+-Work breakdown structure (WBS)
+-Product backlog
++Sprint backlog
+
+Which of the following terms are deliverables from each iteration that are produced and delivered to the customer for feedback through a product demo or review?
+-Product Entities
+-Milestones
+-Implements
++Increments
+
+The ABC Company recently implemented a PMO… What type of PMO does this describe?
+-Directive
++Supportive
+-Informational
+-Controlling
+
+PMI breaks project management lifecycles into adaptive and predictive… Which two fall under predictive?
++Waterfall
+-Scrum
+-Agile
++Six Sigma
+
+A team plans to implement an agile model… Where will the team maintain requirements?
+-In the scope backlog
++In the product backlog
+-In the scope management plan
+-In the scope statement
+
+Ralph Stacey developed an analysis matrix… What are the two criteria?
+-Overall risk exposure and score
+-Scheduling volatility
++Technical degree of uncertainty
++Requirements uncertainty
+
+A project sponsor reviewed a list of key roles supporting an agile project… Which role is NOT included?
+-Scrum master
+-Development team
++Project manager
+-Product owner
+
+Which two options are formal phases in the PMI project management lifecycle?
+-Implement
++Execute
+-Manage
++Initiate
+
+PMI stresses the impact of organization models… Which matrix model is described?
+-Balanced Matrix Model
+-Weak Matrix Model
++Strong Matrix Model
+-Standard Matrix Model
+
+A team is performing a cost of quality study… Which two costs are non-compliance?
+-Training costs
+-Verification costs
++Reworks costs
++Warranty claims costs
+
+A product owner is analyzing the transition model for change… What stage is the team in?
++The Neutral Zone
+-Transition
+-Ending, Losing, and Letting Go
+-The New Beginning
+
+Current ABC Company management assumes employees are motivated from within… What is this management style?
+-Theory Z
+-Theory W
+-Theory X
++Theory Y
+
+When managing the virtual team, which skill is most critical to success?
+-Coaching
+-Motivation
++Communications
+-Influencing
+
+A project manager wants to create a learning environment… Which knowledge area should they consult?
+-Communications management
++Resource management
+-Integration management
+-Quality management
+
+A project manager reviews critical financial metrics… Which two are NOT impacted by time value of money?
++ROI
+-IRR
++Payback
+-NPV
+
+A project manager will need to acquire materials… How should these costs be categorized?
+-Reimbursable costs
++Direct costs
+-Contingency costs
+-Indirect costs
+
+A project manager analyzes stakeholders and develops strategies… What plan did they develop?
+-Stakeholder register
++Stakeholder engagement plan
+-Resource register
+-RACI chart
+
+Which of the following is true regarding the stakeholder register?
++The project manager updates the stakeholder register throughout the project
+-The project manager accomplishes the stakeholder register in the planning process group
+-The project manager completes the stakeholder register before publishing a project charter
+-The project manager uses the stakeholder engagement plan to fill out the stakeholder register
+
+A project sponsor uses a fast decision-making method… Which method is this?
+-OARP
++Autocratic
+-Unanimity
+-Plurality
+
+Bethany schedules a project kick-off meeting… What are two primary purposes?
+-To gain sponsor approval
+-To introduce the project charter
++To formally enter the executing phase
++To gain stakeholder acceptance
+
+A team completed Earned Value analysis… What is the project status?
+-Behind on schedule but ahead of budget
+-Ahead of schedule and ahead of budget
+-Behind on schedule and behind on budget
++Ahead of schedule but behind budget
+
+A project manager develops a simple “how-to” plan… Which plan is described?
++Schedule management plan
+-Schedule critical path analysis
+-Schedule model
+-Schedule process plan
+
+A project manager and team are developing support plans… Which two belong in support planning folder?
+-Cost management plan
++Quality management plan
+-Scope management plan
++Communications management plan
+
+The project team completes scope planning… Which document is the most detailed version of scope?
+-Scope management plan
++Project scope statement
+-Project network diagram
+-Work breakdown structure (WBS)
+
+Which two of the following components are part of the overall scope baseline?
++Scope statement
+-Requirements management plan
+-Scope management plan
++Work breakdown structure (WBS) dictionary
+
+The project management team develops a comprehensive network diagram to support the project. Which two of the following choices would be featured on a network diagram in this scenario?
++Work package durations
++Critical path
+-Resource costs
+-Task descriptions
+
+A project team analyzes all costs and determines a few indirect costs. Which item would fall under this category?
+-Material purchases
+-Equipment acquisitions
+-Contingency reserves
++Company-funded training
+
+A project manager estimates project cost with an optimistic cost of $22,000, a most-likely cost of $28,000, and a pessimistic cost of $40,000. Applying the PERT method of three-point estimation, which cost estimate should the project manager use?
++$29,000
+-$28,000
+-$40,000
+-$30,000
+
+Plans and timing to support deliverable inspections and verify newly produced deliverables are included in which plan?
+-Project measurement plan
+-Quality assurance plan
+-Quality control plan
++Quality management plan
+
+
+What is the CV for the following scenario?
+EV = $3,000
+
+PV = $2,800
+
+AC = $2,700
+
+++$300
+--$200
+--$300
+-+$200
+
+What is the SPI for the following scenario?
+EV = $3,000
+
+PV = $2,800
+
+AC = $2,700
++1.07
+-1.11
+-1.04
+-0.96
+
+
+Using the following choices, fill in the two blanks in the statement. A manager schedules the project kick-off meeting after _______ approval of the project management plan. The meeting strives to gain ________ acceptance.
++sponsor, stakeholder
+-project team, sponsor
+-sponsor, project team
+-stakeholder, sponsor  
+
+A project manager oversees a project that will remodel a critical portion of its manufacturing facility. The project manager is informed that several permits will be required before construction begins. What type of dependency is the team encountering in this scenario?
+-Discretionary dependency
++External dependency
+-Mandatory dependency
+-Internal dependency
 
 Which two statements regarding risk are correct?
 +Risks are potential events to prepare for
