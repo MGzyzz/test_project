@@ -22,6 +22,8 @@ const rangeFrom = ref(1)
 const rangeTo = ref(1)
 const feedback = ref(null)   // { type: 'correct'|'wrong', text: string }
 const progressPct = ref(0)
+const wrongQuestions = ref([])  // questions answered incorrectly this round
+const roundNumber = ref(1)      // current retry round
 
 // ── Derived ──────────────────────────────────────────────────────────────────
 const currentQuestion = computed(() => quiz.value[current.value])
@@ -59,6 +61,22 @@ function startQuiz(from, to) {
   selected.value = new Set()
   feedback.value = null
   progressPct.value = 0
+  wrongQuestions.value = []
+  roundNumber.value = 1
+}
+
+function startRetryRound() {
+  clearCountdown()
+  const questions = wrongQuestions.value
+  roundNumber.value++
+  wrongQuestions.value = []
+  quiz.value = shuffle(questions).map(q => ({ ...q, answers: shuffle(q.answers) }))
+  current.value = 0
+  score.value = 0
+  answered.value = false
+  selected.value = new Set()
+  feedback.value = null
+  progressPct.value = 0
 }
 
 function selectAnswer(idx) {
@@ -83,7 +101,11 @@ function confirmAnswer() {
     selected.value.size === correctIndices.size &&
     [...selected.value].every(i => correctIndices.has(i))
 
-  if (isCorrect) score.value++
+  if (isCorrect) {
+    score.value++
+  } else {
+    wrongQuestions.value.push(q)
+  }
   progressPct.value = ((current.value + 1) / quiz.value.length) * 100
 
   if (isCorrect) {
@@ -153,8 +175,11 @@ export function useQuiz() {
     feedback,
     progressPct,
     isDone,
+    wrongQuestions,
+    roundNumber,
     loadText,
     startQuiz,
+    startRetryRound,
     selectAnswer,
     confirmAnswer,
     nextQuestion,

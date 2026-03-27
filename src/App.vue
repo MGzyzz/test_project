@@ -27,7 +27,7 @@
       </div>
 
       <QuizScreen v-else-if="screen === 'quiz'" />
-      <ResultsScreen v-else @repeat="handleRepeat" @back="screen = 'setup'" />
+      <ResultsScreen v-else @repeat="handleRepeat" @retry-wrong="handleRetryWrong" @back="screen = 'setup'" />
     </template>
 
     <!-- Editor mode -->
@@ -49,7 +49,7 @@ const screen = ref('setup') // 'setup' | 'quiz' | 'results'
 
 const {
   answered, showConfirm, confirmAnswer, nextQuestion,
-  quiz, current, selectAnswer, restartSameRange, startQuiz, isDone,
+  quiz, current, selectAnswer, restartSameRange, startQuiz, startRetryRound, isDone,
 } = useQuiz()
 
 watch(isDone, done => { if (done) screen.value = 'results' })
@@ -61,6 +61,11 @@ function handleStart({ from, to }) {
 
 function handleRepeat() {
   restartSameRange()
+  screen.value = 'quiz'
+}
+
+function handleRetryWrong() {
+  startRetryRound()
   screen.value = 'quiz'
 }
 
