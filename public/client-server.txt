@@ -1,0 +1,329 @@
+What is the role of SignalR in a Blazor application?
+-Compiles Razor components
+-Renders components on the server
+-Stores SQL connection strings
++Updates the UI upon data changes
+
+In a Blazor WebAssembly project, what file typically contains the root component?
+-_Host.cshtml
+-main.js
++index.html
+-AppSettings.json
+
+How can components be reused in different parts of a Blazor application?
++By reusing component classes and instances directly
+-By specifying them in index.html
+-By re-creating components for each use case
+-By exporting components from _Host.cshtml
+
+In Visual Studio, how do you specify which project is the startup project in a multi-project solution?
+-Use a command in the Visual Studio terminal.
+-Add a configuration in appsettings.json
++Right-click the desired project and select 'Set as Startup Project'
+-Edit the .csproj file directly
+
+Which file acts as the default host page in a Blazor app?
+-App.razor file
+-index.html file
++_Host.cshtml
+-Startup.cs file
+
+What is accomplished by initializing a List of products in the code block of a Blazor component?
+-Ensures persistence of data across sessions
+-Improves execution speed significantly
+-Prevents any product-related errors
++Prepares a dynamic list for management within the UI
+
+When creating a list of products in a Blazor component, what is the primary purpose of displaying the product list on a page?
+-To reduce server load
+-To keep track of inventory internally
+-To prevent data binding errors
++To enable users to view and interact with products
+
+Why might you use a dropdown to display product properties in a Blazor app?
+-To hide product details from the user
+-To prevent users from editing properties
++To allow easy navigation between the various properties
+-To make the UI more complex
+
+Why might a developer apply Bootstrap classes to components in Blazor?
+-To handle asynchronous operations
+-To avoid using C# code
++To utilize a consistent, responsive framework for styling
+-To reduce code overall
+
+What advantage does Blazor provide when rendering components based on dynamic data such as product status?
++Blazor allows real-time data-driven UI updates
+-Blazor limits dynamic capabilities to static data only
+-Blazor offers no advantage over traditional HTML
+-Blazor requires recompilation for UI changes
+
+Why should the logic inside a "for each" loop for displaying products be moved to a separate component in Blazor?
++To enable easier application scaling and reduce redundant code.
+-To improve the loading speed of the page.
+-To simplify the user interface design.
+-To make it easier to implement complex algorithms.
+
+What is necessary to ensure a method is invoked when a Blazor component's checkbox is toggled?
+-Using a background thread to check the checkbox state.
+-Implementing polling to check for changes.
++Passing the method as a parameter to the child component.
+-Using global state to detect changes.
+
+Why is it important to manage favorite products' state via a counter in a Blazor application?
+-To simplify backend data structures by reducing dependencies.
+-To reduce memory usage associated with UI components.
++To accurately track and display user interactions with the component.
+-To enhance application security by managing secure state only.
+
+When dealing with component errors in Blazor, what strategy helps resolve issues effectively?
++Enabling the Developer Exception Page during development
+-Restricting parameter types
+-Writing detailed logs post-deployment
+-Using try-catch blocks extensively
+
+How does routing with parameters work in Blazor components?
++By defining a route template with parameters in a component's attribute
+-By using a separate configuration file
+-By embedding parameters in JSON payloads
+-By stabbing into a central routing service
+
+In Blazor, how can you include multiple render fragments in a component?
++By defining multiple parameters with the RenderFragment type
+-By embedding one fragment inside another
+-By listing them out in a single container
+-By using conditional statements
+
+What is the return type of the 'GetWeatherForecast' method in the second example?
+-A list of strings
++An array of WeatherForecast objects
+-A single WeatherForecast object
+-A DataTable object
+
+Why would you use an extension method for a Toaster notification in Blazor?
+-To directly handle errors in the UI.
+-To replace the need for JavaScript entirely.
+-To compile JavaScript into C#.
++To simplify and reuse code across multiple components.
+
+What is the role of the 'IJSRuntime' in a Blazor application?
+-To handle asynchronous data fetching.
+-To manage browser events.
+-To compile C# code to JavaScript.
++To interact with JavaScript functions.
+
+How does OnAfterRenderAsync differ in execution from OnInitializedAsync?
+-It initializes synchronous variables
+-It updates UI state
++It is intended for post-rendering asynchronous tasks
+-It executes before rendering occurs
+
+Which file serves as the main page of a Blazor application?
+-Program.cs
+-Startup.cs
++App.razor
+-index.html
+
+What should be done to ensure implicit warning checks regarding strings are not enforced in the project settings?
++Disable the 'Nullable' label.
+-Enable the ".NET Implicit" setting.
+-Enable verbose logging.
+-Ensure all string variables are declared.
+
+What function does middleware serve in a .NET application?
+-Store static files
+-Render frontend UI components
+-Configure services
++Process requests and responses in the pipeline
+
+In a Blazor application, what is the implication of reaching a 'Sorry, there's nothing at this address' message?
+-An unhandled exception occurred
++A route to a page was not found
+-A layout file is missing
+-The server is offline
+
+What typically appears first on the default home page of a new Blazor application?
++A greeting header in HTML
+-SQL connection details
+-Error logs
+-List of existing components
+
+What is the purpose of creating a new folder and class in a Blazor application for models?
++To store and manage data models effectively
+-To enhance security of the application
+-To reduce application size
+-To improve file system management
+
+What logic should be implemented to ensure that a product marked as active is displayed correctly in the UI?
+-Disable the product without checks
+-Hardcode the product as always active
++Check the is active flag and render accordingly
+-Manually update the UI components every time
+
+What is the purpose of adding a collection of properties to a product class in a Blazor application?
++To provide a comprehensive representation of product attributes
+-To ensure faster application load times
+-To eliminate the need for a database
+-To simplify data models for easier maintenance
+
+Why might you choose to display product information in editable fields within a table?
+-To restrict data access
+-To slow down edits and prevent errors
++To facilitate quick and easy data editing
+-To hide addition features from the UI
+
+What is the benefit of binding product properties directly within a table in Blazor?
+-Separates data logic from UI code
+-Ensures static data presentation
+-Prevents any UI changes during runtime
++Enhances the dynamic interaction capabilities of the UI
+
+When you want to retrieve the value of an event triggered by a checkbox in Blazor, which type of parameter should you expect?
+-MessageEventArgs
+-PropertyChangedEventArgs
+-MouseEventArgs
++ChangeEventArgs
+
+How does IntelliSense assist developers while working with EventCallback parameters in Blazor?
+-By automatically generating EventCallback code blocks.
+-By preventing runtime errors through real-time linting.
++By suggesting possible types and completions, ensuring type accuracy.
+-By analyzing runtime performance issues.
+
+Which type should the property have when passing a callback method to a Blazor component as a parameter?
+-Action
+-Task
++EventCallback
+-Delegate
+
+What directive is typically used at the top of a Razor component to define its path?
+-@code
+-@namespace
++@page
+-@using
+
+In Blazor, what method type is suggested for handling a change event from a checkbox within a component?
+-Action
+-void
+-Predicate
++AsyncTask
+
+Why is managing component hierarchy crucial for scalability in Blazor applications?
+-It directly affects project build time
+-It ensures optimal use of server resources
++It keeps data flow understandable and architecture maintainable
+-It has no impact on application performance
+
+What must be done to a component to ensure it can receive parameters in Blazor?
+-Properties must be made public
++Properties must have the [Parameter] attribute
+-Components must inherit from a base class
+-Components must use two-way data binding
+
+Can Hot Reload be effectively used in Blazor when modifying layout and logic at runtime?
+-Yes, it works perfectly for all changes
+-No, it does not support any immediate changes
++Partially, as it supports UI-related changes instantly
+-It only works with logic changes
+
+What is attribute splatting in Blazor used for in components?
++To dynamically pass HTML attributes
+-To define JavaScript dependencies
+-To encapsulate CSS styles
+-To delay rendering until data is fetched
+
+Which keyword is used in Blazor to define a parameter that should be passed to a child component from a parent component?
++[Parameter]
+-set parameter
+-define parameter
+-@parameter
+
+What is the return type of the 'GetWeatherForecast' method in the second example?
++An array of WeatherForecast objects
+-A single WeatherForecast object
+-A DataTable object
+-A list of strings
+
+What is the role of the 'IJSRuntime' in a Blazor application?
++To interact with JavaScript functions.
+-To manage browser events.
+-To handle asynchronous data fetching.
+-To compile C# code to JavaScript.
+
+What CSS styling is initially applied to buttons in Blazor as per the assignment?
+-400 pixels wide
+-300 pixels wide
+-100 pixels wide
++200 pixels wide
+
+What does the counter component in Blazor do as shown in the overview?
++It displays and increments a numerical counter.
+-It manages date and time.
+-It generates weather forecasts.
+-It handles authentication flow.
+
+Why would you use an extension method for a Toaster notification in Blazor?
+-To replace the need for JavaScript entirely.
+-To directly handle errors in the UI.
++To simplify and reuse code across multiple components.
+-To compile JavaScript into C#.
+
+How does OnAfterRenderAsync differ from OnAfterRender in Blazor components?
++It allows awaiting of tasks
+-It is used for parameter updates
+-It initiates rendering
+-It is executed before rendering
+
+What occurs when a parent component updates parameters passed to a child component?
+-StateHasChanged is triggered in the child
+-The child is completely re-rendered
++OnParametersSet is called in the child
+-Only the parent re-renders
+
+When should OnAfterRender be used in a Blazor component?
+-During initialization
+-Before component destruction
+-When parameters are updated
++After every render
+
+In the lifecycle of Blazor components, which method is likely called before OnAfterRender during component updates?
+-ShouldRender
+-StateHasChanged
+-OnInitialized
++OnParametersSet
+
+What distinguishes OnParametersSetAsync from OnParametersSet in a Blazor component's lifecycle?
+-OnParametersSetAsync must be called manually
++OnParametersSetAsync allows asynchronous operations
+-OnParametersSetAsync does not run during parameter updates
+-OnParametersSetAsync runs synchronously
+
+Why might you use a NavLink instead of a standard anchor tag in a Blazor component?
++It automatically applies 'active' styling when navigated.
+-To prevent any page reloads.
+-They provide server-side rendering.
+-It allows JavaScript injection directly.
+
+How does organizing components within folders affect a Blazor project's maintenance?
+-It has no impact on project clarity
+-It only benefits large-scale projects
+-It makes the code harder to navigate
++It simplifies maintenance and increases readability
+
+How can you ensure events propagate correctly from child to parent components in Blazor?
+-By declaring all components in a shared library.
+-By chaining the components together in the UI layout.
+-By synchronously updating the application's state service.
++By defining explicit callback handlers in the parent component.
+
+What is a RenderFragment in Blazor used for?
+-To pass non-parameterized state
+-To handle component lifecycle events
++To define a reusable block of markup
+-To bind data dynamically
+
+Which functions are added for Sweet Alert in the assignment?
+-Sweet Alert Notice and Sweet Alert Error
+-Sweet Alert Confirm and Sweet Alert Success
++Sweet Alert Success and Sweet Alert Failure
+-Sweet Alert Confirm and Sweet Alert Prompt
