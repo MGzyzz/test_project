@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue'
 import { parseQuestions } from '../utils/parser.js'
+import { fetchStats, recordAnswer } from '../utils/statsApi.js'
 
 function shuffle(arr) {
   const a = [...arr]
@@ -24,6 +25,12 @@ const feedback = ref(null)   // { type: 'correct'|'wrong', text: string }
 const progressPct = ref(0)
 const wrongQuestions = ref([])  // questions answered incorrectly this round
 const roundNumber = ref(1)      // current retry round
+const allStats = ref([])        // [{ question_text, correct_count, wrong_count }]
+const statsMap = computed(() => {
+  const map = {}
+  for (const s of allStats.value) map[s.question_text] = s
+  return map
+})
 
 // ── Derived ──────────────────────────────────────────────────────────────────
 const currentQuestion = computed(() => quiz.value[current.value])
@@ -63,6 +70,7 @@ function startQuiz(from, to) {
   progressPct.value = 0
   wrongQuestions.value = []
   roundNumber.value = 1
+  fetchStats().then(data => { allStats.value = data })
 }
 
 function startRetryRound() {
@@ -106,6 +114,7 @@ function confirmAnswer() {
   } else {
     wrongQuestions.value.push(q)
   }
+  recordAnswer(q.question, isCorrect)
   progressPct.value = ((current.value + 1) / quiz.value.length) * 100
 
   if (isCorrect) {
@@ -177,6 +186,8 @@ export function useQuiz() {
     isDone,
     wrongQuestions,
     roundNumber,
+    allStats,
+    statsMap,
     loadText,
     startQuiz,
     startRetryRound,

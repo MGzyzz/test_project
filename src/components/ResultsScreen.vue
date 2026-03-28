@@ -9,6 +9,14 @@
       </div>
       <p class="score-count">{{ score }} / {{ quiz.length }} correct</p>
       <p class="score-emoji">{{ message }}</p>
+      <div v-if="hardQuestions.length > 0" class="hard-list">
+        <p class="hard-list-title">Questions to focus on:</p>
+        <div v-for="(q, i) in hardQuestions" :key="i" class="hard-item">
+          <span class="hard-count">{{ q.wrong_count }}✗</span>
+          <span class="hard-text">{{ q.text }}</span>
+        </div>
+      </div>
+
       <div class="actions">
         <button v-if="wrongQuestions.length > 0" class="btn btn-primary" @click="emit('retry-wrong')">
           Retry wrong answers ({{ wrongQuestions.length }})
@@ -25,7 +33,15 @@ import { computed } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
 
 const emit = defineEmits(['repeat', 'retry-wrong', 'back'])
-const { score, quiz, wrongQuestions, roundNumber } = useQuiz()
+const { score, quiz, wrongQuestions, roundNumber, statsMap } = useQuiz()
+
+const hardQuestions = computed(() => {
+  return quiz.value
+    .map(q => ({ text: q.question, ...statsMap.value[q.question] }))
+    .filter(q => q.wrong_count >= 3)
+    .sort((a, b) => b.wrong_count - a.wrong_count)
+    .slice(0, 5)
+})
 
 const pct = computed(() => Math.round((score.value / quiz.value.length) * 100))
 const message = computed(() => {
@@ -71,4 +87,38 @@ const message = computed(() => {
 .score-count { font-size: 1rem; color: var(--text-2); margin-bottom: 8px; }
 .score-emoji { font-size: 1.375rem; color: var(--text); margin-bottom: 20px; }
 .actions { display: flex; flex-direction: column; gap: 10px; }
+
+.hard-list {
+  text-align: left;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+.hard-list-title {
+  font-size: .8rem;
+  font-weight: 700;
+  color: #b45309;
+  margin-bottom: 8px;
+}
+.hard-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 4px 0;
+  border-top: 1px solid #fde68a;
+}
+.hard-count {
+  flex-shrink: 0;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #dc2626;
+  min-width: 32px;
+}
+.hard-text {
+  font-size: .85rem;
+  color: #78350f;
+  line-height: 1.4;
+}
 </style>

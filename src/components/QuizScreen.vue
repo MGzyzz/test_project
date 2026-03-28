@@ -8,6 +8,9 @@
     </div>
 
     <div class="card">
+      <p v-if="currentStats && currentStats.wrong_count >= 3" class="hard-badge">
+        ⚠ Hard question — {{ currentStats.wrong_count }} mistakes
+      </p>
       <p class="question-text">{{ currentQuestion.question }}</p>
       <p v-if="isMulti" class="hint">Choose {{ correctCount }} answers</p>
 
@@ -44,6 +47,7 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
 
 const {
@@ -59,7 +63,10 @@ const {
   confirmAnswer,
   nextQuestion,
   getOptionState,
+  statsMap,
 } = useQuiz()
+
+const currentStats = computed(() => statsMap.value[currentQuestion.value?.question])
 </script>
 
 <style scoped>
@@ -153,6 +160,18 @@ const {
 }
 .feedback.correct { background: var(--green-bg); border: 1px solid var(--green-border); color: var(--green); }
 .feedback.wrong { background: var(--red-bg); border: 1px solid var(--red-border); color: var(--red); }
+
+.hard-badge {
+  font-size: .8rem;
+  font-weight: 700;
+  color: #b45309;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
 
 .btn + .btn { margin-top: 10px; }
 .btn:disabled { opacity: 0.4; cursor: not-allowed; }
