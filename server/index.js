@@ -64,7 +64,6 @@ function auth(req, res, next) {
 app.post('/api/auth/register', async (req, res) => {
   const { username, password } = req.body
   if (!username || !password) return res.status(400).json({ error: 'Username and password required' })
-  if (password.length < 4) return res.status(400).json({ error: 'Password too short' })
 
   try {
     const hash = await bcrypt.hash(password, 10)
