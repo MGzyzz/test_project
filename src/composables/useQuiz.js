@@ -73,6 +73,10 @@ function startQuiz(from, to) {
   fetchStats().then(data => { allStats.value = data })
 }
 
+function loadStats() {
+  fetchStats().then(data => { allStats.value = data })
+}
+
 function startRetryRound() {
   clearCountdown()
   const questions = wrongQuestions.value
@@ -189,6 +193,7 @@ export function useQuiz() {
     allStats,
     statsMap,
     loadText,
+    loadStats,
     startQuiz,
     startRetryRound,
     selectAnswer,

@@ -40,7 +40,10 @@
       </div>
     </div>
 
-    <button class="btn btn-primary" @click="onStart">Start Quiz</button>
+    <div class="action-row">
+      <button class="btn btn-primary" @click="onStart">Start Quiz</button>
+      <button v-if="total" class="btn btn-secondary" @click="emit('stats')">View Stats</button>
+    </div>
   </div>
 </template>
 
@@ -48,7 +51,7 @@
 import { ref, computed } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
 
-const emit = defineEmits(['start'])
+const emit = defineEmits(['start', 'stats'])
 const { allQuestions, loadText } = useQuiz()
 
 const text = ref('')
@@ -171,4 +174,10 @@ input[type="file"] { display: none; }
   transition: border-color .15s;
 }
 .range-group input[type="number"]:focus { border-color: var(--accent); }
+
+.action-row {
+  display: flex;
+  gap: 10px;
+}
+.action-row .btn { flex: 1; }
 </style>

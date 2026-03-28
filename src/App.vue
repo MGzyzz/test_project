@@ -22,11 +22,12 @@
       <div v-if="screen === 'setup'" class="setup-layout">
         <FileSidebar @selected="onSidebarSelected" />
         <div class="setup-main">
-          <SetupScreen ref="setupRef" @start="handleStart" />
+          <SetupScreen ref="setupRef" @start="handleStart" @stats="screen = 'stats'" />
         </div>
       </div>
 
       <QuizScreen v-else-if="screen === 'quiz'" />
+      <StatsScreen v-else-if="screen === 'stats'" @back="screen = 'setup'" />
       <ResultsScreen v-else @repeat="handleRepeat" @retry-wrong="handleRetryWrong" @back="screen = 'setup'" />
     </template>
 
@@ -42,6 +43,7 @@ import QuizScreen from './components/QuizScreen.vue'
 import ResultsScreen from './components/ResultsScreen.vue'
 import EditorScreen from './components/EditorScreen.vue'
 import FileSidebar from './components/FileSidebar.vue'
+import StatsScreen from './components/StatsScreen.vue'
 import { useQuiz } from './composables/useQuiz.js'
 
 const mode = ref('quiz')    // 'quiz' | 'editor'
