@@ -111,7 +111,7 @@ function confirmAnswer() {
   if (isCorrect) {
     feedback.value = { type: 'correct', text: 'Correct!' }
   } else {
-    let seconds = 3
+    let seconds = 60
     feedback.value = { type: 'wrong', text: `Incorrect! Auto-next in ${seconds}...` }
     countdownTimer.value = setInterval(() => {
       seconds--
