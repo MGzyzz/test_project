@@ -8,7 +8,7 @@
     </div>
 
     <div class="card">
-      <p v-if="currentStats && currentStats.wrong_count >= 3" class="hard-badge">
+      <p v-if="currentStats && currentStats.wrong_count >= 3 && currentStats.wrong_count > currentStats.correct_count" class="hard-badge">
         ⚠ Hard question — {{ currentStats.wrong_count }} mistakes
       </p>
       <p class="question-text">{{ currentQuestion.question }}</p>
