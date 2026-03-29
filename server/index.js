@@ -55,11 +55,16 @@ await pool.query(`
 `)
 
 // ── Auth middleware ───────────────────────────────────────────────────────────
-function auth(req, res, next) {
+async function auth(req, res, next) {
   const token = req.headers.authorization?.split(' ')[1]
   if (!token) return res.status(401).json({ error: 'Unauthorized' })
   try {
     req.user = jwt.verify(token, JWT_SECRET)
+    const { rows } = await pool.query('SELECT is_blocked, block_reason FROM users WHERE id = $1', [req.user.id])
+    if (rows[0]?.is_blocked) {
+      const reason = rows[0].block_reason ? ` Reason: ${rows[0].block_reason}` : ''
+      return res.status(403).json({ error: `Your account has been blocked.${reason}`, blocked: true })
+    }
     next()
   } catch {
     res.status(401).json({ error: 'Invalid token' })
@@ -105,6 +110,9 @@ app.post('/api/auth/login', async (req, res) => {
   const token = jwt.sign({ id: rows[0].id, username: rows[0].username }, JWT_SECRET, { expiresIn: '30d' })
   res.json({ token, username: rows[0].username })
 })
+
+// ── Status check ─────────────────────────────────────────────────────────────
+app.get('/api/auth/me', auth, (req, res) => res.json({ ok: true }))
 
 // ── Admin routes ──────────────────────────────────────────────────────────────
 function adminOnly(req, res, next) {

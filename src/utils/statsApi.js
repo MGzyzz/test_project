@@ -49,3 +49,14 @@ export async function fetchStats() {
     return []
   }
 }
+
+// Returns { blocked: true, error: '...' } if blocked, otherwise null
+export async function checkMe() {
+  try {
+    const res = await fetch(`${BASE}/api/auth/me`, { headers: authHeaders() })
+    if (res.status === 403) return await res.json()
+    return null
+  } catch {
+    return null
+  }
+}
