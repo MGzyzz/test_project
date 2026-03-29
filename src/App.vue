@@ -18,6 +18,9 @@
       <button class="mode-btn" :class="{ active: mode === 'editor' }" @click="mode = 'editor'">
         Editor
       </button>
+      <button v-if="currentUser === 'admin'" class="mode-btn" :class="{ active: mode === 'admin' }" @click="mode = 'admin'">
+        Admin
+      </button>
       <span class="user-info">{{ currentUser }}</span>
       <button class="mode-btn logout-btn" @click="logout">Logout</button>
     </div>
@@ -38,7 +41,10 @@
     </template>
 
     <!-- Editor mode -->
-    <EditorScreen v-else @go-quiz="onGoQuiz" />
+    <EditorScreen v-else-if="mode === 'editor'" @go-quiz="onGoQuiz" />
+
+    <!-- Admin mode -->
+    <AdminScreen v-else-if="mode === 'admin'" />
 
     </template>
   </div>
@@ -54,9 +60,10 @@ import EditorScreen from './components/EditorScreen.vue'
 import FileSidebar from './components/FileSidebar.vue'
 import StatsScreen from './components/StatsScreen.vue'
 import AuthScreen from './components/AuthScreen.vue'
+import AdminScreen from './components/AdminScreen.vue'
 import { useQuiz } from './composables/useQuiz.js'
 
-const mode = ref('quiz')    // 'quiz' | 'editor'
+const mode = ref('quiz')    // 'quiz' | 'editor' | 'admin'
 const screen = ref('setup') // 'setup' | 'quiz' | 'results'
 const authed = ref(isLoggedIn())
 const currentUser = ref(getUser()?.username || '')

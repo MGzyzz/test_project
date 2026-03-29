@@ -23,8 +23,14 @@ await pool.query(`
     id            SERIAL PRIMARY KEY,
     username      TEXT UNIQUE NOT NULL,
     password_hash TEXT NOT NULL,
-    created_at    TIMESTAMPTZ DEFAULT NOW()
+    created_at    TIMESTAMPTZ DEFAULT NOW(),
+    last_login    TIMESTAMPTZ
   )
+`)
+
+// Add last_login column if missing (migration)
+await pool.query(`
+  ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ
 `)
 
 // Migrate old question_stats (without user_id) to new schema
@@ -89,8 +95,30 @@ app.post('/api/auth/login', async (req, res) => {
   const valid = await bcrypt.compare(password, rows[0].password_hash)
   if (!valid) return res.status(401).json({ error: 'Invalid credentials' })
 
+  await pool.query('UPDATE users SET last_login = NOW() WHERE id = $1', [rows[0].id])
+
   const token = jwt.sign({ id: rows[0].id, username: rows[0].username }, JWT_SECRET, { expiresIn: '30d' })
   res.json({ token, username: rows[0].username })
+})
+
+// ── Admin routes ──────────────────────────────────────────────────────────────
+function adminOnly(req, res, next) {
+  if (req.user.username !== 'admin') return res.status(403).json({ error: 'Forbidden' })
+  next()
+}
+
+app.get('/api/admin/users', auth, adminOnly, async (_req, res) => {
+  const { rows } = await pool.query(
+    `SELECT u.username, u.created_at, u.last_login,
+       COUNT(s.question_hash) AS questions_attempted,
+       COALESCE(SUM(s.wrong_count), 0) AS total_wrong,
+       COALESCE(SUM(s.correct_count), 0) AS total_correct
+     FROM users u
+     LEFT JOIN question_stats s ON s.user_id = u.id
+     GROUP BY u.id
+     ORDER BY u.last_login DESC NULLS LAST`
+  )
+  res.json(rows)
 })
 
 // ── Stats routes (protected) ──────────────────────────────────────────────────
