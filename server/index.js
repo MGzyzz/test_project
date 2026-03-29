@@ -31,6 +31,7 @@ await pool.query(`
 // Migrations
 await pool.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ`)
 await pool.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS is_blocked BOOLEAN DEFAULT FALSE`)
+await pool.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS block_reason TEXT`)
 
 // Migrate old question_stats (without user_id) to new schema
 const { rows: cols } = await pool.query(`
@@ -94,7 +95,10 @@ app.post('/api/auth/login', async (req, res) => {
   const valid = await bcrypt.compare(password, rows[0].password_hash)
   if (!valid) return res.status(401).json({ error: 'Invalid credentials' })
 
-  if (rows[0].is_blocked) return res.status(403).json({ error: 'Your account has been blocked. Contact the administrator.' })
+  if (rows[0].is_blocked) {
+    const reason = rows[0].block_reason ? ` Reason: ${rows[0].block_reason}` : ''
+    return res.status(403).json({ error: `Your account has been blocked.${reason}` })
+  }
 
   await pool.query('UPDATE users SET last_login = NOW() WHERE id = $1', [rows[0].id])
 
@@ -124,14 +128,18 @@ app.get('/api/admin/users', auth, adminOnly, async (_req, res) => {
 
 app.post('/api/admin/users/:username/block', auth, adminOnly, async (req, res) => {
   const { username } = req.params
+  const { reason } = req.body
   if (username === 'admin') return res.status(400).json({ error: 'Cannot block admin' })
-  await pool.query('UPDATE users SET is_blocked = TRUE WHERE username = $1', [username])
+  await pool.query(
+    'UPDATE users SET is_blocked = TRUE, block_reason = $1 WHERE username = $2',
+    [reason || null, username]
+  )
   res.json({ ok: true })
 })
 
 app.post('/api/admin/users/:username/unblock', auth, adminOnly, async (req, res) => {
   const { username } = req.params
-  await pool.query('UPDATE users SET is_blocked = FALSE WHERE username = $1', [username])
+  await pool.query('UPDATE users SET is_blocked = FALSE, block_reason = NULL WHERE username = $1', [username])
   res.json({ ok: true })
 })
 
