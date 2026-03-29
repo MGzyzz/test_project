@@ -76,15 +76,20 @@ const {
 
 const currentStats = computed(() => statsMap.value[currentQuestion.value?.question])
 
-const hintsLeft = ref(3)
-const hintText  = ref('')
+const hintsLeft  = ref(3)
+const hintLength = ref(0)
 
-watch(current, () => { hintText.value = '' })
+watch(current, () => { hintLength.value = 0 })
+
+const hintText = computed(() => {
+  const correct = currentQuestion.value?.answers.find(a => a.correct)
+  if (!correct || hintLength.value === 0) return ''
+  return correct.text.slice(0, hintLength.value) + '...'
+})
 
 function useHint() {
-  const correct = currentQuestion.value?.answers.find(a => a.correct)
-  if (!correct) return
-  hintText.value = correct.text.charAt(0).toUpperCase() + '...'
+  if (hintsLeft.value <= 0) return
+  hintLength.value++
   hintsLeft.value--
 }
 </script>
