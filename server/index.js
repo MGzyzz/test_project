@@ -28,10 +28,9 @@ await pool.query(`
   )
 `)
 
-// Add last_login column if missing (migration)
-await pool.query(`
-  ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ
-`)
+// Migrations
+await pool.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ`)
+await pool.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS is_blocked BOOLEAN DEFAULT FALSE`)
 
 // Migrate old question_stats (without user_id) to new schema
 const { rows: cols } = await pool.query(`
@@ -95,6 +94,8 @@ app.post('/api/auth/login', async (req, res) => {
   const valid = await bcrypt.compare(password, rows[0].password_hash)
   if (!valid) return res.status(401).json({ error: 'Invalid credentials' })
 
+  if (rows[0].is_blocked) return res.status(403).json({ error: 'Your account has been blocked. Contact the administrator.' })
+
   await pool.query('UPDATE users SET last_login = NOW() WHERE id = $1', [rows[0].id])
 
   const token = jwt.sign({ id: rows[0].id, username: rows[0].username }, JWT_SECRET, { expiresIn: '30d' })
@@ -109,7 +110,7 @@ function adminOnly(req, res, next) {
 
 app.get('/api/admin/users', auth, adminOnly, async (_req, res) => {
   const { rows } = await pool.query(
-    `SELECT u.username, u.created_at, u.last_login,
+    `SELECT u.username, u.created_at, u.last_login, u.is_blocked,
        COUNT(s.question_hash) AS questions_attempted,
        COALESCE(SUM(s.wrong_count), 0) AS total_wrong,
        COALESCE(SUM(s.correct_count), 0) AS total_correct
@@ -119,6 +120,19 @@ app.get('/api/admin/users', auth, adminOnly, async (_req, res) => {
      ORDER BY u.last_login DESC NULLS LAST`
   )
   res.json(rows)
+})
+
+app.post('/api/admin/users/:username/block', auth, adminOnly, async (req, res) => {
+  const { username } = req.params
+  if (username === 'admin') return res.status(400).json({ error: 'Cannot block admin' })
+  await pool.query('UPDATE users SET is_blocked = TRUE WHERE username = $1', [username])
+  res.json({ ok: true })
+})
+
+app.post('/api/admin/users/:username/unblock', auth, adminOnly, async (req, res) => {
+  const { username } = req.params
+  await pool.query('UPDATE users SET is_blocked = FALSE WHERE username = $1', [username])
+  res.json({ ok: true })
 })
 
 // ── Stats routes (protected) ──────────────────────────────────────────────────

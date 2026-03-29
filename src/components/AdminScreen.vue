@@ -30,11 +30,15 @@
             <th>Questions</th>
             <th>Correct</th>
             <th>Wrong</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="u in users" :key="u.username">
-            <td class="td-user">{{ u.username }}</td>
+          <tr v-for="u in users" :key="u.username" :class="{ 'row-blocked': u.is_blocked }">
+            <td class="td-user">
+              {{ u.username }}
+              <span v-if="u.is_blocked" class="blocked-badge">blocked</span>
+            </td>
             <td class="td-date">{{ fmt(u.created_at) }}</td>
             <td class="td-date" :class="{ 'td-never': !u.last_login }">
               {{ u.last_login ? fmt(u.last_login) : 'Never' }}
@@ -42,6 +46,13 @@
             <td class="td-num">{{ u.questions_attempted }}</td>
             <td class="td-num correct">{{ u.total_correct }}</td>
             <td class="td-num wrong">{{ u.total_wrong }}</td>
+            <td class="td-action">
+              <button
+                v-if="u.username !== 'admin'"
+                :class="['action-btn', u.is_blocked ? 'btn-unblock' : 'btn-block']"
+                @click="toggleBlock(u)"
+              >{{ u.is_blocked ? 'Unblock' : 'Block' }}</button>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -67,6 +78,15 @@ onMounted(async () => {
     loading.value = false
   }
 })
+
+async function toggleBlock(u) {
+  const action = u.is_blocked ? 'unblock' : 'block'
+  await fetch(`${BASE}/api/admin/users/${u.username}/${action}`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${getToken()}` },
+  })
+  u.is_blocked = !u.is_blocked
+}
 
 function fmt(iso) {
   if (!iso) return '—'
@@ -157,4 +177,31 @@ tr:hover td { background: var(--surface); }
 .td-num { text-align: center; font-weight: 600; }
 .correct { color: var(--green); }
 .wrong   { color: var(--red); }
+
+.row-blocked td { opacity: .5; }
+.blocked-badge {
+  display: inline-block;
+  background: var(--red-bg);
+  color: var(--red);
+  font-size: .65rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.td-action { text-align: center; }
+.action-btn {
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid;
+  transition: opacity .15s;
+}
+.action-btn:hover { opacity: .8; }
+.btn-block   { background: var(--red-bg);   color: var(--red);   border-color: var(--red-border); }
+.btn-unblock { background: var(--green-bg); color: var(--green); border-color: var(--green-border); }
 </style>
