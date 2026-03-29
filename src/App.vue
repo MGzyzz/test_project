@@ -182,17 +182,21 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   font-size: .8rem;
   font-weight: 600;
   color: var(--text-2);
-  padding: 0 8px;
+  padding: 8px 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 120px;
+  display: flex;
+  align-items: center;
 }
 .logout-btn {
   flex: none;
   padding: 8px 12px;
   font-size: .8rem;
+  font-weight: 600;
   color: var(--red);
+  line-height: 1;
 }
 .logout-btn:hover { color: var(--red); background: var(--red-bg); }
 </style>

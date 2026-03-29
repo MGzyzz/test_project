@@ -123,6 +123,7 @@ function confirmAnswer() {
 
   if (isCorrect) {
     feedback.value = { type: 'correct', text: 'Correct!' }
+    countdownTimer.value = setTimeout(() => nextQuestion(), 600)
   } else {
     let seconds = 60
     feedback.value = { type: 'wrong', text: `Incorrect! Auto-next in ${seconds}...` }
@@ -151,6 +152,7 @@ function nextQuestion() {
 function clearCountdown() {
   if (countdownTimer.value) {
     clearInterval(countdownTimer.value)
+    clearTimeout(countdownTimer.value)
     countdownTimer.value = null
   }
 }

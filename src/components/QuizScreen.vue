@@ -8,9 +8,16 @@
     </div>
 
     <div class="card">
-      <p v-if="currentStats && currentStats.wrong_count >= 3 && currentStats.wrong_count > currentStats.correct_count" class="hard-badge">
-        ⚠ Hard question — {{ currentStats.wrong_count }} mistakes
-      </p>
+      <div v-if="currentStats && currentStats.wrong_count >= 3 && currentStats.wrong_count > currentStats.correct_count" class="hard-badge">
+        <span>⚠ Hard question — {{ currentStats.wrong_count }} mistakes</span>
+        <button
+          v-if="!answered && hintsLeft > 0"
+          class="hint-btn"
+          @click="useHint"
+        >💡 Hint ({{ hintsLeft }})</button>
+        <span v-else-if="hintsLeft === 0 && !hintText" class="hint-used">No hints left</span>
+      </div>
+      <p v-if="hintText" class="hint-text">Starts with: <strong>{{ hintText }}</strong></p>
       <p class="question-text">{{ currentQuestion.question }}</p>
       <p v-if="isMulti" class="hint">Choose {{ correctCount }} answers</p>
 
@@ -47,7 +54,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
 
 const {
@@ -64,9 +71,22 @@ const {
   nextQuestion,
   getOptionState,
   statsMap,
+  current,
 } = useQuiz()
 
 const currentStats = computed(() => statsMap.value[currentQuestion.value?.question])
+
+const hintsLeft = ref(3)
+const hintText  = ref('')
+
+watch(current, () => { hintText.value = '' })
+
+function useHint() {
+  const correct = currentQuestion.value?.answers.find(a => a.correct)
+  if (!correct) return
+  hintText.value = correct.text.charAt(0).toUpperCase() + '...'
+  hintsLeft.value--
+}
 </script>
 
 <style scoped>
@@ -162,15 +182,41 @@ const currentStats = computed(() => statsMap.value[currentQuestion.value?.questi
 .feedback.wrong { background: var(--red-bg); border: 1px solid var(--red-border); color: var(--red); }
 
 .hard-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   font-size: .8rem;
   font-weight: 700;
   color: #b45309;
   background: #fef3c7;
   border: 1px solid #fcd34d;
   border-radius: var(--radius-sm);
-  padding: 4px 10px;
+  padding: 6px 10px;
   margin-bottom: 10px;
-  display: inline-block;
+}
+.hint-btn {
+  flex-shrink: 0;
+  background: #fde68a;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.hint-btn:hover { background: #fcd34d; }
+.hint-used { font-size: .75rem; color: #b45309; opacity: .6; }
+.hint-text {
+  font-size: .85rem;
+  color: #b45309;
+  background: #fef9ec;
+  border: 1px dashed #fcd34d;
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  margin-bottom: 10px;
 }
 
 .btn + .btn { margin-top: 10px; }
