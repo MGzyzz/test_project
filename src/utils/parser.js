@@ -5,7 +5,12 @@ export function parseQuestions(raw) {
     const question = lines[0]
     const answers = lines.slice(1)
       .filter(l => l[0] === '+' || l[0] === '-')
-      .map(l => ({ text: l.slice(1).trim(), correct: l[0] === '+' }))
+      .map(l => {
+        let text = l.slice(1).trim()
+        text = text.replace(/\.+$/, '')
+        text = text.charAt(0).toUpperCase() + text.slice(1)
+        return { text, correct: l[0] === '+' }
+      })
     if (answers.length && answers.some(a => a.correct)) {
       acc.push({ question, answers })
     }
