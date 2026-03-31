@@ -7,7 +7,7 @@ export function parseQuestions(raw) {
       .filter(l => l[0] === '+' || l[0] === '-')
       .map(l => {
         let text = l.slice(1).trim()
-        text = text.replace(/\.+$/, '')
+        text = text.replace(/[.;]+$/, '')
         text = text.charAt(0).toUpperCase() + text.slice(1)
         return { text, correct: l[0] === '+' }
       })
