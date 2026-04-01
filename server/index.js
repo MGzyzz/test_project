@@ -54,6 +54,18 @@ await pool.query(`
   )
 `)
 
+await pool.query(`
+  CREATE TABLE IF NOT EXISTS test_results (
+    id           SERIAL PRIMARY KEY,
+    user_id      INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    test_name    TEXT NOT NULL,
+    score        INTEGER NOT NULL,
+    total        INTEGER NOT NULL,
+    time_seconds INTEGER NOT NULL,
+    completed_at TIMESTAMPTZ DEFAULT NOW()
+  )
+`)
+
 // ── Auth middleware ───────────────────────────────────────────────────────────
 async function auth(req, res, next) {
   const token = req.headers.authorization?.split(' ')[1]
@@ -112,7 +124,7 @@ app.post('/api/auth/login', async (req, res) => {
 })
 
 // ── Status check ─────────────────────────────────────────────────────────────
-app.get('/api/auth/me', auth, (req, res) => res.json({ ok: true }))
+app.get('/api/auth/me', auth, (_req, res) => res.json({ ok: true }))
 
 // ── Admin routes ──────────────────────────────────────────────────────────────
 function adminOnly(req, res, next) {
@@ -175,6 +187,48 @@ app.get('/api/stats', auth, async (req, res) => {
      FROM question_stats WHERE user_id = $1
      ORDER BY wrong_count DESC`,
     [req.user.id]
+  )
+  res.json(rows)
+})
+
+// ── Test results routes ───────────────────────────────────────────────────────
+app.post('/api/test-results', auth, async (req, res) => {
+  const { testName, score, total, timeSeconds } = req.body
+  if (!testName || score == null || !total || timeSeconds == null) {
+    return res.status(400).json({ error: 'testName, score, total, timeSeconds required' })
+  }
+  await pool.query(
+    'INSERT INTO test_results (user_id, test_name, score, total, time_seconds) VALUES ($1, $2, $3, $4, $5)',
+    [req.user.id, testName, score, total, timeSeconds]
+  )
+  res.json({ ok: true })
+})
+
+app.get('/api/test-results/tests', auth, async (_req, res) => {
+  const { rows } = await pool.query(
+    `SELECT DISTINCT test_name FROM test_results ORDER BY test_name`
+  )
+  res.json(rows.map(r => r.test_name))
+})
+
+app.get('/api/test-results/leaderboard', auth, async (req, res) => {
+  const testName = req.query.testName
+  if (!testName) return res.status(400).json({ error: 'testName required' })
+
+  const { rows } = await pool.query(
+    `SELECT username, score, total, time_seconds, completed_at,
+       ROUND((score::numeric / total) * 100) AS pct
+     FROM (
+       SELECT DISTINCT ON (r.user_id)
+         u.username, r.score, r.total, r.time_seconds, r.completed_at
+       FROM test_results r
+       JOIN users u ON u.id = r.user_id
+       WHERE r.test_name = $1 AND u.is_blocked = FALSE
+       ORDER BY r.user_id, r.score DESC, r.time_seconds ASC
+     ) best
+     ORDER BY score DESC, time_seconds ASC
+     LIMIT 10`,
+    [testName]
   )
   res.json(rows)
 })

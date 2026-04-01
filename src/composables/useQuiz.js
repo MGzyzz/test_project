@@ -2,6 +2,13 @@ import { ref, computed } from 'vue'
 import { parseQuestions } from '../utils/parser.js'
 import { fetchStats, recordAnswer } from '../utils/statsApi.js'
 
+export function formatTime(seconds) {
+  if (seconds < 60) return `${seconds}s`
+  const m = Math.floor(seconds / 60)
+  const s = seconds % 60
+  return s > 0 ? `${m}m ${s}s` : `${m}m`
+}
+
 function shuffle(arr) {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
@@ -26,6 +33,13 @@ const progressPct = ref(0)
 const wrongQuestions = ref([])  // questions answered incorrectly this round
 const roundNumber = ref(1)      // current retry round
 const allStats = ref([])        // [{ question_text, correct_count, wrong_count }]
+const currentTestName = ref('')
+const quizStartTime = ref(null)
+const quizEndTime = ref(null)
+const quizElapsed = computed(() => {
+  if (!quizStartTime.value || !quizEndTime.value) return 0
+  return Math.round((quizEndTime.value - quizStartTime.value) / 1000)
+})
 const statsMap = computed(() => {
   const map = {}
   for (const s of allStats.value) map[s.question_text] = s
@@ -55,7 +69,7 @@ function loadText(text) {
   rangeTo.value = n || 1
 }
 
-function startQuiz(from, to) {
+function startQuiz(from, to, testName = 'Custom Test') {
   clearCountdown()
   const n = allQuestions.value.length
   rangeFrom.value = Math.max(1, Math.min(from, n))
@@ -70,6 +84,9 @@ function startQuiz(from, to) {
   progressPct.value = 0
   wrongQuestions.value = []
   roundNumber.value = 1
+  currentTestName.value = testName
+  quizStartTime.value = Date.now()
+  quizEndTime.value = null
   fetchStats().then(data => { allStats.value = data })
 }
 
@@ -142,7 +159,10 @@ function confirmAnswer() {
 function nextQuestion() {
   clearCountdown()
   current.value++
-  if (current.value >= quiz.value.length) return
+  if (current.value >= quiz.value.length) {
+    quizEndTime.value = Date.now()
+    return
+  }
   answered.value = false
   selected.value = new Set()
   feedback.value = null
@@ -194,6 +214,8 @@ export function useQuiz() {
     roundNumber,
     allStats,
     statsMap,
+    currentTestName,
+    quizElapsed,
     loadText,
     loadStats,
     startQuiz,

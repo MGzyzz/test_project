@@ -63,7 +63,7 @@
 <script setup>
 import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { isLoggedIn, getUser, clearAuth } from './utils/auth.js'
-import { checkMe } from './utils/statsApi.js'
+import { checkMe, saveTestResult } from './utils/statsApi.js'
 import SetupScreen from './components/SetupScreen.vue'
 import QuizScreen from './components/QuizScreen.vue'
 import ResultsScreen from './components/ResultsScreen.vue'
@@ -119,12 +119,20 @@ function stopPolling() {
 const {
   answered, showConfirm, confirmAnswer, nextQuestion,
   quiz, current, selectAnswer, restartSameRange, startQuiz, startRetryRound, isDone,
+  score, currentTestName, quizElapsed,
 } = useQuiz()
 
-watch(isDone, done => { if (done) screen.value = 'results' })
+watch(isDone, done => {
+  if (done) {
+    screen.value = 'results'
+    if (currentTestName.value && quiz.value.length) {
+      saveTestResult(currentTestName.value, score.value, quiz.value.length, quizElapsed.value)
+    }
+  }
+})
 
-function handleStart({ from, to }) {
-  startQuiz(from, to)
+function handleStart({ from, to, testName }) {
+  startQuiz(from, to, testName)
   screen.value = 'quiz'
 }
 

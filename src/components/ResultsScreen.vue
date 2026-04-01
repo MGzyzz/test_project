@@ -8,6 +8,7 @@
         <span class="score-label">score</span>
       </div>
       <p class="score-count">{{ score }} / {{ quiz.length }} correct</p>
+      <p v-if="quizElapsed" class="score-time">{{ formatTime(quizElapsed) }}</p>
       <p class="score-emoji">{{ message }}</p>
       <div v-if="hardQuestions.length > 0" class="hard-list">
         <p class="hard-list-title">Questions to focus on:</p>
@@ -30,10 +31,10 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useQuiz } from '../composables/useQuiz.js'
+import { useQuiz, formatTime } from '../composables/useQuiz.js'
 
 const emit = defineEmits(['repeat', 'retry-wrong', 'back'])
-const { score, quiz, wrongQuestions, roundNumber, statsMap } = useQuiz()
+const { score, quiz, wrongQuestions, roundNumber, statsMap, quizElapsed } = useQuiz()
 
 const hardQuestions = computed(() => {
   return quiz.value
@@ -85,6 +86,7 @@ const message = computed(() => {
 .score-pct { font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1; }
 .score-label { font-size: .75rem; font-weight: 600; color: var(--accent); margin-top: 2px; }
 .score-count { font-size: 1rem; color: var(--text-2); margin-bottom: 8px; }
+.score-time { font-size: .875rem; color: var(--text-3); margin-bottom: 4px; }
 .score-emoji { font-size: 1.375rem; color: var(--text); margin-bottom: 20px; }
 .actions { display: flex; flex-direction: column; gap: 10px; }
 

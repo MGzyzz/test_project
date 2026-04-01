@@ -86,7 +86,10 @@ function onFileChange(e) {
 
 function onStart() {
   if (!total.value) return
-  emit('start', { from: from.value, to: to.value })
+  const testName = (fileName.value && fileName.value !== 'or paste text below')
+    ? fileName.value
+    : 'Custom Test'
+  emit('start', { from: from.value, to: to.value, testName })
 }
 
 function syncFromSidebar(name, content, total_) {

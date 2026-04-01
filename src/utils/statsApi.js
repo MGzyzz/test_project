@@ -50,6 +50,41 @@ export async function fetchStats() {
   }
 }
 
+export async function saveTestResult(testName, score, total, timeSeconds) {
+  try {
+    await fetch(`${BASE}/api/test-results`, {
+      method: 'POST',
+      headers: authHeaders(),
+      body: JSON.stringify({ testName, score, total, timeSeconds }),
+    })
+  } catch {
+    // non-critical
+  }
+}
+
+export async function fetchAvailableTests() {
+  try {
+    const res = await fetch(`${BASE}/api/test-results/tests`, { headers: authHeaders() })
+    if (!res.ok) return []
+    return await res.json()
+  } catch {
+    return []
+  }
+}
+
+export async function fetchLeaderboard(testName) {
+  try {
+    const res = await fetch(
+      `${BASE}/api/test-results/leaderboard?testName=${encodeURIComponent(testName)}`,
+      { headers: authHeaders() }
+    )
+    if (!res.ok) return []
+    return await res.json()
+  } catch {
+    return []
+  }
+}
+
 // Returns { blocked: true, error: '...' } if blocked, otherwise null
 export async function checkMe() {
   try {
