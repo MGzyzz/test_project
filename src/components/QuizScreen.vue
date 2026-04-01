@@ -9,12 +9,18 @@
 
     <div class="card">
       <div v-if="currentStats && currentStats.wrong_count >= 3 && currentStats.wrong_count > currentStats.correct_count" class="hard-badge">
-        <span>⚠ Hard question — {{ currentStats.wrong_count }} mistakes</span>
+        <span class="hard-badge-label">
+          <span class="hard-icon" v-html="iconWarning" />
+          Hard question — {{ currentStats.wrong_count }} mistakes
+        </span>
         <button
           v-if="!answered && hintsLeft > 0"
           class="hint-btn"
           @click="useHint"
-        >💡 Hint ({{ hintsLeft }})</button>
+        >
+          <span v-html="iconLightbulb" />
+          Hint ({{ hintsLeft }})
+        </button>
         <span v-else-if="hintsLeft === 0 && !hintText" class="hint-used">No hints left</span>
       </div>
       <p v-if="hintText" class="hint-text">Starts with: <strong>{{ hintText }}</strong></p>
@@ -56,6 +62,7 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
+import { iconWarning, iconLightbulb } from '../utils/icons.js'
 
 const {
   currentQuestion,
@@ -200,8 +207,21 @@ function useHint() {
   padding: 6px 10px;
   margin-bottom: 10px;
 }
+.hard-badge-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.hard-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 .hint-btn {
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   background: var(--yellow-bg);
   border: 1px solid var(--yellow);
   color: var(--yellow-text);

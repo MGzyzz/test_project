@@ -42,7 +42,11 @@
 
     <div class="action-row">
       <button class="btn btn-primary" @click="onStart">Start Quiz</button>
-      <button v-if="total" class="btn btn-secondary" @click="emit('stats')">View Stats</button>
+      <button v-if="total" class="btn btn-secondary" @click="emit('stats')">Stats</button>
+      <button class="btn btn-secondary btn-lb" @click="emit('leaderboard')">
+        <span v-html="iconTrophy" />
+        Leaderboard
+      </button>
     </div>
   </div>
 </template>
@@ -50,8 +54,9 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
+import { iconTrophy } from '../utils/icons.js'
 
-const emit = defineEmits(['start', 'stats'])
+const emit = defineEmits(['start', 'stats', 'leaderboard'])
 const { allQuestions, loadText } = useQuiz()
 
 const text = ref('')
@@ -183,4 +188,13 @@ input[type="file"] { display: none; }
   gap: 10px;
 }
 .action-row .btn { flex: 1; }
+.btn-lb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--yellow-text);
+  border-color: var(--yellow-border);
+}
+.btn-lb:hover { background: var(--yellow-bg); border-color: var(--yellow); }
 </style>

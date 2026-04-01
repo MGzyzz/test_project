@@ -9,7 +9,7 @@
     <!-- Blocked screen -->
     <div v-if="blockMessage" class="blocked-screen">
       <div class="blocked-card">
-        <div class="blocked-icon">🚫</div>
+        <div class="blocked-icon" v-html="iconBan" />
         <h2>Account Blocked</h2>
         <p class="blocked-msg">{{ blockMessage }}</p>
         <button class="btn btn-primary" @click="blockMessage = ''">OK</button>
@@ -18,9 +18,7 @@
 
     <!-- Auth screen -->
     <template v-else-if="!authed">
-      <button class="theme-btn-float" :title="isDark ? 'Switch to light' : 'Switch to dark'" @click="toggleTheme">
-        {{ isDark ? '☀️' : '🌙' }}
-      </button>
+      <ThemeToggle :is-dark="isDark" class="theme-btn-float" @toggle="toggleTheme" />
       <AuthScreen @authed="onAuthed" />
     </template>
 
@@ -37,9 +35,7 @@
         Admin
       </button>
       <span class="user-info">{{ currentUser }}</span>
-      <button class="mode-btn theme-btn" :title="isDark ? 'Switch to light' : 'Switch to dark'" @click="toggleTheme">
-        {{ isDark ? '☀️' : '🌙' }}
-      </button>
+      <ThemeToggle :is-dark="isDark" @toggle="toggleTheme" />
       <button class="mode-btn logout-btn" @click="logout">Logout</button>
     </div>
 
@@ -49,12 +45,13 @@
       <div v-if="screen === 'setup'" class="setup-layout">
         <FileSidebar @selected="onSidebarSelected" />
         <div class="setup-main">
-          <SetupScreen ref="setupRef" @start="handleStart" @stats="screen = 'stats'" />
+          <SetupScreen ref="setupRef" @start="handleStart" @stats="screen = 'stats'" @leaderboard="screen = 'leaderboard'" />
         </div>
       </div>
 
       <QuizScreen v-else-if="screen === 'quiz'" />
       <StatsScreen v-else-if="screen === 'stats'" @back="screen = 'setup'" />
+      <LeaderboardScreen v-else-if="screen === 'leaderboard'" @back="screen = 'setup'" />
       <ResultsScreen v-else @repeat="handleRepeat" @retry-wrong="handleRetryWrong" @back="screen = 'setup'" />
     </template>
 
@@ -72,6 +69,7 @@
 import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { isLoggedIn, getUser, clearAuth } from './utils/auth.js'
 import { checkMe, saveTestResult } from './utils/statsApi.js'
+import { iconBan } from './utils/icons.js'
 import SetupScreen from './components/SetupScreen.vue'
 import QuizScreen from './components/QuizScreen.vue'
 import ResultsScreen from './components/ResultsScreen.vue'
@@ -80,6 +78,8 @@ import FileSidebar from './components/FileSidebar.vue'
 import StatsScreen from './components/StatsScreen.vue'
 import AuthScreen from './components/AuthScreen.vue'
 import AdminScreen from './components/AdminScreen.vue'
+import ThemeToggle from './components/ThemeToggle.vue'
+import LeaderboardScreen from './components/LeaderboardScreen.vue'
 import { useQuiz } from './composables/useQuiz.js'
 
 const mode = ref('quiz')    // 'quiz' | 'editor' | 'admin'
@@ -278,24 +278,10 @@ onUnmounted(() => {
 }
 .logout-btn:hover { color: var(--red); background: var(--red-bg); }
 
-.theme-btn {
-  flex: none;
-  padding: 6px 10px;
-  font-size: 1rem;
-  line-height: 1;
-}
-
 .theme-btn-float {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 7px 10px;
-  font-size: 1rem;
-  line-height: 1;
-  cursor: pointer;
   z-index: 10;
 }
 
@@ -314,7 +300,12 @@ onUnmounted(() => {
   text-align: center;
   box-shadow: 0 8px 32px rgba(0,0,0,.2);
 }
-.blocked-icon { font-size: 2.5rem; margin-bottom: 12px; }
+.blocked-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: var(--red);
+}
 .blocked-card h2 { margin-bottom: 10px; color: var(--red); }
 .blocked-msg {
   color: var(--text-2); font-size: .9375rem;

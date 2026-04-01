@@ -216,18 +216,19 @@ app.get('/api/test-results/leaderboard', auth, async (req, res) => {
   if (!testName) return res.status(400).json({ error: 'testName required' })
 
   const { rows } = await pool.query(
-    `SELECT username, score, total, time_seconds, completed_at,
-       ROUND((score::numeric / total) * 100) AS pct
+    `SELECT username, score, total, time_seconds, completed_at
      FROM (
        SELECT DISTINCT ON (r.user_id)
          u.username, r.score, r.total, r.time_seconds, r.completed_at
        FROM test_results r
        JOIN users u ON u.id = r.user_id
-       WHERE r.test_name = $1 AND u.is_blocked = FALSE
-       ORDER BY r.user_id, r.score DESC, r.time_seconds ASC
+       WHERE r.test_name = $1
+         AND u.is_blocked = FALSE
+         AND r.score = r.total
+       ORDER BY r.user_id, r.time_seconds ASC
      ) best
-     ORDER BY score DESC, time_seconds ASC
-     LIMIT 10`,
+     ORDER BY time_seconds ASC
+     LIMIT 20`,
     [testName]
   )
   res.json(rows)

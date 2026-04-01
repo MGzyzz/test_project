@@ -31,9 +31,12 @@
 
       <!-- Leaderboard -->
       <div class="card leaderboard-card">
-        <p class="section-title">Leaderboard</p>
+        <div class="lb-header-row">
+          <p class="section-title">Leaderboard</p>
+          <span class="lb-badge-100">100% only</span>
+        </div>
         <div v-if="loadingLeaderboard" class="empty">Loading...</div>
-        <div v-else-if="!leaderboard.length" class="empty">No results yet for this test.</div>
+        <div v-else-if="!leaderboard.length" class="empty">No perfect scores yet on this test.</div>
         <div v-else class="leaderboard">
           <div class="lb-header">
             <span></span>
@@ -47,9 +50,14 @@
             class="lb-row"
             :class="{ 'lb-me': entry.username === currentUser, 'lb-top': i === 0 }"
           >
-            <span class="lb-rank">{{ rankIcon(i) }}</span>
-            <span class="lb-username">{{ entry.username }}</span>
-            <span class="lb-score" :class="scoreClass(entry.pct)">{{ entry.pct }}%</span>
+            <span class="lb-rank">
+              <span class="rank-badge" :class="`rank-${Math.min(i + 1, 4)}`">{{ i + 1 }}</span>
+            </span>
+            <span class="lb-username">
+              {{ entry.username }}
+              <span v-if="entry.username === currentUser" class="you-tag">you</span>
+            </span>
+            <span class="lb-score good">100%</span>
             <span class="lb-time">{{ formatTime(+entry.time_seconds) }}</span>
           </div>
         </div>
@@ -159,18 +167,6 @@ function onBack() {
   }
 }
 
-function rankIcon(i) {
-  if (i === 0) return '🥇'
-  if (i === 1) return '🥈'
-  if (i === 2) return '🥉'
-  return `#${i + 1}`
-}
-
-function scoreClass(pct) {
-  if (pct >= 75) return 'good'
-  if (pct >= 50) return 'medium'
-  return 'bad'
-}
 
 // ── Question stats ────────────────────────────────────────────────────────────
 const totalQuestions = computed(() => allQuestions.value.length)
@@ -301,6 +297,23 @@ const barOptions = {
 
 /* Leaderboard */
 .leaderboard-card { padding: 16px 20px; margin-bottom: 12px; }
+.lb-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.lb-badge-100 {
+  font-size: .68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  background: var(--green-bg);
+  color: var(--green);
+  border: 1px solid var(--green-border);
+  border-radius: 99px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
 
 .lb-header {
   display: grid;
@@ -327,6 +340,39 @@ const barOptions = {
 }
 .lb-row.lb-me { background: var(--accent-bg); margin: 0 -20px; padding: 8px 20px; }
 .lb-row.lb-top .lb-username { font-weight: 700; }
+
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  font-size: .72rem;
+  font-weight: 800;
+}
+.rank-1 { background: #fef3c7; color: #b45309; border: 1px solid #fcd34d; }
+.rank-2 { background: #f1f5f9; color: #64748b; border: 1px solid #cbd5e1; }
+.rank-3 { background: #fef3c7; color: #92400e; border: 1px solid #fbbf24; filter: saturate(.6); }
+.rank-4 { background: var(--surface-3); color: var(--text-3); border: 1px solid var(--border); }
+[data-theme="dark"] .rank-1 { background: #3d2e08; color: #fbbf24; border-color: #92400e; }
+[data-theme="dark"] .rank-2 { background: #1e2535; color: #94a3b8; border-color: #334155; }
+[data-theme="dark"] .rank-3 { background: #2d1f08; color: #d97706; border-color: #78350f; }
+
+.you-tag {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  padding: 1px 5px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
 
 .lb-rank { font-size: .9rem; text-align: center; }
 .lb-username { font-weight: 500; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

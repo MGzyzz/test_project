@@ -11,7 +11,7 @@
         :class="{ active: active === f.file }"
         @click="select(f)"
       >
-        <span class="file-icon">📄</span>
+        <span class="file-icon" v-html="iconFile" />
         <span class="file-label">{{ f.name }}</span>
       </li>
     </ul>
@@ -21,6 +21,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
+import { iconFile } from '../utils/icons.js'
 
 const emit = defineEmits(['selected'])
 const { loadText, allQuestions } = useQuiz()
@@ -109,9 +110,12 @@ async function select(f) {
 }
 
 .file-icon {
-  font-size: .875rem;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
+  color: var(--text-3);
 }
+.file-item.active .file-icon { color: var(--accent); }
 
 .file-label {
   line-height: 1.3;
