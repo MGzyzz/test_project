@@ -92,8 +92,8 @@ const message = computed(() => {
 
 .hard-list {
   text-align: left;
-  background: #fef3c7;
-  border: 1px solid #fcd34d;
+  background: var(--yellow-bg);
+  border: 1px solid var(--yellow-border);
   border-radius: var(--radius);
   padding: 12px 14px;
   margin-bottom: 16px;
@@ -101,7 +101,7 @@ const message = computed(() => {
 .hard-list-title {
   font-size: .8rem;
   font-weight: 700;
-  color: #b45309;
+  color: var(--yellow-text);
   margin-bottom: 8px;
 }
 .hard-item {
@@ -109,18 +109,18 @@ const message = computed(() => {
   align-items: flex-start;
   gap: 10px;
   padding: 4px 0;
-  border-top: 1px solid #fde68a;
+  border-top: 1px solid var(--yellow-border);
 }
 .hard-count {
   flex-shrink: 0;
   font-size: .75rem;
   font-weight: 700;
-  color: #dc2626;
+  color: var(--red);
   min-width: 32px;
 }
 .hard-text {
   font-size: .85rem;
-  color: #78350f;
+  color: var(--text);
   line-height: 1.4;
 }
 </style>

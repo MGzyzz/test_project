@@ -23,9 +23,50 @@
   --yellow: #d97706;
   --yellow-bg: #fef3c7;
   --yellow-border: #fde68a;
+  --yellow-text: #92400e;
   --radius: 12px;
   --radius-sm: 8px;
   --shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.06);
+}
+
+[data-theme="dark"] {
+  --bg: #0d0f18;
+  --surface: #161922;
+  --surface-2: #1c1f2e;
+  --surface-3: #222537;
+  --border: #2c2f45;
+  --border-2: #363a52;
+  --text: #e2e4f0;
+  --text-2: #8b8fa8;
+  --text-3: #555972;
+  --accent: #7c6ef5;
+  --accent-bright: #9d94f7;
+  --accent-bg: #1a1935;
+  --accent-border: #3d3780;
+  --green: #4ade80;
+  --green-bg: #052012;
+  --green-border: #166534;
+  --red: #f87171;
+  --red-bg: #280f0f;
+  --red-border: #991b1b;
+  --yellow: #fbbf24;
+  --yellow-bg: #1e1508;
+  --yellow-border: #92400e;
+  --yellow-text: #fbbf24;
+  --shadow: 0 1px 3px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.4);
+}
+
+html {
+  transition:
+    background-color .25s ease,
+    color .25s ease;
+}
+
+body, .card, .btn, input, textarea, select {
+  transition:
+    background-color .25s ease,
+    border-color .25s ease,
+    color .25s ease;
 }
 
 body {

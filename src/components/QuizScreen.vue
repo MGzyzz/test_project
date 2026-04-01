@@ -170,9 +170,9 @@ function useHint() {
   color: var(--text-2);
   transition: background .15s, color .15s;
 }
-.option.selected .badge { background: var(--accent); color: #0f0e0c; }
-.option.correct .badge { background: var(--green); color: #0f0e0c; }
-.option.wrong .badge { background: var(--red); color: #0f0e0c; }
+.option.selected .badge { background: var(--accent); color: #fff; }
+.option.correct .badge { background: var(--green); color: #fff; }
+.option.wrong .badge { background: var(--red); color: #fff; }
 
 .option-text { font-size: .9375rem; line-height: 1.45; padding-top: 2px; }
 
@@ -193,32 +193,32 @@ function useHint() {
   gap: 10px;
   font-size: .8rem;
   font-weight: 700;
-  color: #b45309;
-  background: #fef3c7;
-  border: 1px solid #fcd34d;
+  color: var(--yellow-text);
+  background: var(--yellow-bg);
+  border: 1px solid var(--yellow-border);
   border-radius: var(--radius-sm);
   padding: 6px 10px;
   margin-bottom: 10px;
 }
 .hint-btn {
   flex-shrink: 0;
-  background: #fde68a;
-  border: 1px solid #f59e0b;
-  color: #92400e;
+  background: var(--yellow-bg);
+  border: 1px solid var(--yellow);
+  color: var(--yellow-text);
   font-size: .75rem;
   font-weight: 700;
   padding: 3px 10px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background .15s;
+  transition: background .15s, border-color .15s;
 }
-.hint-btn:hover { background: #fcd34d; }
-.hint-used { font-size: .75rem; color: #b45309; opacity: .6; }
+.hint-btn:hover { border-color: var(--yellow-text); }
+.hint-used { font-size: .75rem; color: var(--yellow-text); opacity: .6; }
 .hint-text {
   font-size: .85rem;
-  color: #b45309;
-  background: #fef9ec;
-  border: 1px dashed #fcd34d;
+  color: var(--yellow-text);
+  background: var(--yellow-bg);
+  border: 1px dashed var(--yellow-border);
   border-radius: var(--radius-sm);
   padding: 5px 10px;
   margin-bottom: 10px;

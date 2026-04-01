@@ -332,7 +332,7 @@ const barOptions = {
 .lb-username { font-weight: 500; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .lb-score { font-weight: 700; text-align: right; }
 .lb-score.good   { color: var(--green); }
-.lb-score.medium { color: #d97706; }
+.lb-score.medium { color: var(--yellow); }
 .lb-score.bad    { color: var(--red); }
 .lb-time { color: var(--text-2); font-size: .8125rem; text-align: right; }
 
@@ -349,7 +349,7 @@ const barOptions = {
 .summary-item { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .summary-value { font-size: 1.75rem; font-weight: 800; color: var(--accent); }
 .summary-value.good   { color: var(--green); }
-.summary-value.medium { color: #d97706; }
+.summary-value.medium { color: var(--yellow); }
 .summary-value.bad    { color: var(--red); }
 .summary-label { font-size: .7rem; font-weight: 600; color: var(--text-2); text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
 .summary-divider { width: 1px; height: 40px; background: var(--border); flex-shrink: 0; }

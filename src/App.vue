@@ -17,7 +17,12 @@
     </div>
 
     <!-- Auth screen -->
-    <AuthScreen v-else-if="!authed" @authed="onAuthed" />
+    <template v-else-if="!authed">
+      <button class="theme-btn-float" :title="isDark ? 'Switch to light' : 'Switch to dark'" @click="toggleTheme">
+        {{ isDark ? '☀️' : '🌙' }}
+      </button>
+      <AuthScreen @authed="onAuthed" />
+    </template>
 
     <template v-else-if="authed">
     <!-- Mode nav (hidden during active quiz) -->
@@ -32,6 +37,9 @@
         Admin
       </button>
       <span class="user-info">{{ currentUser }}</span>
+      <button class="mode-btn theme-btn" :title="isDark ? 'Switch to light' : 'Switch to dark'" @click="toggleTheme">
+        {{ isDark ? '☀️' : '🌙' }}
+      </button>
       <button class="mode-btn logout-btn" @click="logout">Logout</button>
     </div>
 
@@ -80,6 +88,16 @@ const authed = ref(isLoggedIn())
 const currentUser = ref(getUser()?.username || '')
 const blockMessage = ref('')
 let pollInterval = null
+
+// ── Theme ────────────────────────────────────────────────────────────────────
+const isDark = ref(document.documentElement.getAttribute('data-theme') === 'dark')
+
+function toggleTheme() {
+  isDark.value = !isDark.value
+  const theme = isDark.value ? 'dark' : 'light'
+  document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : '')
+  try { localStorage.setItem('theme', theme) } catch {}
+}
 
 function onAuthed(username) {
   authed.value = true
@@ -187,6 +205,8 @@ onUnmounted(() => {
 </script>
 
 <style>
+.container { position: relative; }
+
 .container--with-sidebar {
   max-width: 860px;
 }
@@ -257,6 +277,27 @@ onUnmounted(() => {
   line-height: 1;
 }
 .logout-btn:hover { color: var(--red); background: var(--red-bg); }
+
+.theme-btn {
+  flex: none;
+  padding: 6px 10px;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.theme-btn-float {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+}
 
 .blocked-screen {
   position: fixed; inset: 0;
