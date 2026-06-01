@@ -13,6 +13,7 @@
       >
         <span class="file-icon" v-html="iconFile" />
         <span class="file-label">{{ f.name }}</span>
+        <button class="edit-btn" :title="'Edit ' + f.name" @click="editFile(f, $event)" v-html="iconPencil" />
       </li>
     </ul>
   </aside>
@@ -21,9 +22,10 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useQuiz } from '../composables/useQuiz.js'
-import { iconFile } from '../utils/icons.js'
+import { iconFile, iconPencil } from '../utils/icons.js'
+import { fetchFileContent } from '../utils/statsApi.js'
 
-const emit = defineEmits(['selected'])
+const emit = defineEmits(['selected', 'edit-file'])
 const { loadText, allQuestions } = useQuiz()
 
 const files = ref([])
@@ -40,14 +42,17 @@ onMounted(async () => {
 
 async function select(f) {
   if (active.value === f.file) return
-  try {
-    const res = await fetch(f.file)
-    if (!res.ok) return
-    const text = await res.text()
-    loadText(text)
-    active.value = f.file
-    emit('selected', { name: f.name, text, total: allQuestions.value.length })
-  } catch {}
+  const filename = f.file.replace(/^\//, '')
+  const content = await fetchFileContent(filename)
+  if (content === null) return
+  loadText(content)
+  active.value = f.file
+  emit('selected', { name: f.name, text: content, total: allQuestions.value.length })
+}
+
+function editFile(f, event) {
+  event.stopPropagation()
+  emit('edit-file', { name: f.name, filename: f.file.replace(/^\//, '') })
 }
 </script>
 
@@ -116,6 +121,23 @@ async function select(f) {
   color: var(--text-3);
 }
 .file-item.active .file-icon { color: var(--accent); }
+
+.edit-btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 3px 5px;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-3);
+  opacity: 0;
+  transition: opacity .15s, background .15s, color .15s;
+}
+.file-item:hover .edit-btn { opacity: 1; }
+.edit-btn:hover { background: var(--surface-2); color: var(--accent); }
 
 .file-label {
   line-height: 1.3;
