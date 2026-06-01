@@ -43,7 +43,7 @@
     <template v-if="mode === 'quiz'">
       <!-- Setup with sidebar -->
       <div v-if="screen === 'setup'" class="setup-layout">
-        <FileSidebar @selected="onSidebarSelected" />
+        <FileSidebar @selected="onSidebarSelected" @edit-file="onEditFile" />
         <div class="setup-main">
           <SetupScreen ref="setupRef" @start="handleStart" @stats="screen = 'stats'" @leaderboard="screen = 'leaderboard'" />
         </div>
@@ -56,7 +56,12 @@
     </template>
 
     <!-- Editor mode -->
-    <EditorScreen v-else-if="mode === 'editor'" @go-quiz="onGoQuiz" />
+    <EditorScreen
+      v-else-if="mode === 'editor'"
+      :filename="editFileData?.filename || ''"
+      :initial-content="editFileData?.content || ''"
+      @go-quiz="onGoQuiz"
+    />
 
     <!-- Admin mode -->
     <AdminScreen v-else-if="mode === 'admin'" />
@@ -69,6 +74,7 @@
 import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { isLoggedIn, getUser, clearAuth } from './utils/auth.js'
 import { checkMe, saveTestResult } from './utils/statsApi.js'
+import { fetchFileContent } from './utils/statsApi.js'
 import { iconBan } from './utils/icons.js'
 import SetupScreen from './components/SetupScreen.vue'
 import QuizScreen from './components/QuizScreen.vue'
@@ -140,6 +146,10 @@ const {
   score, currentTestName, quizElapsed,
 } = useQuiz()
 
+watch(mode, (newMode) => {
+  if (newMode !== 'editor') editFileData.value = null
+})
+
 watch(isDone, done => {
   if (done) {
     screen.value = 'results'
@@ -175,7 +185,15 @@ function onSidebarSelected({ name, text, total }) {
   if (setupRef.value) setupRef.value.syncFromSidebar(name, text, total)
 }
 
+async function onEditFile({ name, filename }) {
+  const content = await fetchFileContent(filename)
+  if (content === null) return
+  editFileData.value = { name, filename, content }
+  mode.value = 'editor'
+}
+
 const setupRef = ref(null)
+const editFileData = ref(null)
 
 function onKeydown(e) {
   if (screen.value !== 'quiz') return
