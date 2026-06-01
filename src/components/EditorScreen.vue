@@ -16,6 +16,17 @@
       </div>
 
       <div class="topbar-actions" v-if="blocks.length">
+        <button
+          v-if="props.filename"
+          class="btn btn-save"
+          :disabled="saveStatus === 'saving'"
+          @click="saveToServer"
+        >
+          <span v-if="saveStatus === 'saving'">Saving…</span>
+          <span v-else-if="saveStatus === 'saved'">Saved ✓</span>
+          <span v-else-if="saveStatus === 'error'">Error ✗</span>
+          <span v-else>Save to server</span>
+        </button>
         <button v-if="issueCount" class="btn btn-warn" @click="autoFixAll">Auto-fix ({{ issueCount }})</button>
         <button class="btn btn-secondary" @click="exportText">Export</button>
         <button class="btn btn-primary" @click="useInQuiz">Use in quiz →</button>
@@ -146,11 +157,16 @@
 </template>
 
 <script setup>
-import { ref, computed, nextTick } from 'vue'
+import { ref, computed, nextTick, watch, onUnmounted } from 'vue'
 import { analyzeText, autoFixText, replaceBlock, mergeBlocksAt } from '../utils/linter.js'
 import { useQuiz } from '../composables/useQuiz.js'
+import { saveFileContent } from '../utils/statsApi.js'
 
 const emit = defineEmits(['go-quiz'])
+const props = defineProps({
+  filename: { type: String, default: '' },
+  initialContent: { type: String, default: '' },
+})
 const { loadText } = useQuiz()
 
 // ── State ─────────────────────────────────────────────────────────────────────
@@ -160,6 +176,20 @@ const search = ref('')
 const filter = ref('all')
 const selectedBlockIndex = ref(-1)
 const editorRef = ref(null)
+const saveStatus = ref('') // '' | 'saving' | 'saved' | 'error'
+let saveTimer = null
+
+watch(() => props.initialContent, (val) => {
+  if (val) {
+    rawText.value = val
+    fileName.value = props.filename || 'from sidebar'
+    selectedBlockIndex.value = -1
+  }
+}, { immediate: true })
+
+onUnmounted(() => {
+  if (saveTimer) clearTimeout(saveTimer)
+})
 
 // ── Computed ──────────────────────────────────────────────────────────────────
 const blocks = computed(() => analyzeText(rawText.value))
@@ -307,6 +337,15 @@ function useInQuiz() {
   loadText(rawText.value)
   emit('go-quiz')
 }
+
+async function saveToServer() {
+  if (!props.filename || saveStatus.value === 'saving') return
+  saveStatus.value = 'saving'
+  clearTimeout(saveTimer)
+  const ok = await saveFileContent(props.filename, rawText.value)
+  saveStatus.value = ok ? 'saved' : 'error'
+  saveTimer = setTimeout(() => { saveStatus.value = '' }, 3000)
+}
 </script>
 
 <style scoped>
@@ -373,6 +412,9 @@ input[type='file'] { display: none; }
 
 .btn-warn { background: var(--yellow); color: #fff; border: none; }
 .btn-warn:hover { opacity: .85; }
+.btn-save { background: var(--accent); color: #fff; border: none; }
+.btn-save:hover:not(:disabled) { opacity: .85; }
+.btn-save:disabled { opacity: .6; cursor: not-allowed; }
 
 /* ── Two-panel layout ─────────────────────────────────────────────────────── */
 .editor-layout {
