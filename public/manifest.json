@@ -1,5 +1,8 @@
 [
   { "name": "IT Project Management", "file": "/test.txt" },
   { "name": "Legal Aspects ICT 2025", "file": "/legal_aspects_ICT_2025_mytest.txt" },
-  { "name": "Client-Server", "file": "/client-server.txt" }
+  { "name": "Client-Server", "file": "/client-server.txt" },
+  { "name": "Invasive Diseases (200)", "file": "/invasive_diseases_200.txt" },
+  { "name": "Russian Epizootology (200)", "file": "/russian_epizootology_200.txt" },
+  { "name": "Virusology (84)", "file": "/virusology_84.txt" }
 ]
