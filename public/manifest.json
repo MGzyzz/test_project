@@ -1,5 +1,6 @@
 [
   { "name": "Invasive Diseases (200)", "file": "/invasive_diseases_200.txt" },
   { "name": "Russian Epizootology (200)", "file": "/russian_epizootology_200.txt" },
-  { "name": "Virusology (84)", "file": "/virusology_84.txt" }
+  { "name": "Virusology (84)", "file": "/virusology_84.txt" },
+  { "name": "vetsan (200)", "file": "/vetsan_exam_200.txt" }
 ]

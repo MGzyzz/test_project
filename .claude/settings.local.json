@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(find /Users/madi_gaziz/Desktop/alter_work/fast_app_test -maxdepth 3 -not -path */node_modules* -not -path */.git/* -not -path */dist/*)"
+      "Bash(find /Users/madi_gaziz/Desktop/alter_work/fast_app_test -maxdepth 3 -not -path */node_modules* -not -path */.git/* -not -path */dist/*)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
