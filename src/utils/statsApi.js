@@ -95,3 +95,52 @@ export async function checkMe() {
     return null
   }
 }
+
+export async function fetchFileContent(filename) {
+  try {
+    const res = await fetch(`${BASE}/api/files/${encodeURIComponent(filename)}`)
+    if (!res.ok) return null
+    const { content } = await res.json()
+    return content
+  } catch {
+    return null
+  }
+}
+
+export async function saveFileContent(filename, content) {
+  try {
+    const res = await fetch(`${BASE}/api/files/${encodeURIComponent(filename)}`, {
+      method: 'PUT',
+      headers: authHeaders(),
+      body: JSON.stringify({ content }),
+    })
+    return res.ok
+  } catch {
+    return false
+  }
+}
+
+export async function fetchFileVersions(filename) {
+  try {
+    const res = await fetch(
+      `${BASE}/api/admin/files/${encodeURIComponent(filename)}/versions`,
+      { headers: authHeaders() }
+    )
+    if (!res.ok) return []
+    return await res.json()
+  } catch {
+    return []
+  }
+}
+
+export async function restoreFileVersion(filename, versionId) {
+  try {
+    const res = await fetch(
+      `${BASE}/api/admin/files/${encodeURIComponent(filename)}/restore/${versionId}`,
+      { method: 'POST', headers: authHeaders() }
+    )
+    return res.ok
+  } catch {
+    return false
+  }
+}
