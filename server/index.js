@@ -215,6 +215,77 @@ app.get('/api/files/:filename', async (req, res) => {
   }
 })
 
+app.put('/api/files/:filename', auth, async (req, res) => {
+  const { filename } = req.params
+  const { content } = req.body
+  if (!/^[\w\-.]+\.txt$/.test(filename)) {
+    return res.status(400).json({ error: 'Invalid filename' })
+  }
+  if (typeof content !== 'string' || !content.trim()) {
+    return res.status(400).json({ error: 'content required' })
+  }
+
+  // Log the new version to history
+  await pool.query(
+    'INSERT INTO file_versions (filename, content, saved_by) VALUES ($1, $2, $3)',
+    [filename, content, req.user.username]
+  )
+
+  // Upsert current content
+  await pool.query(
+    `INSERT INTO file_contents (filename, content, updated_at)
+     VALUES ($1, $2, NOW())
+     ON CONFLICT (filename) DO UPDATE SET content = $2, updated_at = NOW()`,
+    [filename, content]
+  )
+
+  res.json({ ok: true })
+})
+
+app.get('/api/admin/files/:filename/versions', auth, adminOnly, async (req, res) => {
+  const { filename } = req.params
+  if (!/^[\w\-.]+\.txt$/.test(filename)) {
+    return res.status(400).json({ error: 'Invalid filename' })
+  }
+
+  const { rows } = await pool.query(
+    `SELECT id, saved_by, saved_at, note, LEFT(content, 120) AS preview
+     FROM file_versions
+     WHERE filename = $1
+     ORDER BY saved_at DESC`,
+    [filename]
+  )
+  res.json(rows)
+})
+
+app.post('/api/admin/files/:filename/restore/:versionId', auth, adminOnly, async (req, res) => {
+  const { filename, versionId } = req.params
+  if (!/^[\w\-.]+\.txt$/.test(filename)) {
+    return res.status(400).json({ error: 'Invalid filename' })
+  }
+
+  const { rows } = await pool.query(
+    'SELECT content FROM file_versions WHERE id = $1 AND filename = $2',
+    [parseInt(versionId), filename]
+  )
+  if (!rows.length) return res.status(404).json({ error: 'Version not found' })
+
+  const content = rows[0].content
+
+  await pool.query(
+    'INSERT INTO file_versions (filename, content, saved_by, note) VALUES ($1, $2, $3, $4)',
+    [filename, content, req.user.username, `restored from version ${versionId}`]
+  )
+  await pool.query(
+    `INSERT INTO file_contents (filename, content, updated_at)
+     VALUES ($1, $2, NOW())
+     ON CONFLICT (filename) DO UPDATE SET content = $2, updated_at = NOW()`,
+    [filename, content]
+  )
+
+  res.json({ ok: true })
+})
+
 // ── Stats routes (protected) ──────────────────────────────────────────────────
 app.post('/api/stats', auth, async (req, res) => {
   const { questionText, correct } = req.body
