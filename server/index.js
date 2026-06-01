@@ -5,6 +5,12 @@ import pg from 'pg'
 import crypto from 'crypto'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+import { readFile } from 'fs/promises'
+import { dirname, join } from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const PUBLIC_DIR = join(__dirname, '..', 'public')
 
 const app = express()
 app.use(cors())
@@ -63,6 +69,25 @@ await pool.query(`
     total        INTEGER NOT NULL,
     time_seconds INTEGER NOT NULL,
     completed_at TIMESTAMPTZ DEFAULT NOW()
+  )
+`)
+
+await pool.query(`
+  CREATE TABLE IF NOT EXISTS file_contents (
+    filename   TEXT PRIMARY KEY,
+    content    TEXT NOT NULL,
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+  )
+`)
+
+await pool.query(`
+  CREATE TABLE IF NOT EXISTS file_versions (
+    id        SERIAL PRIMARY KEY,
+    filename  TEXT NOT NULL,
+    content   TEXT NOT NULL,
+    saved_by  TEXT NOT NULL,
+    saved_at  TIMESTAMPTZ DEFAULT NOW(),
+    note      TEXT
   )
 `)
 
