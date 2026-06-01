@@ -188,6 +188,33 @@ app.post('/api/admin/users/:username/unblock', auth, adminOnly, async (req, res)
   res.json({ ok: true })
 })
 
+// ── File content routes ───────────────────────────────────────────────────────
+app.get('/api/files/:filename', async (req, res) => {
+  const { filename } = req.params
+  if (!/^[\w\-.]+\.txt$/.test(filename)) {
+    return res.status(400).json({ error: 'Invalid filename' })
+  }
+
+  try {
+    const { rows } = await pool.query(
+      'SELECT content FROM file_contents WHERE filename = $1',
+      [filename]
+    )
+    if (rows.length) return res.json({ content: rows[0].content })
+
+    // Bootstrap: read from repo's public/ directory
+    const content = await readFile(join(PUBLIC_DIR, filename), 'utf-8')
+    await pool.query(
+      'INSERT INTO file_contents (filename, content) VALUES ($1, $2) ON CONFLICT DO NOTHING',
+      [filename, content]
+    )
+    res.json({ content })
+  } catch (e) {
+    if (e.code === 'ENOENT') return res.status(404).json({ error: 'File not found' })
+    throw e
+  }
+})
+
 // ── Stats routes (protected) ──────────────────────────────────────────────────
 app.post('/api/stats', auth, async (req, res) => {
   const { questionText, correct } = req.body
