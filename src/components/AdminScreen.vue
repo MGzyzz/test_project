@@ -2,64 +2,127 @@
   <div>
     <h1>Admin Panel</h1>
 
-    <div class="card summary-row">
-      <div class="stat">
-        <span class="stat-value">{{ users.length }}</span>
-        <span class="stat-label">Total users</span>
-      </div>
-      <div class="stat">
-        <span class="stat-value">{{ activeToday }}</span>
-        <span class="stat-label">Active today</span>
-      </div>
-      <div class="stat">
-        <span class="stat-value">{{ activeWeek }}</span>
-        <span class="stat-label">Active this week</span>
-      </div>
+    <div class="admin-tabs">
+      <button class="admin-tab" :class="{ active: activeTab === 'users' }" @click="activeTab = 'users'">Users</button>
+      <button class="admin-tab" :class="{ active: activeTab === 'files' }" @click="activeTab = 'files'">Files</button>
     </div>
 
-    <div class="card table-card">
-      <p class="section-title">Users</p>
-      <div v-if="loading" class="empty">Loading...</div>
-      <div v-else-if="!users.length" class="empty">No users yet.</div>
-      <table v-else>
-        <thead>
-          <tr>
-            <th>Username</th>
-            <th>Registered</th>
-            <th>Last login</th>
-            <th>Questions</th>
-            <th>Correct</th>
-            <th>Wrong</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="u in users" :key="u.username" :class="{ 'row-blocked': u.is_blocked }">
-            <td class="td-user">
-              {{ u.username }}
-              <span v-if="u.is_blocked" class="blocked-badge">blocked</span>
-              <span v-if="u.is_blocked && u.block_reason" class="block-reason">{{ u.block_reason }}</span>
-            </td>
-            <td class="td-date">{{ fmt(u.created_at) }}</td>
-            <td class="td-date" :class="{ 'td-never': !u.last_login }">
-              {{ u.last_login ? fmt(u.last_login) : 'Never' }}
-            </td>
-            <td class="td-num">{{ u.questions_attempted }}</td>
-            <td class="td-num correct">{{ u.total_correct }}</td>
-            <td class="td-num wrong">{{ u.total_wrong }}</td>
-            <td class="td-action">
-              <button
-                v-if="u.username !== 'admin'"
-                :class="['action-btn', u.is_blocked ? 'btn-unblock' : 'btn-block']"
-                @click="u.is_blocked ? unblock(u) : openBlockModal(u)"
-              >{{ u.is_blocked ? 'Unblock' : 'Block' }}</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <template v-if="activeTab === 'users'">
+      <div class="card summary-row">
+        <div class="stat">
+          <span class="stat-value">{{ users.length }}</span>
+          <span class="stat-label">Total users</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">{{ activeToday }}</span>
+          <span class="stat-label">Active today</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">{{ activeWeek }}</span>
+          <span class="stat-label">Active this week</span>
+        </div>
+      </div>
 
-    <!-- Block modal -->
+      <div class="card table-card">
+        <p class="section-title">Users</p>
+        <div v-if="loading" class="empty">Loading...</div>
+        <div v-else-if="!users.length" class="empty">No users yet.</div>
+        <table v-else>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Registered</th>
+              <th>Last login</th>
+              <th>Questions</th>
+              <th>Correct</th>
+              <th>Wrong</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="u in users" :key="u.username" :class="{ 'row-blocked': u.is_blocked }">
+              <td class="td-user">
+                {{ u.username }}
+                <span v-if="u.is_blocked" class="blocked-badge">blocked</span>
+                <span v-if="u.is_blocked && u.block_reason" class="block-reason">{{ u.block_reason }}</span>
+              </td>
+              <td class="td-date">{{ fmt(u.created_at) }}</td>
+              <td class="td-date" :class="{ 'td-never': !u.last_login }">
+                {{ u.last_login ? fmt(u.last_login) : 'Never' }}
+              </td>
+              <td class="td-num">{{ u.questions_attempted }}</td>
+              <td class="td-num correct">{{ u.total_correct }}</td>
+              <td class="td-num wrong">{{ u.total_wrong }}</td>
+              <td class="td-action">
+                <button
+                  v-if="u.username !== 'admin'"
+                  :class="['action-btn', u.is_blocked ? 'btn-unblock' : 'btn-block']"
+                  @click="u.is_blocked ? unblock(u) : openBlockModal(u)"
+                >{{ u.is_blocked ? 'Unblock' : 'Block' }}</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </template>
+
+    <template v-else>
+      <div class="files-layout">
+        <div class="card file-list-card">
+          <p class="section-title">Test Files</p>
+          <div v-if="!files.length" class="empty">No files in manifest.</div>
+          <ul v-else class="file-list">
+            <li
+              v-for="f in files"
+              :key="f.file"
+              class="file-list-item"
+              :class="{ active: selectedFile === f.file.replace(/^\//, '') }"
+              @click="loadVersions(f.file.replace(/^\//, ''))"
+            >
+              {{ f.name }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="card versions-card">
+          <p class="section-title">
+            {{ selectedFile ? 'Version history — ' + selectedFile : 'Select a file' }}
+          </p>
+          <div v-if="versionsLoading" class="empty">Loading...</div>
+          <div v-else-if="!selectedFile" class="empty">Click a file to see its history.</div>
+          <div v-else-if="!versions.length" class="empty">No saved versions yet.</div>
+          <table v-else>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Saved by</th>
+                <th>Date</th>
+                <th>Preview</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(v, i) in versions" :key="v.id">
+                <td class="td-num">{{ versions.length - i }}</td>
+                <td class="td-user">{{ v.saved_by }}</td>
+                <td class="td-date">{{ fmtDate(v.saved_at) }}</td>
+                <td class="td-preview">{{ v.preview }}…</td>
+                <td class="td-action">
+                  <span v-if="v.note" class="note-badge">{{ v.note }}</span>
+                  <button
+                    v-else
+                    class="action-btn btn-restore"
+                    :disabled="restoring"
+                    @click="restore(v.id)"
+                  >Restore</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </template>
+
     <div v-if="modal.open" class="modal-overlay" @click.self="modal.open = false">
       <div class="modal">
         <p class="modal-title">Block {{ modal.user?.username }}</p>
@@ -81,10 +144,17 @@
 <script setup>
 import { ref, reactive, computed, onMounted } from 'vue'
 import { getToken } from '../utils/auth.js'
+import { fetchFileVersions, restoreFileVersion } from '../utils/statsApi.js'
 
 const BASE  = import.meta.env.VITE_API_URL || ''
 const users   = ref([])
 const loading = ref(true)
+const activeTab = ref('users')
+const files = ref([])
+const selectedFile = ref(null)
+const versions = ref([])
+const versionsLoading = ref(false)
+const restoring = ref(false)
 const modal   = reactive({ open: false, user: null, reason: '' })
 
 onMounted(async () => {
@@ -96,6 +166,10 @@ onMounted(async () => {
   } finally {
     loading.value = false
   }
+  try {
+    const res = await fetch('/manifest.json')
+    if (res.ok) files.value = await res.json()
+  } catch {}
 })
 
 function openBlockModal(u) {
@@ -123,6 +197,29 @@ async function unblock(u) {
   })
   u.is_blocked   = false
   u.block_reason = null
+}
+
+async function loadVersions(filename) {
+  selectedFile.value = filename
+  versionsLoading.value = true
+  versions.value = []
+  versions.value = await fetchFileVersions(filename)
+  versionsLoading.value = false
+}
+
+async function restore(versionId) {
+  if (!confirm(`Restore version ${versionId}? This will replace the current content.`)) return
+  restoring.value = true
+  const ok = await restoreFileVersion(selectedFile.value, versionId)
+  if (ok) await loadVersions(selectedFile.value)
+  restoring.value = false
+}
+
+function fmtDate(iso) {
+  if (!iso) return '—'
+  const d = new Date(iso)
+  return d.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short', year: 'numeric' }) +
+    ' ' + d.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' })
 }
 
 function fmt(iso) {
@@ -255,4 +352,75 @@ tr:hover td { background: var(--surface); }
   cursor: pointer; transition: opacity .15s;
 }
 .btn-block-confirm:hover { opacity: .85; }
+
+.admin-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: var(--radius);
+}
+.admin-tab {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: .9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-2);
+  transition: background .15s, color .15s;
+}
+.admin-tab.active { background: var(--accent); color: #fff; }
+
+.files-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .files-layout { grid-template-columns: 1fr; }
+}
+
+.file-list-card, .versions-card { padding: 16px 20px; }
+.file-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.file-list-item {
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: .875rem;
+  color: var(--text-2);
+  font-weight: 500;
+  transition: background .12s, color .12s;
+  border: 1.5px solid transparent;
+}
+.file-list-item:hover { background: var(--surface-2); color: var(--text); }
+.file-list-item.active {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
+.td-preview {
+  font-size: .75rem;
+  color: var(--text-3);
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.note-badge {
+  font-size: .7rem; font-style: italic;
+  color: var(--text-3);
+}
+.btn-restore {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+.btn-restore:disabled { opacity: .5; cursor: not-allowed; }
 </style>
